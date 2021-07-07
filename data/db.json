@@ -1,0 +1,22 @@
+{
+    "bikesPreview": [
+      {
+        "name":"Manticora",
+        "body":"Quia optio ipsam molestiae quibusdam error, eaque, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
+        "url":"/images/mountain-bike.jpg",
+        "id":1
+      },
+      {
+        "name":"Pegas",
+        "body":"Quia optio ipsam molestiae quibusdam aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
+        "url":"/images/treant-bike.jpg",
+        "id":2
+      },
+      {
+        "name":"Griffon",
+        "body":" Sit amet consectetur adipisicing elit aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
+        "url":"/images/folding-bike.jpg",
+        "id":3
+      }
+    ]
+  }

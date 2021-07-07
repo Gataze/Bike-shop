@@ -1,0 +1,25 @@
+.main-nav {
+  background-color: white;
+}
+
+.main-nav .col {
+  display: flex;
+  padding: 15px;
+}
+
+.main-nav .col .navigation {
+  display: none;
+}
+
+.main-nav .col .logo {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.main-nav .col .logo .bold-style {
+  font-weight: 400;
+}
+
+.main-nav .col .logo .bold-style span {
+  font-weight: 600;
+}

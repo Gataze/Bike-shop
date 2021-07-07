@@ -1,0 +1,19 @@
+.mobile {
+    position: absolute;
+    width: 100%;
+    background-color: lightgray;
+    
+    .col ul{
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        
+        gap: 20px;
+        padding: 40px;
+        font-size: 20px;
+        
+        a{
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.our-photos {
+  padding: 10px;
+}
+
+.our-photos .row-header {
+  font-size: 28px;
+  text-align: center;
+  padding: 30px;
+  font-weight: 600;
+}
+
+.our-photos .row-photos {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 250px);
+  gap: 10px;
+}
+
+.our-photos .row-photos .photo-grid-item:nth-child(odd) {
+  display: none;
+}
+
+.our-photos .row-photos img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.our-photos .row-text {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 15px;
+}

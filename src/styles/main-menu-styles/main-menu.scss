@@ -1,0 +1,27 @@
+.main-nav{
+    
+    background-color: white;
+    
+    .col{
+        display: flex;
+        padding: 15px;
+
+        .navigation {
+            display: none;
+        }
+
+        .logo{
+            text-transform: uppercase;
+            
+            font-size: 28px;
+            
+
+            .bold-style{
+                font-weight: 400;
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

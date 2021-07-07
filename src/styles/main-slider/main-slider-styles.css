@@ -1,0 +1,43 @@
+.hero .col {
+  position: relative;
+}
+
+.hero .main-slider {
+  background-image: url("/src/images/background/main-slider.jpg");
+  background-size: cover;
+  background-position-x: center;
+  height: 90vw;
+}
+
+.hero .hero-msg {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: rgba(255, 166, 0, 0.65);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.hero .row-2 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.hero .row-2 .square {
+  background-color: orange;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.hero .row-2 h2 {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.hero .row-2 p {
+  font-size: 10px;
+}

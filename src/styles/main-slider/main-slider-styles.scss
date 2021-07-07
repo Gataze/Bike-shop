@@ -1,0 +1,50 @@
+
+
+
+.hero{
+
+    .col{
+        position: relative;
+    }
+
+    .main-slider{
+        background-image: url('/src/images/background/main-slider.jpg');
+        background-size: cover;
+        background-position-x: center;
+        height: 90vw;
+    }
+
+    .hero-msg{
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: rgba(255, 166, 0, 0.650);
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+
+    .row-2{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 25px 0;
+        
+
+        .square{
+            background-color: orange;
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+
+        h2{
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+}

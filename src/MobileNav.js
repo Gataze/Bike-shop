@@ -1,0 +1,25 @@
+import '../src/styles/mobile-nav-styles/mobile-nav.css'
+import { Link } from 'react-router-dom';
+
+
+const MobileNav = () => {
+    
+    
+    return ( 
+    <div className="mobile">
+        <div className="container">
+            <div className="row">
+                <div className="col">
+                    <ul>
+                        <li><Link to="/">HOME</Link></li>
+                        <li><Link to="/">BIKES</Link></li>
+                        <li><Link to="/">ACCESORIES</Link></li>
+                        <li><Link to="/">ABOUT US</Link></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> );
+}
+ 
+export default MobileNav;
