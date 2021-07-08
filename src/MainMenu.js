@@ -1,6 +1,7 @@
 import Logo from './images/logo/logo.png'
 import './styles/main-menu-styles/main-menu.css'
 import BurgerBtn from './BurgerBtn';
+import ProductsNav from './ProductsNav';
 import { Link } from 'react-router-dom';
 import React from "react";
 import {FaSignInAlt, FaUser, FaShoppingCart} from "react-icons/fa"
@@ -18,12 +19,10 @@ const MainMenu = ({activeStyle, handleShow}) => {
                             <img src={Logo} alt="#"/>
                             <span className='bold-style'>Lorem<span>Bikes</span></span>
                         </div>
-                            
-                        
                         <div className="navigation">
                             <ul>
                                 <li><Link to="#">HOME</Link></li>
-                                <li><Link to="#">OUR BIKES</Link></li>
+                                <ProductsNav />
                                 <li><Link to="#">ACCESORIES</Link></li>
                                 <li><Link to="#">ABOUT US</Link></li>
                             </ul>
