@@ -12,11 +12,30 @@ footer .row {
   font-weight: 200;
 }
 
+@media (min-width: 768px) {
+  footer .row {
+    font-size: 15px;
+  }
+}
+
 footer .row .col {
   min-width: 50%;
   display: flex;
   flex-flow: column;
   padding: 20px;
+}
+
+@media (min-width: 1200px) {
+  footer .row .col {
+    min-width: 25%;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    font-size: 18px;
+  }
+}
+
+footer .row .col span {
+  color: white;
 }
 
 footer .row form {
@@ -26,10 +45,11 @@ footer .row form {
 }
 
 footer .row .plane {
-  display: inline-block;
+  display: flex;
   border: 1px solid orange;
   width: 23px;
   text-align: center;
+  justify-content: center;
 }
 
 footer .row .plane .footer-subscribe {
@@ -45,4 +65,10 @@ footer .row input {
   outline: none;
   font-size: 12px;
   padding: 4px;
+}
+
+@media (min-width: 768px) {
+  footer .row input {
+    font-size: 14px;
+  }
 }

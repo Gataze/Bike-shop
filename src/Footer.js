@@ -35,7 +35,7 @@ const Footer = () => {
                     <form action="#">
                         <input type="text" placeholder='Your email adress...'/>
                         <div className="plane">
-                            <button class="footer-subscribe">
+                            <button className="footer-subscribe">
                                 <FaPaperPlane />
                             </button>
                         </div>

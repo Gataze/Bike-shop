@@ -4,7 +4,7 @@
   border: 0;
   background-color: transparent;
   cursor: pointer;
-  height: 30px;
+  height: 35px;
 }
 
 .hamburger:focus > .hamburger__container {

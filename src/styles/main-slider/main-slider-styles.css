@@ -9,6 +9,20 @@
   height: 90vw;
 }
 
+@media (min-width: 768px) {
+  .hero .main-slider {
+    height: 60vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .main-slider {
+    height: 38vw;
+    background-position-y: 65%;
+    background-size: 100% 150%;
+  }
+}
+
 .hero .hero-msg {
   position: absolute;
   top: 60px;
@@ -18,11 +32,53 @@
   border-radius: 20px;
 }
 
+.hero .hero-msg a {
+  color: black;
+}
+
+.hero .hero-msg a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .hero .hero-msg {
+    font-size: 1.5em;
+    border-radius: 30px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .hero-msg {
+    font-size: 2em;
+    border-radius: 30px;
+    padding: 20px;
+    right: 15%;
+    top: 120px;
+  }
+}
+
+.hero .hero-msg .arrow {
+  display: inline-block;
+  margin-bottom: -10px;
+  margin-left: 10px;
+  font-size: 45px;
+  color: white;
+  transform: rotate(-45deg);
+}
+
 .hero .row-2 {
   display: flex;
   justify-content: space-around;
   text-align: center;
   padding: 25px 0;
+  background-color: #f8f8f8;
+}
+
+@media (min-width: 768px) {
+  .hero .row-2 {
+    padding: 50px 0;
+  }
 }
 
 .hero .row-2 .square {
@@ -33,11 +89,31 @@
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .hero .row-2 .square {
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+  }
+}
+
 .hero .row-2 h2 {
   font-size: 12px;
   margin-top: 10px;
 }
 
+@media (min-width: 768px) {
+  .hero .row-2 h2 {
+    font-size: 18px;
+  }
+}
+
 .hero .row-2 p {
   font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .hero .row-2 p {
+    font-size: 14px;
+  }
 }

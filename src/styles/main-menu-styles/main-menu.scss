@@ -5,23 +5,65 @@
     .col{
         display: flex;
         padding: 15px;
+        align-items: center;
 
         .navigation {
             display: none;
+            @media(min-width: 768px){
+                display: block;
+                ul{
+                    display: flex;
+                    li{
+                        margin-left: 40px;
+                        a{
+                            color: black;
+                        }
+                    }
+                }
+            }
         }
+
+
+        .social-menu{
+            display: none;
+            @media (min-width: 768px){
+                display: block;
+                margin-left: auto;
+
+                ul.social-links{
+                    display: flex;
+                    li{
+                        margin-left: 20px;
+                        a{
+                            color: black;
+                            &:hover{
+                                color: orange
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+
 
         .logo{
             text-transform: uppercase;
-            
             font-size: 28px;
-            
-
             .bold-style{
                 font-weight: 400;
                 span{
                     font-weight: 600;
                 }
             }
+        }
+
+
+
+        .burger-btn{
+            margin-left: auto;
+            @media (min-width: 768px){
+                display: none;
+            }  
         }
     }
 }

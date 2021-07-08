@@ -2,6 +2,9 @@
     position: absolute;
     width: 100%;
     background-color: lightgray;
+    @media (min-width: 768px) {
+        display: none;
+    }
     
     .col ul{
         display: flex;

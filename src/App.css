@@ -12,3 +12,10 @@
   width: 100%;
   transition: top 0.35s ease-in-out;
 }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

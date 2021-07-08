@@ -5,6 +5,16 @@
   background-color: #f1f1f1;
 }
 
+.refs h2 {
+  margin: 30px 0 50px;
+}
+
+@media (min-width: 992px) {
+  .refs h2 {
+    font-size: 28px;
+  }
+}
+
 .refs .row {
   display: flex;
   flex-flow: column;
@@ -12,14 +22,17 @@
   align-items: center;
 }
 
-.refs .row h2 {
-  margin: 30px 0 10px;
+@media (min-width: 992px) {
+  .refs .row {
+    flex-flow: row;
+  }
 }
 
 .refs .row .col {
   width: 65%;
   background-color: #f8f8f8;
   padding: 30px;
+  margin-bottom: 50px;
 }
 
 .refs .row .col .stars svg {
@@ -32,6 +45,14 @@
   height: 40px;
   margin: 0 auto;
   border-radius: 20px;
+}
+
+@media (min-width: 992px) {
+  .refs .row .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
 }
 
 .refs .row .name {

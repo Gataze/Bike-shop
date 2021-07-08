@@ -4,21 +4,30 @@
     padding: 20px;
     background-color: rgb(241, 241, 241);
 
+    h2{
+        margin: 30px 0 50px;
+        @media(min-width: 992px){
+            font-size: 28px;
+        }
+    }
+
     .row{
         display: flex;
         flex-flow: column;
         gap: 40px;
         align-items: center;
-
-        h2{
-            margin: 30px 0 10px;
+        @media(min-width: 992px){
+            flex-flow: row;
         }
+
+        
 
         .col{
             
             width: 65%;
             background-color: rgb(248, 248, 248);
             padding: 30px;
+            margin-bottom: 50px;
 
 
             .stars svg{
@@ -32,6 +41,11 @@
             height: 40px;
             margin: 0 auto;
             border-radius: 20px;
+            @media(min-width: 992px){
+                width: 60px;
+                height: 60px;
+                border-radius: 30px;
+            }
         }
 
         .name{

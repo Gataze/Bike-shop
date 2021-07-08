@@ -1,8 +1,10 @@
-.bike-models img {  
-    width: 30%;
+.bike-models h2{
+    text-align: center;
+    font-size: 24px;
+    padding: 40px 0;
+    @media(min-width: 768px) {
+        font-size: 28px;
+        padding-bottom: 0px;
+        padding-top: 50px;
+    }
 }
-
-.bike-models .col{
-    display: flex
-}
-

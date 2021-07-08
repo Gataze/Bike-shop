@@ -12,6 +12,7 @@ const BikeModels = () => {
     return ( 
         <div className="bike-models">
             <div className="container">
+                <h2>NEW MODELS</h2>
                 <div className="row">
                     {isPending && <div>Loading...</div>}
                     {error && <div>{error}</div>}

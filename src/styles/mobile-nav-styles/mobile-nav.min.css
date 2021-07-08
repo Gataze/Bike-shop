@@ -1,1 +1,1 @@
-.mobile{position:absolute;width:100%;background-color:lightgray}.mobile .col ul{display:flex;align-items:center;flex-flow:column;gap:20px;padding:40px;font-size:20px}.mobile .col ul a{color:black}
+.mobile{position:absolute;width:100%;background-color:lightgray}@media (min-width: 768px){.mobile{display:none}}.mobile .col ul{display:flex;align-items:center;flex-flow:column;gap:20px;padding:40px;font-size:20px}.mobile .col ul a{color:black}

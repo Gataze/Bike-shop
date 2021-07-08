@@ -4,6 +4,12 @@
   background-color: lightgray;
 }
 
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
 .mobile .col ul {
   display: flex;
   align-items: center;

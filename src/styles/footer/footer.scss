@@ -13,12 +13,24 @@ footer{
         flex-wrap: wrap;
         font-size: 13px;
         font-weight: 200;
+        @media (min-width: 768px) {
+            font-size: 15px;
+        }
 
         .col{
             min-width: 50%;
             display: flex;
             flex-flow:column;
             padding: 20px;
+            @media(min-width: 1200px){
+                min-width: 25%;
+                padding-bottom: 80px;
+                padding-top: 40px;
+                font-size: 18px;
+            }
+            span{
+                color: white;
+            }
             
         }
 
@@ -27,14 +39,17 @@ footer{
             line-height: 20px;
             margin-top: 10px;
             display: flex;
+            
+            
         }
 
 
         .plane{
-            display: inline-block;
+            display: flex;
             border: 1px solid orange;
             width: 23px;
             text-align: center;
+            justify-content: center;
            
             
             .footer-subscribe{
@@ -43,7 +58,6 @@ footer{
                 color: orange;
                 cursor: pointer;
                 font-size: 16px;
-                
                 
             }
         }
@@ -54,8 +68,11 @@ footer{
         input{
             border: 1px solid orange;
             outline: none;
-           font-size: 12px;
-           padding: 4px;
+            font-size: 12px;
+            padding: 4px;
+            @media (min-width: 768px) {
+                font-size: 14px;
+            }
         }
     }
 }
