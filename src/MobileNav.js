@@ -12,8 +12,8 @@ const MobileNav = () => {
                 <div className="col">
                     <ul>
                         <li><Link to="/">HOME</Link></li>
-                        <li><Link to="/">BIKES</Link></li>
-                        <li><Link to="/">ACCESORIES</Link></li>
+                        <li><Link to="/products">PRODUCTS</Link></li>
+                        <li><Link to="/cart">CART</Link></li>
                         <li><Link to="/">ABOUT US</Link></li>
                     </ul>
                 </div>

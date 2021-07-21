@@ -1,7 +1,7 @@
 import Logo from './images/logo/logo.png'
 import './styles/main-menu-styles/main-menu.css'
 import BurgerBtn from './BurgerBtn';
-import ProductsNav from './ProductsNav';
+import ProductsNav from './products/ProductsNav';
 import { Link } from 'react-router-dom';
 import React from "react";
 import {FaSignInAlt, FaUser, FaShoppingCart} from "react-icons/fa"
@@ -21,9 +21,8 @@ const MainMenu = ({activeStyle, handleShow}) => {
                         </div>
                         <div className="navigation">
                             <ul>
-                                <li><Link to="#">HOME</Link></li>
+                                <li><Link to="/">HOME</Link></li>
                                 <ProductsNav />
-                                <li><Link to="#">ACCESORIES</Link></li>
                                 <li><Link to="#">ABOUT US</Link></li>
                             </ul>
                         </div>
@@ -31,7 +30,7 @@ const MainMenu = ({activeStyle, handleShow}) => {
                             <ul className="social-links">
                                 <li><Link to="#"><FaSignInAlt /></Link></li>
                                 <li><Link to="#"><FaUser /></Link></li>
-                                <li><Link to="#"><FaShoppingCart /></Link></li>
+                                <li><Link to="/cart"><FaShoppingCart /></Link></li>
                             </ul>
                         </div>
                         <div className="burger-btn">

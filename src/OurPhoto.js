@@ -5,7 +5,7 @@ import "./styles/our-photo/our-photo.css"
 
 const OurPhoto = () => {
 
-    const {data: photos, isPending, error} = useFetch('http://localhost:8001/OurPhotos')
+    const {data: photos, isPending, error} = useFetch('http://localhost:8000/OurPhotos')
 
     return ( 
         <div className="our-photos">

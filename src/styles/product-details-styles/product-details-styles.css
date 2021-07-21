@@ -1,0 +1,100 @@
+.card {
+  background-color: white;
+}
+
+.card .container {
+  padding: 0px;
+}
+
+.card .row {
+  display: flex;
+  flex-flow: column;
+}
+
+.card .row .col-1 {
+  display: flex;
+  width: 100%;
+}
+
+.card .row .col-1 .img-wrapper img {
+  max-width: 100%;
+}
+
+.card .row .col-2 {
+  margin: 15px;
+}
+
+.card .row .col-2 .user-grade {
+  display: flex;
+  align-items: center;
+}
+
+.card .row .col-2 .user-grade .stars {
+  color: gold;
+}
+
+.card .row .col-2 .user-grade span {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.card .row .col-2 .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.card .row .col-2 .loan, .card .row .col-2 .spcs {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.card .row .col-2 .quantity .form-wrapper {
+  display: flex;
+  align-items: flex-end;
+  font-size: 18px;
+}
+
+.card .row .col-2 .quantity .form-wrapper label {
+  margin-right: 10px;
+}
+
+.card .row .col-2 .quantity .form-wrapper form {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 25px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.card .row .col-2 .quantity .form-wrapper form input {
+  border: none;
+  background-color: white;
+  outline: none;
+  text-align: center;
+  width: 50px;
+  color: black;
+}
+
+.card .row .col-2 .quantity .form-wrapper form svg {
+  cursor: pointer;
+  color: gold;
+  background-color: black;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.card .row .col-2 .shop-accesibility {
+  display: inline-block;
+  background-color: gold;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card .row .col-2 .shop-accesibility a {
+  color: black;
+  padding: 10px;
+  width: 200px;
+}

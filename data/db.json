@@ -4,19 +4,73 @@
         "name":"Manticora",
         "body":"Quia optio ipsam molestiae quibusdam error, eaque, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
         "url":"/images/mountain-bike.jpg",
+        "price": 1799,
         "id":1
       },
       {
         "name":"Pegas",
         "body":"Quia optio ipsam molestiae quibusdam aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
         "url":"/images/treant-bike.jpg",
+        "price": 1299,
         "id":2
       },
       {
         "name":"Griffon",
         "body":" Sit amet consectetur adipisicing elit aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
         "url":"/images/folding-bike.jpg",
+        "price": 999,
         "id":3
       }
-    ]
+    ],
+    "accesories": [
+      {
+        "name":"Helmet",
+        "body":"Quia optio ipsam molestiae quibusdam aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
+        "url":"/images/accesories/helmet.jpg",
+        "price": 79,
+        "id":4
+      },
+      {
+        "name":"Saddle",
+        "body":"Quia optio ipsam molestiae quibusdam aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
+        "url":"/images/accesories/saddle.jpg",
+        "price": 99,
+        "id":5
+      },
+      {
+        "name":"Water bottle",
+        "body":"Quia optio ipsam molestiae quibusdam aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
+        "url":"/images/accesories/water-bottle.jpg",
+        "price": 29,
+        "id":6
+      }
+    ],
+
+    "OurPhotos": [
+      {
+          "url": "/images/our-photos/bicycle-1.jpg",
+          "id": 7
+      },
+      {
+          "url": "/images/our-photos/bicycle-2.jpg",
+          "id": 8
+      },
+      {
+          "url": "/images/our-photos/bicycle-3.jpg",
+          "id": 9
+      },
+      {
+          "url": "/images/our-photos/bicycle-4.jpg",
+          "id": 10
+      },
+      {
+          "url": "/images/our-photos/bicycle-5.jpg",
+          "id": 11
+      },
+      {
+          "url": "/images/our-photos/bicycle-6.jpg",
+          "id": 12
+      }
+
+  ]
   }

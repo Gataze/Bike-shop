@@ -1,0 +1,137 @@
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.products .row-1 {
+  text-align: center;
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+}
+
+.products .row-1 h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.products .row-1 .col-2 {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.products .row-1 .col-2 span {
+  color: white;
+  cursor: pointer;
+  padding: 2px 10px;
+  border-radius: 15px;
+  background-color: #4e4e4e;
+  margin-left: 10px;
+}
+
+.products .row-2 {
+  display: flex;
+  flex-flow: column;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.products .row-2 .product-item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.products .row-2 .col-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products .row-2 .col-3 h2 {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.products .row-2 .col-3 .photo {
+  width: 49.7%;
+  display: flex;
+}
+
+.products .row-2 .col-3 .photo img {
+  min-width: 150px;
+  margin-top: auto;
+  height: 33vw;
+  width: 100%;
+  object-fit: fill;
+}
+
+@media (min-width: 1200px) {
+  .products .row-2 .col-3 .photo img {
+    height: 420px;
+    min-width: 520px;
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+.products .row-2 .col-3 .description {
+  width: 49.7%;
+  padding-left: 40px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+@media (min-width: 576px) {
+  .products .row-2 .col-3 .description {
+    line-height: 28px;
+    font-size: 18px;
+    padding-left: 60px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products .row-2 .col-3 .description {
+    line-height: 38px;
+    font-size: 24px;
+    padding-left: 90px;
+  }
+}
+
+.products .row-2 .col-3 .description button {
+  background-color: rgba(0, 0, 0, 0.753);
+  border: none;
+  width: 100px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.products .row-2 .col-3 .description button a {
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .products .row-2 .col-3 .description button {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products .row-2 .col-3 .description button {
+    width: 300px;
+    margin-top: 20px;
+  }
+  .products .row-2 .col-3 .description button a {
+    font-size: 18px;
+  }
+}

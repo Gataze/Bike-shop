@@ -19,3 +19,7 @@
     margin: 0 auto;
   }
 }
+
+.btn {
+  display: inline-block;
+}
