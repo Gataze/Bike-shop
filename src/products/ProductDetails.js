@@ -3,15 +3,61 @@ import { useParams } from "react-router"
 import '../styles/product-details-styles/product-details-styles.css'
 import { Link } from "react-router-dom"
 import useFetch from "../useFetch"
+import { useState } from "react"
+
 
 
 const ProductDetails = () => {
 
 
-    const {typeId, id} = useParams()
     
 
-    const {data: item, error, isPending} = useFetch(`http://localhost:8000/${typeId}/${id}` )
+    const [counter, setCounter] = useState(1)
+
+    const {typeId, id} = useParams()
+
+    const {data: item} = useFetch(`http://localhost:8000/${typeId}/${id}` )
+
+    
+
+    
+
+    const addToCart = (item) => {
+
+        const oldItemsString = localStorage.getItem('item')
+        let oldItems = []
+        
+        if(oldItemsString){
+            oldItems = JSON.parse(oldItemsString)
+            
+        }
+
+
+        //item pobrany przez fetch w tym pliku
+        const newItem = {
+            name: item.name,
+            body: item.body,
+            price: item.price,
+            url: item.url,
+            id: item.id,
+            counter: counter
+        }
+        
+        const updatedItems = oldItems.filter(oldItem => oldItem.id !== newItem.id) 
+
+        const allItems = [...updatedItems, newItem] 
+         
+
+
+        console.log(allItems)
+
+    const temp = JSON.stringify(allItems)
+    localStorage.setItem('item', temp)
+
+    }
+
+    
+   
 
 
     return ( 
@@ -68,19 +114,34 @@ const ProductDetails = () => {
                         <p className='spcs'>Kolor<span>: Ciemna lawenda</span></p>
                         <p className='spcs'>Rozmiar<span>: Uniwersalny</span></p>
                         <div className="quantity">
+                            <label htmlFor="qnt">Ilość</label>
                             <div className='form-wrapper'>
-                                <label htmlFor="qnt">Ilość</label>
                                 
-                                <form>
-                                    <FaMinus/>
-                                    <input type="text" id='qnt' value='1'></input>
-                                    <FaPlus /> 
-                                </form>
+                                
+                                
+                                    <div onClick={() => setCounter(
+                                        counter => {
+                                            if(counter >= 1){
+                                               return counter - 1
+                                            } else {
+                                                return counter
+                                            }
+                                        })}>
+                                        <FaMinus />
+                                    </div>
+                                   
+                                    <p type="text" id='qnt' value={counter} >{counter}</p>
+
+                                    <div onClick={() => setCounter(counter + 1)} >
+                                        <FaPlus /> 
+                                    </div>
+                                    
+                                
                                  
                             </div>
                         </div>
-                        <div className='shop-accesibility'>
-                            <a href="/cart" className="btn">DODAJ DO KOSZYKA</a>
+                        <div onClick={() => addToCart(item)}  className='shop-accesibility'>
+                            <Link to="/cart" className="btn" >DODAJ DO KOSZYKA</Link>
                         </div>
                     </div>
                 </div>

@@ -49,40 +49,42 @@
   margin-top: 5px;
 }
 
-.card .row .col-2 .quantity .form-wrapper {
+.card .row .col-2 .quantity {
   display: flex;
-  align-items: flex-end;
-  font-size: 18px;
+  align-items: center;
+  margin: 20px 0 5px 0;
 }
 
-.card .row .col-2 .quantity .form-wrapper label {
+.card .row .col-2 .quantity label {
   margin-right: 10px;
 }
 
-.card .row .col-2 .quantity .form-wrapper form {
+.card .row .col-2 .quantity .form-wrapper {
   display: flex;
   align-items: center;
-  background-color: white;
-  height: 25px;
-  width: 100px;
-  border: 1px solid black;
+  font-size: 18px;
+  padding: 0px 5px;
 }
 
-.card .row .col-2 .quantity .form-wrapper form input {
-  border: none;
-  background-color: white;
-  outline: none;
-  text-align: center;
-  width: 50px;
-  color: black;
+.card .row .col-2 .quantity .form-wrapper div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card .row .col-2 .quantity .form-wrapper form svg {
+.card .row .col-2 .quantity .form-wrapper div svg {
   cursor: pointer;
   color: gold;
   background-color: black;
-  font-size: 25px;
+  font-size: 28px;
   padding: 5px;
+}
+
+.card .row .col-2 .quantity .form-wrapper p {
+  width: 40px;
+  text-align: center;
+  border: 1px solid black;
+  background: white;
 }
 
 .card .row .col-2 .shop-accesibility {

@@ -1,18 +1,16 @@
+
 import { Link } from "react-router-dom";
 
 
 const ProductItem = ({bikes, product}) => {
 
+   
 
     return ( 
     <>
     {bikes.map(bike => (
 
         <div className="product-item" key={bike.id}>
-            {/* <div className='col-2'>
-                
-            </div> */}
-
             <div className="col-3">
                 <h2>{bike.name}</h2>
                 <div className="photo">
@@ -33,7 +31,7 @@ const ProductItem = ({bikes, product}) => {
                         <span>Frame size <b>18"</b></span>
                     </div>
                     <div>
-                        <span>Rama <b>męska</b></span>
+                        <span>Frame type <b>male</b></span>
                     </div>
                     <button>
                         <Link className="btn" to={`/products/${product + bike.id}`}>SEE MORE</Link>

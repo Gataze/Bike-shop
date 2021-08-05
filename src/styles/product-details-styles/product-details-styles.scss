@@ -37,40 +37,50 @@
                 font-size: 12px;
                 margin-top: 5px;
             }
-            .quantity .form-wrapper{
+            .quantity{
                 display: flex;
-                align-items: flex-end;
-                font-size: 18px;
-                
+                align-items: center;
+                margin: 20px 0 5px 0;
+
                 label{
                     margin-right: 10px;
                 }
+            }
+
+
+            .quantity .form-wrapper{
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                padding: 0px 5px;
                 
-                form {
+                div{
                     display: flex;
                     align-items: center;
-                    background-color: rgb(255, 255, 255);
-                    height: 25px;
+                    justify-content: center;
                     
-                    width: 100px;
-                    border: 1px solid black;
-                    input{
-                        border: none;
-                        background-color: rgb(255, 255, 255);
-                        outline: none;
-                        text-align: center;
-                        width: 50px;
-                        color: black;
-                    }
                     svg {
                         cursor: pointer;
                         color: gold;
                         background-color: black;
-                        font-size: 25px;
+                        font-size: 28px;
                         padding: 5px;
                         
                     }
                 }
+                
+                p{
+                    width: 40px;
+                    text-align: center;
+                    border: 1px solid black;
+                    background: white;
+
+                    
+
+                    
+                }
+                    
+                
             }
             .shop-accesibility{
                 display: inline-block;

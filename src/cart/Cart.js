@@ -1,21 +1,85 @@
 import '../styles/cart/cart-styles.css'
 import useFetch from '../useFetch';
-import CartItem from './CartItem';
-
+import CartList from './CartList';
+import { useState, useEffect } from 'react'
 
 const Cart = () => {
 
 
     const {data: bikes, error, isPending} = useFetch('http://localhost:8000/bikesPreview')
 
+    const [items, setItems] = useState([])
 
-    // const [bike, SetBike] = useState([])
+    //Zmienna która będzie przechwoywać całkowitą wartość produktów w koszyku
+    const [totalValue, setTotalValue] = useState(0)
+
+    useEffect(()=> {
+
+        //pobranie danych z localStorage
+        const temp = localStorage.getItem('item')
+        const loadedItem = JSON.parse(temp)
+
+        
+        //Jeśli cokowliek było w localStorage to zapisuje to w zmiennej items
+        if(loadedItem){
+            setItems(loadedItem)   
+        }
+
+    },[])
 
 
-    // const addBikeItem = () => {
+    useEffect(() => {       
+        const temp = JSON.stringify(items)
+        localStorage.setItem('item', temp)
+    }, [items])
 
 
-    // }
+
+    const delFromCart = (id) => {
+
+        const temp = localStorage.getItem('item')
+        const loadedItem = JSON.parse(temp)
+        console.log(loadedItem)
+
+
+        setItems(
+            loadedItem.filter((localItem) => localItem.id !== id)
+        )
+    }
+
+    //clears the cart and localStorage
+    const clearCart = () => {
+
+        setItems([])
+
+    }
+
+
+
+    //efekt zliczający całkowitą wartośc produktów w koszyku
+    useEffect(() => {
+        setTotalValue(
+            [...items].map(item => {
+                return item.counter * item.price
+            }).reduce((a, b) => a + b, 0)
+        )   
+    }, [items])
+
+    
+
+
+    const addTotalValue = (price) => {
+        setTotalValue(prevState=> 
+            prevState + price
+        )
+    }
+
+    const minusTotalValue = (price) => {
+        setTotalValue(prevState=> 
+            prevState - price
+        )
+    }
+
 
     return ( 
         <div>
@@ -33,11 +97,17 @@ const Cart = () => {
                 
                     {isPending && <div>Loading...</div>}
                     {error && <div>{error}</div>}
-                    {bikes && <CartItem  bikes={bikes}/>}
+                    {bikes && <CartList 
+                    items={items}
+                    delFromCart={delFromCart}
+                    totalValue={totalValue}
+                    addTotalValue={addTotalValue}
+                    minusTotalValue={minusTotalValue}
+                    />}
                     
                 
             <div className="row clear-proceed">
-                <div className="col btn">Clear shopping cart</div>
+                <div className="col btn"  onClick={()=> clearCart()}>Clear shopping cart</div>
                 <div className="col btn">Proceed to checkout</div>
             </div>
             </div>
