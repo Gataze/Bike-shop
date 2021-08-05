@@ -4,6 +4,9 @@ import '../styles/product-details-styles/product-details-styles.css'
 import { Link } from "react-router-dom"
 import useFetch from "../useFetch"
 import { useState } from "react"
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
 
 
 
@@ -57,7 +60,6 @@ const ProductDetails = () => {
     }
 
     
-   
 
 
     return ( 
@@ -68,7 +70,23 @@ const ProductDetails = () => {
                     <div className="col-1">
                         <div className="img-wrapper">
                             <div className="featured-wrapper">
-                                <img src={item.url} alt="" className="featured"></img>
+                                <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} >
+                                    <div>
+                                        <img src={item.url} alt="" className="thumbnail"/>
+                                    </div>
+                                    <div>
+                                        <img src={item.url2} alt="" className="thumbnail"/>
+                                    </div>
+                                    <div>
+                                        <img src={item.url} alt="" className="thumbnail"/>
+                                    </div>
+                                    <div>
+                                        <img src={item.url} alt="" className="thumbnail"/>
+                                    </div>
+                                    <div>
+                                        <img src={item.url} alt="" className="thumbnail"/>
+                                    </div>
+                                </Carousel>
                             </div>
                             <div className="slider-wrapper">
                                 <div className="left-arrow-container">
