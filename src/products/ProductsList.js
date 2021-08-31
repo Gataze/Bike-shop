@@ -48,23 +48,17 @@ const ProductsList = () => {
             
         }
 
-        sortArray()
-        
+        sortArray()      
 
     },[sortType, bikes])
 
 
-
-
     
-
-
     return ( 
             <div className="products">   
                 <div className="row-1">
                     <div className="col-1">
                         <h2>All Products</h2>
-                        <p>Products: 189</p>
                     </div>
 
                     <div className="col-2">

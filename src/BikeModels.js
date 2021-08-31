@@ -6,7 +6,7 @@ import BikeModelsList from "./BikeModelsList"
 const BikeModels = () => {
 
     const {data, error, isPending} = useFetch('http://localhost:8000/bikesPreview')
-
+    
     
 
     return ( 

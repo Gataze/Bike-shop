@@ -7,17 +7,8 @@ import { useState } from "react";
 const OurPhotoList = ({photos}) => {
 
 
-    const [carouselStyle, setCarouselStyle] = useState(false)
-
     const [activeIndex, setActiveIndex] = useState('')
  
-
-    const handleShow = (e) => {
-        setCarouselStyle(!carouselStyle)
- 
-    }
-
-    console.log(activeIndex)
 
 
     return ( 

@@ -53,19 +53,21 @@
   }
 }
 
-.bike-models-list .col button {
+.bike-models-list .col a {
   display: block;
   position: relative;
   margin-top: 10px;
   border: 0px;
   background-color: orange;
-  padding: 5px;
-  border-radius: 10px;
+  color: black;
+  width: 90px;
+  padding: 10px;
+  border-radius: 11px;
   transition: top 0.3s ease-in-out;
 }
 
 @media (min-width: 768px) {
-  .bike-models-list .col button {
+  .bike-models-list .col a {
     font-size: 18px;
     padding: 10px;
     border-radius: 15px;
@@ -73,17 +75,17 @@
 }
 
 @media (min-width: 1200px) {
-  .bike-models-list .col button {
+  .bike-models-list .col a {
     width: 25%;
   }
 }
 
-.bike-models-list .col button:before {
+.bike-models-list .col a:before {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid gray;
+  border: 2px solid gray;
   border-radius: inherit;
   transition: all 0.25s ease-in-out;
   top: 5px;
@@ -91,14 +93,14 @@
 }
 
 @media (min-width: 768px) {
-  .bike-models-list .col button:before {
+  .bike-models-list .col a:before {
     top: 7px;
     left: 7px;
     border: 2px solid gray;
   }
 }
 
-.bike-models-list .col button:hover:before {
+.bike-models-list .col a:hover:before {
   top: 0px;
   left: 0px;
 }

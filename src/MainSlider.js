@@ -4,39 +4,36 @@ import {FaArrowLeft, FaPhoneAlt, FaToolbox, FaTools, FaUserShield} from 'react-i
 import { Carousel } from "react-responsive-carousel";
 import useFetch from "./useFetch";
 
+
 const MainSlider = () => {
 
-
+    
     const {data: slides, isPending, error} = useFetch('http://localhost:8000/sliders')
 
 
     return ( 
         <div className="hero">
-            <div className="row">
-            
+            <div className="row">     
                 <div className="col">
                 {isPending && <div>Loading</div>}
+                {error && <div>{error}</div>}
                 {slides && 
                      <Carousel infiniteLoop={true} showThumbs={false} autoFocus={true} autoPlay={true} interval={5000} transitionTime={1000}>
                      {slides.map(slide => (
                          <div className="main-slider" key={slide.id} style={{backgroundImage: `url(${slide.url})`}}>
                          
                          </div>
-                     ))}
- 
- 
-                     
+                     ))}                     
                      </Carousel>
-                
-                
+       
                 }    
                 <div className="hero-msg">
-                         <h2>NEW MODEL</h2>
-                         <Link to="/">Check It Now</Link>
-                         <FaArrowLeft className='arrow'/>
-                         </div>
-                </div>
-               
+                    <h2>NEW MODEL</h2>
+                    <p>Manticora</p>
+                    <Link to={`/products/bikesPreview/1`}>Check It Now</Link>
+                    <FaArrowLeft className='arrow'/>
+                    </div>
+                </div>  
             </div>
             <div className="row-2">
                 <div className="col">

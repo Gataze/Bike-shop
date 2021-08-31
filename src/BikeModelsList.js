@@ -1,6 +1,12 @@
+import { useState } from 'react'
 import './styles/bike-models-list/Bike-models-list.css'
+import { Link } from 'react-router-dom'
 
 const BikeModelsList = (data) => {
+
+
+    const [product] = useState("bikesPreview/")
+    
 
     return ( 
         <div className="bike-models-list">
@@ -10,7 +16,10 @@ const BikeModelsList = (data) => {
                     <div className="description">
                         <h2>{item.name}</h2>
                         <span>{item.body}</span>
-                        <button>View more</button>
+                        
+                            <Link to={`/products/${product + item.id}`}>View more</Link>
+                       
+                        
                     </div>
                 </div>
             ))}
