@@ -1,7 +1,3 @@
-.our-photos {
-  padding: 10px;
-}
-
 .our-photos .row-header {
   font-size: 28px;
   text-align: center;
@@ -14,6 +10,71 @@
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 60vw);
   gap: 10px;
+}
+
+.our-photos .row-photos .photo-grid-item {
+  position: relative;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+.our-photos .row-photos .photo-grid-item .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(49, 49, 49, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.our-photos .row-photos .photo-grid-item .overlay .overlay-text {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  color: white;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.our-photos .row-photos .photo-grid-item .overlay .overlay-text h2 {
+  font-size: 24px;
+}
+
+.our-photos .row-photos .photo-grid-item .overlay .overlay-text div {
+  display: flex;
+  gap: 10px;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.our-photos .row-photos .photo-grid-item .overlay .overlay-text div svg:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.our-photos .row-photos .photo-grid-item .overlay .overlay-text span {
+  margin-top: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.our-photos .row-photos .photo-grid-item .overlay .overlay-text span:hover {
+  color: orange;
+}
+
+.our-photos .row-photos .photo-grid-item .overlay:hover {
+  background-color: rgba(49, 49, 49, 0.712);
+  transition: all 0.2s ease-in-out;
+}
+
+.our-photos .row-photos .photo-grid-item .overlay:hover .overlay-text {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -52,6 +113,8 @@
 }
 
 .our-photos .row-photos img {
+  position: relative;
+  z-index: 0;
   width: 100%;
   height: 100%;
   object-fit: fill;
@@ -68,4 +131,41 @@
     font-size: 20px;
     padding: 30px 0 50px;
   }
+}
+
+.our-photos .container-carousel {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  width: 100%;
+  left: 0px;
+  height: 1000px;
+  background-color: rgba(22, 22, 22, 0.89);
+}
+
+.our-photos .container-carousel .slide div {
+  height: 100%;
+}
+
+.our-photos .container-carousel .slide div img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.our-photos .fixed-carousel {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.our-photos .fixed-carousel button {
+  position: absolute;
+  top: -20px;
+  right: 7px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }

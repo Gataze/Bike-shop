@@ -3,7 +3,6 @@
 }
 
 .hero .main-slider {
-  background-image: url("/src/images/background/main-slider.jpg");
   background-size: cover;
   background-position-x: center;
   height: 90vw;
@@ -87,10 +86,14 @@
   height: 45px;
   border-radius: 10px;
   margin: 0 auto;
+  font-size: 32px;
 }
 
 @media (min-width: 768px) {
   .hero .row-2 .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 65px;
     height: 65px;
     border-radius: 15px;

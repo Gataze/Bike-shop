@@ -2,9 +2,13 @@ import '../src/styles/mobile-nav-styles/mobile-nav.css'
 import { Link } from 'react-router-dom';
 
 
+
+
+
 const MobileNav = () => {
-    
-    
+
+
+
     return ( 
     <div className="mobile">
         <div className="container">

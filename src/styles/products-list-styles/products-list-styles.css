@@ -35,6 +35,10 @@
   margin-left: 10px;
 }
 
+.products .row-1 .col-2 select:focus {
+  outline: none;
+}
+
 .products .row-2 {
   display: flex;
   flex-flow: column;

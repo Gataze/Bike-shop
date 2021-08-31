@@ -20,7 +20,7 @@
 }
 
 .main-cart {
-  padding: 20px;
+  padding: 20px 0px;
   background: white;
 }
 
@@ -48,7 +48,6 @@
 @media (min-width: 768px) {
   .main-cart .col-2 {
     flex-wrap: nowrap;
-    margin-bottom: 0px;
   }
 }
 

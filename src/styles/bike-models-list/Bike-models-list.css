@@ -1,8 +1,8 @@
 .bike-models-list {
-  padding: 10px;
   display: flex;
   flex-flow: column;
-  gap: 50px;
+  gap: 60px;
+  padding-top: 30px;
 }
 
 @media (min-width: 768px) {

@@ -27,14 +27,14 @@ const Cart = () => {
 
     },[])
 
-
+    //zapisuje items do localStorage po dodaniu lub usunięciu danego produktu z koszyka
     useEffect(() => {       
         const temp = JSON.stringify(items)
         localStorage.setItem('item', temp)
     }, [items])
 
 
-
+    //usówa dany produkt z localStorage
     const delFromCart = (id) => {
 
         const temp = localStorage.getItem('item')

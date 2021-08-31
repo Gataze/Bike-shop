@@ -26,6 +26,7 @@ const MainPage = () => {
 
     return ( 
         <div className="main-page-wrapper" style={activeStyle ? {top: "260px"} : {top: "0px"}}>
+            
             <MainMenu activeStyle={activeStyle} handleShow={handleShow}  />
             <Switch>
                 <Route exact path="/">

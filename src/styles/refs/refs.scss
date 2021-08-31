@@ -36,11 +36,16 @@
         }
 
         .circle{
-            background-color: orange;
+            background-color: rgb(31, 31, 31);
             width: 40px;
             height: 40px;
             margin: 0 auto;
             border-radius: 20px;
+            display: flex;
+            justify-content: center;          
+            align-items: center;
+            font-size: 38px;
+            color: orange;
             @media(min-width: 992px){
                 width: 60px;
                 height: 60px;

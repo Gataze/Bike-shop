@@ -29,6 +29,12 @@
             background-color: rgb(78, 78, 78);
             margin-left: 10px;
         }
+
+        select{
+            &:focus{
+                outline: none;
+            }
+        }
     }
 }
 

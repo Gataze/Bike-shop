@@ -23,7 +23,7 @@
 //MAIN CART STYLES
 
 .main-cart{
-    padding: 20px;
+    padding: 20px 0px;
     background: white;
 
 
@@ -49,7 +49,6 @@
         margin-bottom: 20px;
         @media(min-width: 768px){
             flex-wrap: nowrap;
-            margin-bottom: 0px;
         }
         
 

@@ -2,6 +2,7 @@
     position: absolute;
     width: 100%;
     background-color: lightgray;
+    z-index: 0;
     @media (min-width: 768px) {
         display: none;
     }
@@ -10,13 +11,32 @@
         display: flex;
         align-items: center;
         flex-flow: column;
-        
+        position: relative;
         gap: 20px;
         padding: 40px;
         font-size: 20px;
-        
         a{
             color: black;
         }
+
+        li {
+            position: relative;
+            z-index: 1;
+            sup{
+                font-weight: 800;
+                position: absolute;
+                left: 35px;
+                top: -4px;
+                color: black;
+                background-color: gold;
+                padding: 0 6px 0px 5px;
+                font-size: 14px;
+                border-radius: 10px;
+                z-index: -1;
+            }
+        }
+        
+        
+        
     }
 }

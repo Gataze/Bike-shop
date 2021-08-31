@@ -36,10 +36,6 @@ const CartItem = ({bike, delFromCart, addTotalValue, minusTotalValue}) => {
 
 
 
-
-
-
-
     const plusOne = () => {
         setCounter(prevState => {
             return prevState + 1

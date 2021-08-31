@@ -72,8 +72,8 @@ const ProductsList = () => {
                         <span title="accesories/" onClick={(e) => handleClick(e)}>Accesories</span>
                     </div>
                     <div className="col-2">
-                        <select placeholder='name' onChange={(e) => setSortType(e.target.value) }>
-                            <option disabled hidden>Sort items by:</option>
+                        <select defaultValue="" onChange={(e) => setSortType(e.target.value) }>
+                            <option value="" disabled hidden>Sort items by: </option>
                             <option value="name">Name (A...Z)</option>
                             <option value="name long">Name (Z...A)</option>
                             <option value="price">Price (1...9)</option>

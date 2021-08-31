@@ -8,7 +8,7 @@ footer {
 footer .row {
   display: flex;
   flex-wrap: wrap;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 200;
 }
 
@@ -22,7 +22,7 @@ footer .row .col {
   min-width: 50%;
   display: flex;
   flex-flow: column;
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 @media (min-width: 1200px) {
@@ -30,7 +30,7 @@ footer .row .col {
     min-width: 25%;
     padding-bottom: 80px;
     padding-top: 40px;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
