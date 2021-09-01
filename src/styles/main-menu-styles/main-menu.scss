@@ -6,6 +6,9 @@
         display: flex;
         padding: 10px 0px;
         align-items: center;
+        @media(min-width:1200px){
+            padding: 20px 0;
+        }
 
         .navigation {
             display: none;
@@ -20,6 +23,9 @@
                         }
                     }
                 }
+            }
+            @media (min-width: 1200px){
+                font-size: 20px;
             }
         }
 
@@ -42,6 +48,9 @@
                         }
                     }
                 }   
+            }
+            @media (min-width: 1200px){
+                font-size: 22px;
             }
         }
 

@@ -28,7 +28,7 @@ const MainMenu = ({activeStyle, handleShow}) => {
                         </div>
                         <div className="social-menu">
                             <ul className="social-links">
-                                <li><Link to="#"><FaSignInAlt /></Link></li>
+                                <li><Link aria-label='logout'to="#"><FaSignInAlt /></Link></li>
                                 <li><Link to="/login"><FaUser /></Link></li>
                                 <li><Link to="/cart"><FaShoppingCart /></Link></li>
                             </ul>

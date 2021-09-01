@@ -1,1 +1,1 @@
-Bike shop simulator
+Bike shop - front-end - HTML, CSS, SASS, JAVASCRIPT, REACT-RESPONSIVE-CAROUSEL, JSX, REACT.JS

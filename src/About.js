@@ -25,7 +25,7 @@ const About = () => {
                 </div>
                 <div className="col col-4">
                     
-                    <form classNam='contact-form'>
+                    <form className='contact-form'>
                         <h2>Contact us</h2>
                         <label>Name*</label>
                         <input type="text" />

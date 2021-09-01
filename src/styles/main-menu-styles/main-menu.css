@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+@media (min-width: 1200px) {
+  .main-nav .col {
+    padding: 20px 0;
+  }
+}
+
 .main-nav .col .navigation {
   display: none;
 }
@@ -24,6 +30,12 @@
   }
   .main-nav .col .navigation ul li a {
     color: black;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav .col .navigation {
+    font-size: 20px;
   }
 }
 
@@ -47,6 +59,12 @@
   }
   .main-nav .col .social-menu ul.social-links li a:hover {
     color: orange;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav .col .social-menu {
+    font-size: 22px;
   }
 }
 

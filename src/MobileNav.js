@@ -18,7 +18,7 @@ const MobileNav = () => {
                         <li><Link to="/">HOME</Link></li>
                         <li><Link to="/products">PRODUCTS</Link></li>
                         <li><Link to="/cart">CART</Link></li>
-                        <li><Link to="/">ABOUT US</Link></li>
+                        <li><Link to="/about">ABOUT US</Link></li>
                     </ul>
                 </div>
             </div>
