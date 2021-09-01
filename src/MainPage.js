@@ -10,7 +10,8 @@ import {Switch, Route} from 'react-router-dom'
 import Cart from "./cart/Cart";
 import ProductsList from "./products/ProductsList";
 import ProductDetails from "./products/ProductDetails";
-
+import About from "./About"
+import LoginPage from "./LoginPage";
 
 const MainPage = () => {
 
@@ -41,6 +42,12 @@ const MainPage = () => {
                 </Route>
                 <Route path="/products">
                     <ProductsList />
+                </Route>
+                <Route path="/about">
+                    <About />
+                </Route>
+                <Route path="/login">
+                    <LoginPage />
                 </Route>
                 
                 

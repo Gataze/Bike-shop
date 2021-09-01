@@ -11,9 +11,21 @@
   flex-flow: column;
 }
 
+@media (min-width: 768px) {
+  .card .row {
+    flex-flow: row;
+  }
+}
+
 .card .row .col-1 {
   display: flex;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card .row .col-1 {
+    width: 60%;
+  }
 }
 
 .card .row .col-2 {
@@ -53,6 +65,11 @@
 
 .card .row .col-2 .quantity label {
   margin-right: 10px;
+}
+
+.card .row .col-2 .detailsSpan {
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .card .row .col-2 .quantity .form-wrapper {
@@ -104,4 +121,36 @@
 .card .slider.animated div img {
   height: 100%;
   object-fit: cover;
+}
+
+.card .row-one {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .card .row-one {
+    margin: 0 15px;
+    grid-gap: 20px;
+  }
+}
+
+.card .row-two {
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .card .row-two {
+    margin-bottom: 50px;
+  }
+}
+
+.card .row-two h2 {
+  margin: 0 auto;
+  font-size: 26px;
+}
+
+.card .row-three {
+  display: block;
 }

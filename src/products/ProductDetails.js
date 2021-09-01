@@ -54,27 +54,24 @@ const ProductDetails = () => {
     return ( 
 
         <section className="card">
-            <div className="container">
+            
+                <div className="row row-two">
+                    <h2>Product card</h2>
+                </div>
+                <div className="container">
                 <div className="row row-one">
                     <div className="col-1">
                         <div className="img-wrapper">
                             <div className="featured-wrapper">
                                 <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} >
+
                                     <div>
                                         <img src={item.url} alt="" className="thumbnail"/>
                                     </div>
                                     <div>
                                         <img src={item.url2} alt="" className="thumbnail"/>
                                     </div>
-                                    <div>
-                                        <img src={item.url} alt="" className="thumbnail"/>
-                                    </div>
-                                    <div>
-                                        <img src={item.url} alt="" className="thumbnail"/>
-                                    </div>
-                                    <div>
-                                        <img src={item.url} alt="" className="thumbnail"/>
-                                    </div>
+                                    
                                 </Carousel>
                             </div>  
                         </div>
@@ -94,12 +91,15 @@ const ProductDetails = () => {
                         <p className='price'>{item.price}$</p>
                         <div className="loan">
                             <span>10 rat x {item.price/10}0$ </span>
-                            <span><Link to="/">Obicz ratę</Link></span>
                         </div>
-                        <p className='spcs'>Kolor<span>: Ciemna lawenda</span></p>
-                        <p className='spcs'>Rozmiar<span>: Uniwersalny</span></p>
+                        <p className='detailsSpan'><b>Details: </b></p>
+                        <p className='spcs'>Type: <span><b>{item.type}</b></span></p>
+                        <p className='spcs'>Color: <span><b>{item.color}</b></span></p>
+                        <p className='spcs'>Frame: <span><b>{item.frame}"</b></span></p>
+                        <p className='spcs'>Wheel: <span><b>{item.wheel}"</b></span></p>
+                        
                         <div className="quantity">
-                            <label htmlFor="qnt">Ilość</label>
+                            <label htmlFor="qnt">Count</label>
                             <div className='form-wrapper'>
                                 <div onClick={() => setCounter(
                                     counter => {
@@ -118,12 +118,17 @@ const ProductDetails = () => {
                             </div>
                         </div>
                         <div onClick={() => addToCart(item)}  className='shop-accesibility'>
-                            <Link to="/cart" className="btn" >DODAJ DO KOSZYKA</Link>
+                            <Link to="/cart" className="btn" >ADD TO CART</Link>
                         </div>
-                        <ProductDescription />
+                        
                     </div>
+                    
                 </div>
+ 
+                    
+        
             </div>
+            <ProductDescription />
         </section>
      );
 }

@@ -23,13 +23,13 @@ const MainMenu = ({activeStyle, handleShow}) => {
                             <ul>
                                 <li><Link to="/">HOME</Link></li>
                                 <ProductsNav />
-                                <li><Link to="#">ABOUT US</Link></li>
+                                <li><Link to="/about">ABOUT US</Link></li>
                             </ul>
                         </div>
                         <div className="social-menu">
                             <ul className="social-links">
                                 <li><Link to="#"><FaSignInAlt /></Link></li>
-                                <li><Link to="#"><FaUser /></Link></li>
+                                <li><Link to="/login"><FaUser /></Link></li>
                                 <li><Link to="/cart"><FaShoppingCart /></Link></li>
                             </ul>
                         </div>

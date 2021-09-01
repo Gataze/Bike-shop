@@ -22,16 +22,16 @@ const ProductItem = ({bikes, product}) => {
                         <span><b> {bike.price}$</b></span>
                     </div>
                     <div>
-                        <span>Number of gears <b>27</b></span> 
+                        <span>Type of bicycle: <b>{bike.type}</b></span> 
                     </div>
                     <div>
-                        <span>Wheel size <b>26"</b></span>
+                        <span>Wheel size: <b>{bike.wheel}"</b></span>
                     </div>
                     <div>
-                        <span>Frame size <b>18"</b></span>
+                        <span>Frame size: <b>{bike.frame}"</b></span>
                     </div>
                     <div>
-                        <span>Frame type <b>male</b></span>
+                        <span>Color: <b>{bike.color}</b></span>
                     </div>
                     <button>
                         <Link className="btn" to={`/products/${product + bike.id}`}>SEE MORE</Link>

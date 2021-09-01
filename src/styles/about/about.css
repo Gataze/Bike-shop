@@ -1,0 +1,127 @@
+.about {
+  background-color: white;
+  margin-bottom: -15px;
+}
+
+.about h1 {
+  text-align: center;
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+}
+
+.about .container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+@media (min-width: 768px) {
+  .about .container {
+    max-width: 100%;
+  }
+  .about .container h2 {
+    font-size: 14px;
+  }
+  .about .container p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about .container h2 {
+    font-size: 18px;
+  }
+  .about .container p {
+    font-size: 15px;
+  }
+}
+
+.about .row {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .about .row {
+    display: grid;
+    max-width: calc(100% - 60px);
+    grid-template-columns: 20% 25% 25% 30%;
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about .row {
+    gap: 40px;
+    max-width: calc(100% - 120px);
+    margin-top: 65px;
+  }
+}
+
+.about .row .col-1 {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .about .row .col-1 {
+    margin-top: 0px;
+  }
+}
+
+.about .row .col-1 img {
+  max-width: 50%;
+}
+
+@media (min-width: 768px) {
+  .about .row .col-1 img {
+    max-width: 100%;
+  }
+}
+
+.about .row .col-2 {
+  font-size: 14px;
+}
+
+.about .row .col-3 {
+  font-size: 14px;
+}
+
+.about .row .col-3 p {
+  margin-bottom: 5px;
+}
+
+.about .row .col-4 form {
+  display: flex;
+  flex-flow: column;
+  font-size: 14px;
+  margin: auto;
+}
+
+.about .row .col-4 form label {
+  margin-top: 10px;
+}
+
+.about .row .col-4 form input, .about .row .col-4 form textarea {
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.about .row .col-4 form textarea {
+  height: 100px;
+}
+
+.about .row .col-4 form button {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 33.3%;
+  padding: 5px 0;
+  align-self: flex-end;
+  border: 2px solid gray;
+  background-color: orange;
+  color: black;
+}
+
+.about .row .col-4 form button:hover {
+  opacity: 0.8;
+}

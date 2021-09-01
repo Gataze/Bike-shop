@@ -3,22 +3,37 @@
       {
         "name":"Manticora",
         "body":"Quia optio ipsam molestiae quibusdam error, eaque, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
-        "url":"/images/mountain-bike.jpg",
+        "url":"/images/bikes/mountain-bike.jpg",
+        "url2": "/images/bikes/folding-bike2.jpg",
         "price": 1799,
+        "type": "mountain bike",
+        "wheel": 28,
+        "frame": 18,
+        "color": "black",
         "id":1
       },
       {
         "name":"Pegas",
         "body":"Quia optio ipsam molestiae quibusdam aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
-        "url":"/images/treant-bike.jpg",
+        "url":"/images/bikes/treant-bike.jpg",
+        "url2": "/images/bikes/folding-bike2.jpg",
         "price": 1299,
+        "type": "roadster",
+        "wheel": 26,
+        "frame": 18,
+        "color": "brown",
         "id":2
       },
       {
         "name":"Griffon",
         "body":" Sit amet consectetur adipisicing elit aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
-        "url":"/images/folding-bike.jpg",
+        "url": "/images/bikes/folding-bike.jpg",
+        "url2": "/images/bikes/folding-bike2.jpg",
         "price": 999,
+        "type": "folidng bike",
+        "wheel": 22,
+        "frame": 18,
+        "color": "red",
         "id":3
       }
     ],

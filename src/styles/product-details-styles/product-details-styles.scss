@@ -8,9 +8,16 @@
     .row{
         display: flex;
         flex-flow: column;
+        @media(min-width: 768px){
+            flex-flow: row;
+        }
         .col-1{
             display: flex;
             width: 100%;
+            @media(min-width: 768px){
+                width: 60%;
+            }
+
         }
         .col-2{
             margin: 15px;
@@ -42,6 +49,10 @@
                 label{
                     margin-right: 10px;
                 }
+            }
+            .detailsSpan{
+                margin-top: 10px;
+                font-size: 14px;
             }
 
 
@@ -99,5 +110,33 @@
             height: 100%;
             object-fit: cover;
         }
+    }
+
+    .row-one{
+        margin-top: 10px;
+        @media(min-width: 768px){
+            margin: 0 15px;
+            grid-gap: 20px;
+
+        }
+        
+    }
+
+
+    .row-two{
+        background-color: #333333;
+        color: white;
+        padding: 20px;
+        @media(min-width: 768px){
+            margin-bottom: 50px;
+        }
+        
+        h2{
+            margin: 0 auto;
+            font-size: 26px;
+        }   
+    }
+    .row-three{
+        display: block;
     }
 }

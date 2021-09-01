@@ -1,0 +1,114 @@
+.about{
+    background-color: white;
+    margin-bottom: -15px;
+    
+    h1{
+        text-align: center;
+        background-color: #333333;
+        color: white;
+        padding: 20px;
+    }
+
+    .container{
+        margin: 0 auto;
+        max-width: 500px;
+        @media(min-width: 768px){
+            max-width: 100%;
+            h2{
+                font-size: 14px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+        @media(min-width: 1200px){
+            h2{
+                font-size: 18px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+       
+    }
+    
+    .row{
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        @media(min-width: 768px){
+            display: grid;
+            max-width: calc(100% - 60px);
+            grid-template-columns: 20% 25% 25% 30%;
+            margin-top: 35px;
+        }
+        @media(min-width: 1200px){
+            gap: 40px;
+            max-width: calc(100% - 120px);
+            margin-top: 65px;
+        }
+
+        
+        
+        
+
+        .col-1{
+            margin-top: 40px;
+            @media(min-width: 768px){
+                margin-top: 0px;
+            }
+            
+            img{
+                max-width: 50%;
+                @media(min-width: 768px){
+                    max-width: 100%;
+                }
+            };
+        }
+        .col-2{
+            
+            font-size: 14px;
+            
+        }
+        .col-3{
+            
+            font-size: 14px;
+            p{
+                margin-bottom: 5px;
+            }
+        }
+        .col-4{
+            
+            
+            form{
+                display: flex;
+                flex-flow: column;
+                font-size: 14px;
+                margin: auto;
+                label{
+                    margin-top: 10px;
+                }
+                input, textarea{
+                    border: 1px solid gray;
+                    padding:  5px;
+                }
+                textarea{
+                    height: 100px;
+                }
+                button{
+                    cursor: pointer;
+                    margin-top: 20px;
+                    width: 33.3%;
+                    padding: 5px 0;
+                    align-self: flex-end;
+                    border: 2px solid gray;
+                    background-color: orange;
+                    color: black;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
