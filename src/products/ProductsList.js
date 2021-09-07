@@ -9,7 +9,7 @@ const ProductsList = () => {
 
 
     const [product, setProduct] = useState("bikesPreview/")
-    const {data: bikes, error, isPending} = useFetch(`http://localhost:8000/${product}`)
+    const {data: bikes, error, isPending} = useFetch(`https://my-json-server.typicode.com/gataze/mockjson/${product}`)
 
     const handleClick = (e) => {
 

@@ -5,7 +5,7 @@ import BikeModelsList from "./BikeModelsList"
 
 const BikeModels = () => {
 
-    const {data, error, isPending} = useFetch('http://localhost:8000/bikesPreview')
+    const {data, error, isPending} = useFetch('https://my-json-server.typicode.com/gataze/mockjson/bikesPreview')
     
     
 

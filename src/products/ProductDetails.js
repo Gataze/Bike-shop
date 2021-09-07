@@ -16,7 +16,7 @@ const ProductDetails = () => {
     const [counter, setCounter] = useState(1)
     const {typeId, id} = useParams()
 
-    const {data: item} = useFetch(`http://localhost:8000/${typeId}/${id}` )
+    const {data: item} = useFetch(`https://my-json-server.typicode.com/gataze/mockjson/${typeId}/${id}` )
 
     
     const addToCart = (item) => {

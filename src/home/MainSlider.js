@@ -8,7 +8,7 @@ import useFetch from "../hooks/useFetch";
 const MainSlider = () => {
 
     
-    const {data: slides, isPending, error} = useFetch('http://localhost:8000/sliders')
+    const {data: slides, isPending, error} = useFetch('https://my-json-server.typicode.com/gataze/mockjson/sliders')
 
 
     return ( 

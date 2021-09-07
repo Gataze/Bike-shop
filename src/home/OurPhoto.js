@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const OurPhoto = () => {
 
-    const {data: photos, isPending, error} = useFetch('http://localhost:8000/OurPhotos')
+    const {data: photos, isPending, error} = useFetch('https://my-json-server.typicode.com/gataze/mockjson/OurPhotos')
 
     
 
