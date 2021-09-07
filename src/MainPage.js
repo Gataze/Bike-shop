@@ -12,6 +12,8 @@ import ProductsList from "./products/ProductsList";
 import ProductDetails from "./products/ProductDetails";
 import About from "./About"
 import LoginPage from "./LoginPage";
+import SignupPage from './SignupPage'
+import ForgotPass from "./ForgotPass";
 
 const MainPage = () => {
 
@@ -48,6 +50,12 @@ const MainPage = () => {
                 </Route>
                 <Route path="/login">
                     <LoginPage />
+                </Route>
+                <Route path="/signup">
+                    <SignupPage />
+                </Route>
+                <Route path="/remind">
+                    <ForgotPass />
                 </Route>
                 
                 

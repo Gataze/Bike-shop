@@ -131,6 +131,7 @@
     .container-carousel{
         display: none;
         position: fixed;
+        justify-content: center;
         z-index: 2;
         top: 0px;
         width: 100%;
@@ -139,9 +140,11 @@
         background-color: rgba(22, 22, 22, 0.89);
         .slide div{
             height: 100%;
+            
             img{
                 object-fit: cover;
                 height: 100%;
+                
             }
         }
         
@@ -149,10 +152,21 @@
     }
 
     .fixed-carousel {
+        
         position: fixed;
         top: 50%;
+        height: 70%;
+        
         transform: translateY(-50%);
         width: 100%;
+        @media(min-width:992px){
+            width: 70%;
+            margin: 0 auto;
+        }
+        @media(min-width:1200px){
+            width: 90vh;
+            margin: 0 auto;
+        }
         button{
             position: absolute;
             top: -20px;
@@ -161,6 +175,12 @@
             border: none;
             color: white;
             cursor: pointer;
+        }
+        .carousel-root{
+            height: 100%;
+            .carousel{
+                height: 100%;
+            }
         }
         
     }

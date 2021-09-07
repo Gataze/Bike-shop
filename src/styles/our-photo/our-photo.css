@@ -136,6 +136,7 @@
 .our-photos .container-carousel {
   display: none;
   position: fixed;
+  justify-content: center;
   z-index: 2;
   top: 0px;
   width: 100%;
@@ -156,8 +157,23 @@
 .our-photos .fixed-carousel {
   position: fixed;
   top: 50%;
+  height: 70%;
   transform: translateY(-50%);
   width: 100%;
+}
+
+@media (min-width: 992px) {
+  .our-photos .fixed-carousel {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .our-photos .fixed-carousel {
+    width: 90vh;
+    margin: 0 auto;
+  }
 }
 
 .our-photos .fixed-carousel button {
@@ -168,4 +184,12 @@
   border: none;
   color: white;
   cursor: pointer;
+}
+
+.our-photos .fixed-carousel .carousel-root {
+  height: 100%;
+}
+
+.our-photos .fixed-carousel .carousel-root .carousel {
+  height: 100%;
 }

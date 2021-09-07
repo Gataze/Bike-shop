@@ -13,20 +13,24 @@ const LoginPage = () => {
                 </div>
                 <div className="row-2">
                     <div className="form-container">
-                    <h2>Log In to Your Account</h2>
+                    <h2>Create Your LOREMBIKES Account</h2>
                     <form>
-                        <input type="text" placeholder="Email or username" />
-                        <input type="password" placeholder="Password"/>
+                        <input type="text" placeholder="First Name" />
+                        <input type="text" placeholder="Last Name" />
+                        <input type="text" placeholder="Username" />
+                        <input type="text" placeholder="Password" />
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Confirm password"/>
                         <div>
                             <input type="checkbox" />
-                            <span>Keep me logged in</span>
-                            <Link to="/remind">Forgot password?</Link>
+                            <span>I accept the rules*</span>
+                            
                         </div>
-                        <button>Log In</button>
+                        <button>Register</button>
                     </form>
                     <div className="sing-up-input">
-                        <span>Need an account?</span>
-                        <Link to="/signup">Sign up</Link>
+                        <span>Have an account?</span>
+                        <Link to="/login">Sign in</Link>
                     </div>
                     </div>
                 </div>

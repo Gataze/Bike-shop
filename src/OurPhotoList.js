@@ -31,7 +31,7 @@ const OurPhotoList = ({photos}) => {
                     <img src={photo.url} alt="#" /> 
                     <ul className="container-carousel"  
                         data-id={index}
-                        style={index === activeIndex? {display: 'block'} : {display: 'none'}}>
+                        style={index === activeIndex? {display: 'flex'} : {display: 'none'}}>
 
                         <div className="fixed-carousel">
                             <Carousel infiniteLoop={true} showThumbs={false} autoFocus={true}>

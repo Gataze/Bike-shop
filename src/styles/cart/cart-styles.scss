@@ -44,7 +44,7 @@
         flex-wrap: wrap;
         width: 100%;
         background-color: lightgrey;
-        padding: 20px;
+        padding: 25px;
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
         margin-bottom: 20px;
         @media(min-width: 768px){
@@ -76,7 +76,9 @@
             padding-top: 10px;
             order: 2;
             max-width: 60%;
-            gap: 40px;
+            gap: 30px;
+            height: 24vh;
+            
 
 
             .cart-preview p:nth-child(3){
@@ -92,9 +94,20 @@
             }
             
             img{
-                width: 50%;
-                object-fit: scale-down;
-                
+                width: 35vw;
+                height: 25vw;
+                @media(min-width: 992px){
+                    width: 25vw;
+                    height: 18vw;
+                }
+                @media(min-width: 1200px){
+                    width: 20vw;
+                    height: 14vw;
+                }
+                @media(min-width: 1200px){
+                    width: 18vw;
+                    height: 12vw;
+                }      
             }
 
             
@@ -153,7 +166,7 @@
         .cart-price{
             order: 4;
             font-size: 18px;
-            margin: 40px 40px 40px 0;
+            margin: 40px 0px 40px 40px;
             @media(min-width: 768px){
                 order: 3;
                 
@@ -167,7 +180,7 @@
             margin: 40px;
             @media(min-width: 768px){
                 order: 5;
-                margin-left: 50px;
+                margin-left: 20px;
             }
         }
     }
