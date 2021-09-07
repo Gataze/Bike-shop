@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './styles/bike-models-list/Bike-models-list.css'
+import './../styles/bike-models-list/Bike-models-list.css'
 import { Link } from 'react-router-dom'
 
 const BikeModelsList = (data) => {

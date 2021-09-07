@@ -2,7 +2,7 @@ import { FaMinus, FaPlus, FaStar } from "react-icons/fa"
 import { useParams } from "react-router"
 import '../styles/product-details-styles/product-details-styles.css'
 import { Link } from "react-router-dom"
-import useFetch from "../useFetch"
+import useFetch from "../hooks/useFetch"
 import { useState, useEffect } from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';

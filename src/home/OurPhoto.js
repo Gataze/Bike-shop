@@ -1,6 +1,6 @@
-import useFetch from "./useFetch";
+import useFetch from "../hooks/useFetch";
 import OurPhotoList from './OurPhotoList'
-import "./styles/our-photo/our-photo.css"
+import "./../styles/our-photo/our-photo.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 

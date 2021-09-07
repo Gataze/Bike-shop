@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import './styles/login/login.css'
-import './styles/login/forgot.css'
+import '../styles/login/login.css'
+import '../styles/login/forgot.css'
 
 const ForgotPass = () => {
-    
     
     return ( 
         <div className="login-page">

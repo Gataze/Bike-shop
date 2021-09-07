@@ -1,5 +1,5 @@
 import '../styles/cart/cart-styles.css'
-import useFetch from '../useFetch';
+import useFetch from '../hooks/useFetch';
 import CartList from './CartList';
 import { useState, useEffect } from 'react'
 

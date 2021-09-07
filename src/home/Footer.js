@@ -1,4 +1,4 @@
-import './styles/footer/footer.css'
+import './../styles/footer/footer.css'
 import { FaPaperPlane } from 'react-icons/fa';
 
 

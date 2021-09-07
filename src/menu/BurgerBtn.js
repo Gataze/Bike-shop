@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './styles/burger-btn-styles/burger-btn.css'
+import './../styles/burger-btn-styles/burger-btn.css'
 
 
 

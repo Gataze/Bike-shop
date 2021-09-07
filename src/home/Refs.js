@@ -1,6 +1,4 @@
-
-
-import "./styles/refs/refs.css"
+import "./../styles/refs/refs.css"
 import {FaStar, FaUserCircle} from "react-icons/fa"
 
 const Refs = () => {

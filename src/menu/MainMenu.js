@@ -1,7 +1,7 @@
-import Logo from './images/logo/logo.png'
-import './styles/main-menu-styles/main-menu.css'
+import Logo from './../images/logo/logo.png'
+import './../styles/main-menu-styles/main-menu.css'
 import BurgerBtn from './BurgerBtn';
-import ProductsNav from './products/ProductsNav';
+import ProductsNav from '../products/ProductsNav';
 import { Link } from 'react-router-dom';
 import React from "react";
 import {FaSignInAlt, FaUser, FaShoppingCart} from "react-icons/fa"

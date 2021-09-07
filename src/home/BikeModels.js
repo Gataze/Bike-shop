@@ -1,5 +1,5 @@
-import './styles/bike-models-styles/bike-models-styles.css'
-import useFetch from "./useFetch"
+import './../styles/bike-models-styles/bike-models-styles.css'
+import useFetch from "../hooks/useFetch"
 import BikeModelsList from "./BikeModelsList"
 
 

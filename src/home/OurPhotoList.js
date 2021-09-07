@@ -1,5 +1,5 @@
 import {FaFacebook, FaInstagram, FaTwitter} from 'react-icons/fa'
-import "./styles/our-photo/our-photo.css"
+import "./../styles/our-photo/our-photo.css"
 import { Carousel } from 'react-responsive-carousel';
 import {FaTimesCircle} from 'react-icons/fa'
 import { useState } from "react";

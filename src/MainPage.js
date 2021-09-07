@@ -1,19 +1,19 @@
-import MainMenu from "./MainMenu";
-import MainSlider from "./MainSlider";
-import BikeModels from "./BikeModels";
-import Refs from "./Refs";
-import OurPhoto from "./OurPhoto";
-import Footer from "./Footer";
+import MainMenu from "./menu/MainMenu";
+import MainSlider from "./home/MainSlider";
+import BikeModels from "./home/BikeModels";
+import Refs from "./home/Refs";
+import OurPhoto from "./home/OurPhoto";
+import Footer from "./home/Footer";
 import { useState } from "react";
 import React from "react";
 import {Switch, Route} from 'react-router-dom'
 import Cart from "./cart/Cart";
 import ProductsList from "./products/ProductsList";
 import ProductDetails from "./products/ProductDetails";
-import About from "./About"
-import LoginPage from "./LoginPage";
-import SignupPage from './SignupPage'
-import ForgotPass from "./ForgotPass";
+import About from "./about/About"
+import LoginPage from "./user/LoginPage";
+import SignupPage from './user/SignupPage'
+import ForgotPass from "./user/ForgotPass";
 
 const MainPage = () => {
 

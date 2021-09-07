@@ -1,4 +1,4 @@
-import '../src/styles/mobile-nav-styles/mobile-nav.css'
+import '../../src/styles/mobile-nav-styles/mobile-nav.css'
 import { Link } from 'react-router-dom';
 
 
@@ -17,8 +17,8 @@ const MobileNav = () => {
                     <ul>
                         <li><Link to="/">HOME</Link></li>
                         <li><Link to="/products">PRODUCTS</Link></li>
+                        <li><Link to="/login">SIGN IN</Link></li>
                         <li><Link to="/cart">CART</Link></li>
-                        <li><Link to="/about">ABOUT US</Link></li>
                     </ul>
                 </div>
             </div>

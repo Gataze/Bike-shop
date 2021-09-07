@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import "../src/styles/main-slider/main-slider-styles.css"
+import "../../src/styles/main-slider/main-slider-styles.css"
 import {FaArrowLeft, FaPhoneAlt, FaToolbox, FaTools, FaUserShield} from 'react-icons/fa'
 import { Carousel } from "react-responsive-carousel";
-import useFetch from "./useFetch";
+import useFetch from "../hooks/useFetch";
 
 
 const MainSlider = () => {

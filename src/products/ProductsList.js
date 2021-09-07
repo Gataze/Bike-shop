@@ -1,4 +1,4 @@
-import useFetch from "../useFetch";
+import useFetch from "../hooks/useFetch";
 import "../styles/products-list-styles/products-list-styles.css"
 import ProductItem from "./ProductItem";
 import { useState, useEffect } from "react";
