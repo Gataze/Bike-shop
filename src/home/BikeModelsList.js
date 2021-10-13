@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom'
 
 const BikeModelsList = (data) => {
 
-
     const [product] = useState("bikesPreview/")
     
-
     return ( 
         <div className="bike-models-list">
             {data.data.map(item => (
@@ -16,10 +14,7 @@ const BikeModelsList = (data) => {
                     <div className="description">
                         <h2>{item.name}</h2>
                         <span>{item.body}</span>
-                        
-                            <Link to={`/products/${product + item.id}`}>View more</Link>
-                       
-                        
+                            <Link to={`/products/${product + item.id}`}>View more</Link>          
                     </div>
                 </div>
             ))}

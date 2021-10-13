@@ -7,8 +7,6 @@ const BikeModels = () => {
 
     const {data, error, isPending} = useFetch('https://my-json-server.typicode.com/gataze/mockjson/bikesPreview')
     
-    
-
     return ( 
         <div className="bike-models">
             <div className="container">

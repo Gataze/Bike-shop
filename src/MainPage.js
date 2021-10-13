@@ -20,12 +20,9 @@ const MainPage = () => {
 
     const [activeStyle, setActiveStyle] = useState(false)
 
-
-
     const handleShow = (activeStyle) => {
         setActiveStyle(!activeStyle)
     }
-
 
     return ( 
         <div className="main-page-wrapper" style={activeStyle ? {top: "260px"} : {top: "0px"}}>
@@ -56,18 +53,12 @@ const MainPage = () => {
                 </Route>
                 <Route path="/remind">
                     <ForgotPass />
-                </Route>
-                
-                
+                </Route> 
             </Switch>
-            
             <Refs />
             <OurPhoto />
             <Footer />
-        </div>
-
-
-        
+        </div>   
      );
 }
  
