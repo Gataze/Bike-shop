@@ -1,15 +1,7 @@
 import CartItem from './CartItem'
 
-
-
-
 const CartList = ({items, totalValue, addTotalValue, minusTotalValue, delFromCart}) => {
 
-
-
-
-    //Obiekty z macierzy zostają rozdzielone ma poszczególne obiekty. Obiekty te wgrywane są
-    //do elementu CartItem gdzie dalej są renderowane.
     return ( 
         <div className="row">
             {!items.length  && <div className='noItemsMsg'>There is no product in your cart...</div>}
@@ -26,8 +18,7 @@ const CartList = ({items, totalValue, addTotalValue, minusTotalValue, delFromCar
                 <span>Total value: {totalValue}$</span>
             </div>
         </div>
-        
-        
+  
      );
 }
  
