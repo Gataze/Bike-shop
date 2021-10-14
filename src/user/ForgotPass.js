@@ -3,7 +3,6 @@ import '../styles/login/login.css'
 import '../styles/login/forgot.css'
 
 const ForgotPass = () => {
-    
     return ( 
         <div className="login-page">
             <div className="container">
@@ -29,6 +28,6 @@ const ForgotPass = () => {
             </div>        
         </div>
      );
-}
+};
  
 export default ForgotPass;
