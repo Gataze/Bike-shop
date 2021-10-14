@@ -78,7 +78,6 @@
         "id": 57
       }
     ],
-
     "OurPhotos": [
       {
           "url": "/images/our-photos/bicycle-1.jpg",
@@ -260,6 +259,4 @@
           ],
           "id": 12
       }
-
-  ]
-  }
+ ]}
