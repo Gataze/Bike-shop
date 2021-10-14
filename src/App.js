@@ -1,10 +1,7 @@
-// import logo from './logo.svg';
 import './styles/app/App.css';
 import MobileNav from './menu/MobileNav';
 import MainPage from './MainPage';
 import { BrowserRouter as Router } from 'react-router-dom';
-
-
 
 function App() {
   return (
