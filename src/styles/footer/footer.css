@@ -1,8 +1,8 @@
 footer {
-  background-color: #333333;
+  background-color: #333;
   color: white;
-  font-size: 9px;
   font-family: 'Mulish', sans-serif;
+  font-size: 9px;
 }
 
 footer .row {
@@ -19,17 +19,17 @@ footer .row {
 }
 
 footer .row .col {
-  min-width: 50%;
   display: flex;
   flex-flow: column;
+  min-width: 50%;
   padding: 20px 10px;
 }
 
 @media (min-width: 1200px) {
   footer .row .col {
     min-width: 25%;
-    padding-bottom: 80px;
     padding-top: 40px;
+    padding-bottom: 80px;
     font-size: 16px;
   }
 }
@@ -39,32 +39,32 @@ footer .row .col span {
 }
 
 footer .row form {
-  line-height: 20px;
-  margin-top: 10px;
   display: flex;
+  margin-top: 10px;
+  line-height: 20px;
 }
 
 footer .row .plane {
   display: flex;
-  border: 1px solid orange;
-  width: 23px;
-  text-align: center;
   justify-content: center;
+  width: 23px;
+  border: 1px solid orange;
+  text-align: center;
 }
 
 footer .row .plane .footer-subscribe {
+  border: 0;
   background-color: transparent;
-  border: 0px;
   color: orange;
-  cursor: pointer;
   font-size: 16px;
+  cursor: pointer;
 }
 
 footer .row input {
+  padding: 4px;
   border: 1px solid orange;
   outline: none;
   font-size: 12px;
-  padding: 4px;
 }
 
 @media (min-width: 768px) {

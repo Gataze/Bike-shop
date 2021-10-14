@@ -1,1 +1,95 @@
-.login-page{background-color:#333333;color:white;padding:20px 0}.login-page h2,.login-page p{text-align:center;font-size:0.9em}@media (min-width: 768px){.login-page h2,.login-page p{font-size:1em}}@media (min-width: 1200px){.login-page h2,.login-page p{font-size:1.3em;padding:10px}}.login-page h2{font-size:22px}.login-page .row-2{display:flex;flex-flow:column;align-items:center;color:black;background-color:white;width:77%;margin:20px auto;padding:10px;max-width:600px}@media (min-width: 768px){.login-page .row-2{padding-bottom:30px;width:60%}}.login-page .row-2 h2{margin:10px}@media (min-width: 768px){.login-page .row-2 h2{font-size:18px;padding:6px}}.login-page .row-2 form{display:flex;flex-flow:column;gap:10px}@media (min-width: 768px){.login-page .row-2 form{gap:20px}}.login-page .row-2 form input{padding:3px}@media (min-width: 768px){.login-page .row-2 form input{padding:6px}}.login-page .row-2 form div{display:flex;font-size:10px;gap:5px}@media (min-width: 768px){.login-page .row-2 form div{font-size:12px}}.login-page .row-2 form div input{margin-right:5px}.login-page .row-2 form div a{color:blue}.login-page .row-2 .sing-up-input{display:flex;margin-top:10px;font-size:12px;gap:10px;justify-content:center}.login-page .row-2 .sing-up-input a{color:blue}
+.login-page {
+  padding: 20px 0;background-color: #333;
+  color: white;
+}
+
+.login-page h2,
+.login-page p {
+font-size: 0.9em;
+  text-align: center;
+}@media (min-width: 768px) {
+.login-page h2,
+  .login-page p {
+font-size: 1em;
+}
+}@media (min-width: 1200px) {
+.login-page h2,
+  .login-page p {
+    padding: 10px;font-size: 1.3em;
+}
+}
+
+.login-page h2 {
+font-size: 22px;
+}
+
+.login-page .row-2 {
+  display: flex;
+  flex-flow: column;align-items: center;
+  width: 77%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: white;
+  color: black;
+}@media (min-width: 768px) {
+.login-page .row-2 {
+    width: 60%;padding-bottom: 30px;
+}
+}
+
+.login-page .row-2 h2 {
+margin: 10px;
+}@media (min-width: 768px) {
+.login-page .row-2 h2 {
+    padding: 6px;font-size: 18px;
+}
+}
+
+.login-page .row-2 form {
+display: flex;
+  flex-flow: column;
+  gap: 10px;
+}@media (min-width: 768px) {
+.login-page .row-2 form {
+gap: 20px;
+}
+}
+
+.login-page .row-2 form input {
+padding: 3px;
+}@media (min-width: 768px) {
+.login-page .row-2 form input {
+padding: 6px;
+}
+}
+
+.login-page .row-2 form div {
+display: flex;
+  font-size: 10px;
+  gap: 5px;
+}@media (min-width: 768px) {
+.login-page .row-2 form div {
+font-size: 12px;
+}
+}
+
+.login-page .row-2 form div input {
+margin-right: 5px;
+}
+
+.login-page .row-2 form div a {
+color: blue;
+}
+
+.login-page .row-2 .sing-up-input {
+display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.login-page .row-2 .sing-up-input a {
+color: blue;
+}

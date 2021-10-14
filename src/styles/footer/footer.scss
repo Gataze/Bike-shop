@@ -1,78 +1,72 @@
-footer{
-    background-color: rgb(51, 51, 51);
-    color: white;
-    font-size: 9px;
-    font-family: 'Mulish', sans-serif;
+footer {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 9px;
 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: 200;
+    @media (min-width: 768px) {
+      font-size: 15px;
+    }
 
+    .col {
+      display: flex;
+      flex-flow: column;
+      min-width: 50%;
+      padding: 20px 10px;
+      @media (min-width: 1200px) {
+        min-width: 25%;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        font-size: 16px;
+      }
 
-
-
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 12px;
-        font-weight: 200;
-        @media (min-width: 768px) {
-            font-size: 15px;
-        }
-
-        .col{
-            min-width: 50%;
-            display: flex;
-            flex-flow:column;
-            padding: 20px 10px;
-            @media(min-width: 1200px){
-                min-width: 25%;
-                padding-bottom: 80px;
-                padding-top: 40px;
-                font-size: 16px;
-            }
-            span{
-                color: white;
-            }
+      span {
+        color: white;
+      }
             
-        }
+    }
 
-
-        form{
-            line-height: 20px;
-            margin-top: 10px;
-            display: flex;
+    form {
+      display: flex;
+      margin-top: 10px;
+      line-height: 20px;
             
             
-        }
+    }
 
-
-        .plane{
-            display: flex;
-            border: 1px solid orange;
-            width: 23px;
-            text-align: center;
-            justify-content: center;
+    .plane {
+      display: flex;
+      justify-content: center;
+      width: 23px;
+      border: 1px solid orange;
+      text-align: center;
            
             
-            .footer-subscribe{
-                background-color: transparent;
-                border: 0px;
-                color: orange;
-                cursor: pointer;
-                font-size: 16px;
+      .footer-subscribe {
+        border: 0;
+        background-color: transparent;
+        color: orange;
+        font-size: 16px;
+        cursor: pointer;
                 
-            }
-        }
+      }
+    }
 
        
 
-
-        input{
-            border: 1px solid orange;
-            outline: none;
-            font-size: 12px;
-            padding: 4px;
-            @media (min-width: 768px) {
-                font-size: 14px;
-            }
-        }
+    input {
+      padding: 4px;
+      border: 1px solid orange;
+      outline: none;
+      font-size: 12px;
+      @media (min-width: 768px) {
+        font-size: 14px;
+      }
     }
+  }
 }

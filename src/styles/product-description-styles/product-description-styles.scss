@@ -1,32 +1,33 @@
 .card .row-1 .col {
-    display: flex;
-    margin-top: 50px;
+  display: flex;
+  margin-top: 50px;
    
-    p{
+  p {
+    padding: 8px 16px;
+    border-radius: 12px 12px 0 0;
     
-            color: rgba(0, 0, 0, 0.808);
-            padding: 8px 16px;
-            border-radius: 12px 12px 0 0;
-            // background: rgba(0, 0, 0, 0.808);
-            // color: gold;
-            cursor: pointer;      
-    }
+    color: rgba(0, 0, 0, 0.808);
+    // background: rgba(0, 0, 0, 0.808);
+    // color: gold;
+    cursor: pointer;
+  }
 
-    .specification-header{
-        background: none;
-        color: rgba(0, 0, 0, 0.808);
-    }
+  .specification-header {
+    background: none;
+    color: rgba(0, 0, 0, 0.808);
+  }
 }
 
-.card .row-2{
-    background: rgba(0, 0, 0, 0.808);
-    color: white;
-    width: calc(100%);
+.card .row-2 {
+  width: calc(100%);
+  background: rgba(0, 0, 0, 0.808);
+  color: white;
     
-    .col{
-        padding: 16px 16px 32px 16px;
-        p {
-            font-size: 14px;
-        }
+  .col {
+    padding: 16px 16px 32px;
+
+    p {
+      font-size: 14px;
     }
+  }
 }

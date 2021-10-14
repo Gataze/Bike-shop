@@ -1,1 +1,13 @@
-.bike-models{padding-top:20px}.bike-models h2{text-align:center;font-size:24px}@media (min-width: 768px){.bike-models h2{font-size:28px;padding-bottom:0px;padding-top:50px}}
+.bike-models {
+padding-top: 20px;
+}
+
+.bike-models h2 {
+font-size: 24px;
+  text-align: center;
+}@media (min-width: 768px) {
+.bike-models h2 {
+    padding-top: 50px;
+    padding-bottom: 0;font-size: 28px;
+}
+}

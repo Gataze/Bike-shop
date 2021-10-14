@@ -3,7 +3,7 @@
 }
 
 .card .container {
-  padding: 0px;
+  padding: 0;
 }
 
 .card .row {
@@ -47,20 +47,21 @@
 }
 
 .card .row .col-2 .price {
+  margin: 5px 0;
   font-size: 24px;
   font-weight: bold;
-  margin: 5px 0;
 }
 
-.card .row .col-2 .loan, .card .row .col-2 .spcs {
-  font-size: 12px;
+.card .row .col-2 .loan,
+.card .row .col-2 .spcs {
   margin-top: 5px;
+  font-size: 12px;
 }
 
 .card .row .col-2 .quantity {
   display: flex;
   align-items: center;
-  margin: 20px 0 5px 0;
+  margin: 20px 0 5px;
 }
 
 .card .row .col-2 .quantity label {
@@ -75,8 +76,8 @@
 .card .row .col-2 .quantity .form-wrapper {
   display: flex;
   align-items: center;
+  padding: 0 5px;
   font-size: 18px;
-  padding: 0px 5px;
 }
 
 .card .row .col-2 .quantity .form-wrapper div {
@@ -86,32 +87,32 @@
 }
 
 .card .row .col-2 .quantity .form-wrapper div svg {
-  cursor: pointer;
-  color: gold;
-  background-color: black;
-  font-size: 28px;
   padding: 5px;
+  background-color: black;
+  color: gold;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 .card .row .col-2 .quantity .form-wrapper p {
   width: 40px;
-  text-align: center;
   border: 1px solid black;
   background: white;
+  text-align: center;
 }
 
 .card .row .col-2 .shop-accesibility {
   display: inline-block;
-  background-color: gold;
-  border: 1px solid black;
-  text-align: center;
   margin-top: 20px;
+  border: 1px solid black;
+  background-color: gold;
+  text-align: center;
 }
 
 .card .row .col-2 .shop-accesibility a {
-  color: black;
-  padding: 10px;
   width: 200px;
+  padding: 10px;
+  color: black;
 }
 
 .card .slider.animated div {
@@ -129,15 +130,15 @@
 
 @media (min-width: 768px) {
   .card .row-one {
-    margin: 0 15px;
     grid-gap: 20px;
+    margin: 0 15px;
   }
 }
 
 .card .row-two {
-  background-color: #333333;
-  color: white;
   padding: 20px;
+  background-color: #333;
+  color: white;
 }
 
 @media (min-width: 768px) {

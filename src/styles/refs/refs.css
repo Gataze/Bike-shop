@@ -1,8 +1,8 @@
 .refs {
   margin-top: 50px;
-  text-align: center;
   padding: 20px;
   background-color: #f1f1f1;
+  text-align: center;
 }
 
 .refs h2 {
@@ -18,8 +18,8 @@
 .refs .row {
   display: flex;
   flex-flow: column;
-  gap: 40px;
   align-items: center;
+  gap: 40px;
 }
 
 @media (min-width: 992px) {
@@ -30,9 +30,9 @@
 
 .refs .row .col {
   width: 65%;
-  background-color: #f8f8f8;
-  padding: 30px;
   margin-bottom: 50px;
+  padding: 30px;
+  background-color: #f8f8f8;
 }
 
 .refs .row .col .stars svg {
@@ -40,16 +40,16 @@
 }
 
 .refs .row .circle {
-  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   margin: 0 auto;
   border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 38px;
+  background-color: #1f1f1f;
   color: orange;
+  font-size: 38px;
 }
 
 @media (min-width: 992px) {

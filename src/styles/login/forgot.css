@@ -1,10 +1,10 @@
 .login-page .row-2 p {
-  text-align: center;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .login-page .row-2 form {
-  grid-gap: 0px;
+  grid-gap: 0;
 }
 
 .login-page .row-2 form label {

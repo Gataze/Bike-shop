@@ -1,1 +1,65 @@
-.hamburger{margin:auto 0 auto auto;padding:0;border:0;background-color:transparent;cursor:pointer;height:35px}.hamburger:focus>.hamburger__container{box-shadow:0 0 2px 2px #51a7e8}.hamburger__container{display:flex;align-items:center;position:relative;width:35px;height:30px}.hamburger__bars{position:absolute;width:35px;height:2px;background-color:#000;transition:transform 220ms ease-in-out}.hamburger__bars:before,.hamburger__bars:after{display:block;position:absolute;width:35px;height:2px;background-color:#000;content:''}.hamburger__bars:before{top:-12px;transition:top 100ms 250ms ease-in, transform 220ms ease-in-out}.hamburger__bars:after{bottom:-12px;transition:bottom 100ms 250ms ease-in,  transform 220ms ease-in-out}.hamburger--active .hamburger__bars{transform:rotate(225deg);transition:transform 220ms 120ms ease-in-out}.hamburger--active .hamburger__bars:before{top:0;transition:top 100ms ease-out}.hamburger--active .hamburger__bars:after{bottom:0;transform:rotate(-90deg);transition:bottom 100ms ease-out,  transform 220ms 120ms ease-in-out}.hamburger:focus,.hamburger__container:focus{outline:none}
+.hamburger {
+  height: 35px;
+  margin: auto 0 auto auto;
+  padding: 0;
+  border: 0;background-color: transparent;
+  cursor: pointer;
+}
+
+.hamburger:focus > .hamburger__container {
+box-shadow: 0 0 2px 2px #51a7e8;
+}
+
+.hamburger__container {
+  display: flex;
+  position: relative;align-items: center;
+  width: 35px;
+  height: 30px;
+}
+
+.hamburger__bars {
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  transition: transform 220ms ease-in-out;background-color: #000;
+}
+
+.hamburger__bars::before,
+.hamburger__bars::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 2px;background-color: #000;
+}
+
+.hamburger__bars::before {
+top: -12px;
+  transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
+
+.hamburger__bars::after {
+bottom: -12px;
+  transition:bottom 100ms 250ms ease-in,  transform 220ms ease-in-out;
+}
+
+.hamburger--active .hamburger__bars {
+transform: rotate(225deg);
+  transition: transform 220ms 120ms ease-in-out;
+}
+
+.hamburger--active .hamburger__bars::before {
+top: 0;
+  transition: top 100ms ease-out;
+}
+
+.hamburger--active .hamburger__bars::after {
+bottom: 0;
+  transform: rotate(-90deg);
+  transition:bottom 100ms ease-out,  transform 220ms 120ms ease-in-out;
+}
+
+.hamburger:focus,
+.hamburger__container:focus {
+outline: none;
+}
