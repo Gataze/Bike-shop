@@ -3,7 +3,6 @@ import './../styles/login/login.css'
 
 const LoginPage = () => {
     
-    
     return ( 
         <div className="login-page">
             <div className="container">
@@ -33,6 +32,6 @@ const LoginPage = () => {
             </div>        
         </div>
      );
-}
+};
  
 export default LoginPage;
