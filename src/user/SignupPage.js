@@ -25,10 +25,10 @@ const LoginPage = () => {
                         </div>
                         <button>Register</button>
                     </form>
-                    <div className="sing-up-input">
-                        <span>Have an account?</span>
-                        <Link to="/login">Sign in</Link>
-                    </div>
+                        <div className="sing-up-input">
+                            <span>Have an account?</span>
+                            <Link to="/login">Sign in</Link>
+                        </div>
                     </div>
                 </div>
             </div>        
