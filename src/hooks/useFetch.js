@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 
-
 const useFetch = (url) => {
 
     const [data, setData] = useState("")
@@ -40,6 +39,6 @@ const useFetch = (url) => {
     },[url])
 
     return {data, error, isPending}
-}
+};
 
 export default useFetch

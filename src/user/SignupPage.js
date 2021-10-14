@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import './../styles/login/login.css'
 
 const LoginPage = () => {
-    
-    
     return ( 
         <div className="login-page">
             <div className="container">
@@ -24,19 +22,18 @@ const LoginPage = () => {
                         <div>
                             <input type="checkbox" />
                             <span>I accept the rules*</span>
-                            
                         </div>
                         <button>Register</button>
                     </form>
-                    <div className="sing-up-input">
-                        <span>Have an account?</span>
-                        <Link to="/login">Sign in</Link>
-                    </div>
+                        <div className="sing-up-input">
+                            <span>Have an account?</span>
+                            <Link to="/login">Sign in</Link>
+                        </div>
                     </div>
                 </div>
             </div>        
         </div>
      );
-}
+};
  
 export default LoginPage;

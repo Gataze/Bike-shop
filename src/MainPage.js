@@ -17,17 +17,14 @@ import ForgotPass from "./user/ForgotPass";
 
 const MainPage = () => {
 
-
-    const [activeStyle, setActiveStyle] = useState(false)
-
+    const [activeStyle, setActiveStyle] = useState(false);
     const handleShow = (activeStyle) => {
         setActiveStyle(!activeStyle)
     }
 
     return ( 
-        <div className="main-page-wrapper" style={activeStyle ? {top: "260px"} : {top: "0px"}}>
-            
-            <MainMenu activeStyle={activeStyle} handleShow={handleShow}  />
+        <div className="main-page-wrapper" style={activeStyle ? {top: "260px"} : {top: "0px"}}> 
+            <MainMenu activeStyle={activeStyle} handleShow={handleShow}/>
             <Switch>
                 <Route exact path="/">
                     <MainSlider />
@@ -60,6 +57,6 @@ const MainPage = () => {
             <Footer />
         </div>   
      );
-}
+};
  
 export default MainPage;

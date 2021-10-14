@@ -125,6 +125,6 @@ const CartItem = ({bike, delFromCart, addTotalValue, minusTotalValue}) => {
             </div> 
          
      );
-}
+};
  
 export default CartItem;

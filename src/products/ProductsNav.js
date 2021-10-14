@@ -4,11 +4,9 @@ import { Link } from 'react-router-dom';
 const ProductsNav = () => {
 
 return ( 
-
     <li className="products">
         <span><Link to="/products">PRODUCTS</Link></span>
     </li>   
-
     );
 }
  

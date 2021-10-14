@@ -8,23 +8,16 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import ProductDescription from "./ProductDescription"
 
-
-
-
 const ProductDetails = () => {
 
     const [counter, setCounter] = useState(1)
     const {typeId, id} = useParams()
-
     const {data: item} = useFetch(`https://my-json-server.typicode.com/gataze/mockjson/${typeId}/${id}` )
-
-    
     const addToCart = (item) => {
-
 
         const oldItems = JSON.parse(localStorage.getItem('item'))
 
-        //item pobrany przez fetch w tym pliku
+        //Item object that is fetched
         const newItem = {
             name: item.name,
             body: item.body,
@@ -41,20 +34,12 @@ const ProductDetails = () => {
     localStorage.setItem('item', temp)
 
     }
-
-
     useEffect(() => {
-        window.scrollTo(0, 0);
-        
+        window.scrollTo(0, 0);     
     }, [])
 
-    
-
-
     return ( 
-
         <section className="card">
-            
                 <div className="row row-two">
                     <h2>Product card</h2>
                 </div>
@@ -64,14 +49,12 @@ const ProductDetails = () => {
                         <div className="img-wrapper">
                             <div className="featured-wrapper">
                                 <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} >
-
                                     <div>
                                         <img src={item.url} alt="" className="thumbnail"/>
                                     </div>
                                     <div>
                                         <img src={item.url2} alt="" className="thumbnail"/>
-                                    </div>
-                                    
+                                    </div>    
                                 </Carousel>
                             </div>  
                         </div>
@@ -97,7 +80,6 @@ const ProductDetails = () => {
                         <p className='spcs'>Color: <span><b>{item.color}</b></span></p>
                         <p className='spcs'>Frame: <span><b>{item.frame}"</b></span></p>
                         <p className='spcs'>Wheel: <span><b>{item.wheel}"</b></span></p>
-                        
                         <div className="quantity">
                             <label htmlFor="qnt">Count</label>
                             <div className='form-wrapper'>
@@ -120,13 +102,8 @@ const ProductDetails = () => {
                         <div onClick={() => addToCart(item)}  className='shop-accesibility'>
                             <Link to="/cart" className="btn" >ADD TO CART</Link>
                         </div>
-                        
                     </div>
-                    
                 </div>
- 
-                    
-        
             </div>
             <ProductDescription />
         </section>

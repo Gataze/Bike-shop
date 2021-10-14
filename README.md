@@ -7,5 +7,4 @@ List of technologies:
     - JAVASCRIPT (LocalStorage)
     - Git, GitHub
 
-Website has been published and is currently available (14.10.2021) on https://vigilant-mcnulty-fd78c7.netlify.app/
-    
+Website has been published and is currently available (14.10.2021) on https://vigilant-mcnulty-fd78c7.netlify.app/  
