@@ -1,9 +1,6 @@
 import './../styles/about/about.css'
 
-
 const About = () => {
-    
-    
     
     return ( 
         <div className="about">
@@ -12,7 +9,6 @@ const About = () => {
             <div className="row">
                 <div className="col col-1">
                     <img src={'/images/about/about-photo.jpg'} alt="about" />
-                
                 </div>
                 <div className="col col-2">
                     <h2>Short</h2>
@@ -23,8 +19,7 @@ const About = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odit natus magni illo impedit. Quis quo voluptas quos, ad eligendi maxime nostrum earum perspiciatis. Ipsam deleniti impedit laudantium eos quis?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate eaque dolore aut illo? Quia recusandae provident fugiat atque, porro dolorem! Enim nostrum quo debitis officiis officia fugit omnis voluptatum.</p>
                 </div>
-                <div className="col col-4">
-                    
+                <div className="col col-4"> 
                     <form className='contact-form'>
                         <h2>Contact us</h2>
                         <label>Name*</label>
@@ -42,9 +37,8 @@ const About = () => {
                 </div>
             </div>
             </div>
-           
         </div>
      );
-}
+};
  
 export default About;
