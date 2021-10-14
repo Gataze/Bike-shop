@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react'
 
 const Cart = () => {
 
-
     const {data: bikes, error, isPending} = useFetch('https://my-json-server.typicode.com/gataze/mockjson/bikesPreview')
 
     const [items, setItems] = useState([])
