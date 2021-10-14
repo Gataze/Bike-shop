@@ -3,7 +3,7 @@ LoremBikes is my first website project written in ReactJS. This app simulates bi
 List of technologies: 
     - ReactJS (react, react-router-dom, hooks (useState, useParams, useEffect), custom hooks, react-responsive-carousel, react-icons)
     - HTML, CSS, SCSS
-    = REST-API (app is simply connected with free online json service that gets data from my GitHub repository)
+    - REST-API (app is simply connected with free online json service that gets data from my GitHub repository)
     - JAVASCRIPT (LocalStorage)
     - Git, GitHub
 
