@@ -1,15 +1,10 @@
 
 import { Link } from "react-router-dom";
 
-
 const ProductItem = ({bikes, product}) => {
-
-   
-
     return ( 
     <>
     {bikes.map(bike => (
-
         <div className="product-item" key={bike.id}>
             <div className="col-3">
                 <h2>{bike.name}</h2>
@@ -42,6 +37,6 @@ const ProductItem = ({bikes, product}) => {
     ))}      
     </>
     );
-}
+};
  
 export default ProductItem;
