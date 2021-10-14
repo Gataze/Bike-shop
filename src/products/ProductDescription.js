@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import '../styles/product-description-styles/product-description-styles.css'
-
+import '../styles/product-description-styles/product-description-styles.css;
 
 const ProductDescription = () => {
 
@@ -8,32 +7,31 @@ const ProductDescription = () => {
         color: 'gold',
         background: 'rgba(0, 0, 0, 0.808)'
     }
-
     const [activeDescription, setActiveDescription] = useState({display: 'block'})
     const [activeSpecification, setActiveSpecification] = useState({display: 'none'})
     const [active, setActive] = useState(false)
 
-    //aktywuje kartę z opisem
+    //activates card with description
     const handleDescription = () => {
 
         setActiveDescription(prevState => {
             return {
                 display: 'block'
             }
-        })
+        });
+        
         setActiveSpecification(prevState => {
             return {
                 display: 'none'
             }
-        })
+        });
+        
         setActive(prevState => {
             return !prevState
-        })
-        
-    }
+        });
+    };
 
-    //aktywuje kartę z specyfikacją
-
+    //activates card with specifications
     const handleSpecification = () => {
 
         setActiveDescription(prevState => {
@@ -46,14 +44,11 @@ const ProductDescription = () => {
                 display: 'block'
             }
         }) 
-        
         setActive(prevState => {
             return !prevState
         })
     }
-
-
-
+    
     return ( 
         <>
             <div className="row-1">
@@ -79,11 +74,9 @@ const ProductDescription = () => {
                         </div>
                     </div>
                 </div>
-                    
-                
             </div>
         </>
      );
-}
+};
  
 export default ProductDescription;
