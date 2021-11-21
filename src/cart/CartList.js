@@ -20,6 +20,6 @@ const CartList = ({items, totalValue, addTotalValue, minusTotalValue, delFromCar
         </div>
   
      );
-}
+};
  
 export default CartList;
