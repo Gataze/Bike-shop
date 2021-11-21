@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../styles/product-description-styles/product-description-styles.css;
+import '../styles/product-description-styles/product-description-styles.css'
 
 const ProductDescription = () => {
 
