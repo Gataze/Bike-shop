@@ -11,7 +11,6 @@ function App() {
           <MainPage />
         </div>
     </Router>
-    
   );
 }
 
