@@ -40,7 +40,6 @@ const Cart = () => {
         const loadedItem = JSON.parse(temp)
         console.log(loadedItem)
 
-
         setItems(
             loadedItem.filter((localItem) => localItem.id !== id)
         )

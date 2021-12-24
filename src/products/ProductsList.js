@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const ProductsList = () => {
     const [product, setProduct] = useState("bikesPreview/")
-    const {data: bikes, error, isPending} = useFetch(`https://my-json-server.typicode.com/gataze/mockjson/${product}`)
+    const {data: bikes=0, error, isPending} = useFetch(`https://my-json-server.typicode.com/gataze/mockjson/${product}`)
 
     const handleClick = (e) => {
         const {target: {title}} = e
@@ -33,7 +33,7 @@ const ProductsList = () => {
                 
             }else{
                 
-                const sorted = [...bikes].sort((a, b) => (a[sortType.substring(0,5).trim()] > b[sortType.substring(0,5).trim()]) ? -1 : 1)
+                    const sorted = [...bikes].sort((a, b) => (a[sortType.substring(0,5).trim()] > b[sortType.substring(0,5).trim()]) ? -1 : 1)
                     setData(sorted)
             }
             
@@ -68,7 +68,7 @@ const ProductsList = () => {
                     <div className="container">
                         {isPending && <div>Loading...</div>}
                         {error && <div>{error}</div>}
-                        {data && <ProductItem product={product} bikes={data} />}  
+                        {<ProductItem product={product} bikes={data} />}  
                     </div>
                 </div>    
             </div>       

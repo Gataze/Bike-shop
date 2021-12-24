@@ -14,18 +14,8 @@ const ProductDescription = () => {
     //activates card with description
     const handleDescription = () => {
 
-        setActiveDescription(prevState => {
-            return {
-                display: 'block'
-            }
-        });
-        
-        setActiveSpecification(prevState => {
-            return {
-                display: 'none'
-            }
-        });
-        
+        setActiveDescription({display: 'block'});
+        setActiveSpecification({display: 'none'});
         setActive(prevState => {
             return !prevState
         });
@@ -34,16 +24,8 @@ const ProductDescription = () => {
     //activates card with specifications
     const handleSpecification = () => {
 
-        setActiveDescription(prevState => {
-            return {
-                display: 'none'
-            }
-        })
-        setActiveSpecification(prevState => {
-            return {
-                display: 'block'
-            }
-        }) 
+        setActiveDescription({display: 'none'})
+        setActiveSpecification({display: 'block'}) 
         setActive(prevState => {
             return !prevState
         })
@@ -58,12 +40,10 @@ const ProductDescription = () => {
                         <p className='specification-header' style={active? activeStyles : null} onClick={handleSpecification}>Specification</p>
                     </div>
                 </div>
-               
             </div>
             <div className='row-2'>
                 <div className="container">
-                <div className="col">
-                        
+                    <div className="col"> 
                         <div className="description"  style={activeDescription}>
                             <h2>Description</h2>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quos inventore deserunt illum sint dolores. Accusamus voluptatum, libero expedita repellat, porro impedit est officia cumque laudantium similique beatae provident. Perferendis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod iusto consectetur excepturi, recusandae incidunt sequi velit quis reiciendis ullam, fuga natus facilis quia possimus harum nobis dignissimos! Facere, placeat repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet, est commodi harum id neque cumque repellat aliquam quos quasi incidunt error nobis rem aspernatur rerum nihil magni perspiciatis unde!</p>
@@ -76,7 +56,7 @@ const ProductDescription = () => {
                 </div>
             </div>
         </>
-     );
+    );
 };
  
 export default ProductDescription;

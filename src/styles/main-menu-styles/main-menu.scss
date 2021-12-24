@@ -1,125 +1,71 @@
-.main-nav {
-    
+.MainNav {
   background-color: white;
-    
-  .col {
+  
+  &__container {
+    margin: 0 20px;
+    max-width: 1200px;
+    @media (min-width: 1240px){
+      margin: 0 auto;
+    }
+  }
+
+
+  &__logo {
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+  &__bold {
+    font-weight: bold;
+  }
+  &__img {
+    height: 22px;
+  }
+
+
+  &__flexbox{
     display: flex;
+    flex-flow: row;
     align-items: center;
-    padding: 10px 0;
-    @media (min-width:1200px) {
-      padding: 20px 0;
-    }
-
-    .navigation {
-      display: none;
-      @media (min-width: 768px) {
-        display: block;
-
-        ul {
-          display: flex;
-
-          li {
-            margin-left: 40px;
-
-            a {
-              color: black;
-            }
-          }
-        }
-      }
-      @media (min-width: 1200px) {
-        font-size: 20px;
-      }
-    }
-
-    .social-menu {
-      display: none;
-      @media (min-width: 768px) {
-        display: block;
-        margin-left: auto;
-
-        ul.social-links {
-          display: flex;
-
-          li {
-            margin-left: 20px;
-
-            a {
-              color: black;
-
-              &:hover {
-                color: orange;
-              }
-            }
-          }
-        }
-      }
-      @media (min-width: 1200px) {
-        font-size: 22px;
-      }
-    }
-
-    .logo {
-      font-size: 28px;
-      text-transform: uppercase;
-
-      .bold-style {
-        font-weight: 400;
-
-        span {
-          font-weight: 600;
-        }
-      }
-    }
-
-    .burger-btn {
-      margin-left: auto;
-      @media (min-width: 768px) {
-        display: none;
-      }
-    }
+    height: 60px;
+    gap: 20px;
   }
 
-  // PRODUCTS-MINI-NAVIGATION
+  &__list{
+    display: none;
+    flex-flow: row;
+    justify-content: center;
+    gap: 10%;
+    flex: 1;
+    gap: 20px;
+    font-size: 22px;
 
-  .products {
-    position: relative;
-    cursor: pointer;
-
-    .products-nav {
+    @media(min-width: 768px){
       display: flex;
-      position: absolute;
-      z-index: 1;
-      flex-flow: column;
-      margin-top: 10px;
-      background-color: rgba(180, 178, 178, 0.781);
-            
-            
-      li {
-        width: 95px;
-        margin-left: 0 !important;
-        padding: 5px 20px 5px 10px;
-        border: 1px solid gray;
-                
-                
-        a {
-          font-size: 18px;
-        }
-                
-      }
-    }
-
-    .triangle {
-      display: inline-block;
-      position: absolute;
-      top: 45%;
-      left: 73px;
-      transition: transform 0.2s ease-in-out;
-      border-top: 5px solid rgb(0, 0, 0);
-      border-right: 5px solid transparent;
-      border-left: 5px solid transparent;
     }
   }
 
-    
+  &__link {
+    color: black;
+  }
+
+
+
+  &__iconList {
+    display: none;
+    flex-flow: row;
+    gap: 20px;
+    @media(min-width: 768px){
+      display: flex;
+    }
+  }
+
+
+  &__burger-btn {
+    margin-left: auto;
+    @media (min-width: 768px){
+      display: none;
+    }
+  }
 }
+
+  

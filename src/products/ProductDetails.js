@@ -17,7 +17,7 @@ const ProductDetails = () => {
 
         const oldItems = JSON.parse(localStorage.getItem('item'))
 
-        //Item object that is fetched
+        //Item object that was fetched
         const newItem = {
             name: item.name,
             body: item.body,
