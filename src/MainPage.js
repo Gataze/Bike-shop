@@ -36,6 +36,7 @@ const MainPage = () => {
                 <Route path="/products/:typeId/:id">
                     <ProductDetails />
                 </Route>
+                
                 <Route path="/products">
                     <ProductsList />
                 </Route>
