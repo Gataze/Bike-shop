@@ -6,16 +6,24 @@ const MobileNav = () => {
     <div className="mobile">
       <ul className="mobile__list">
         <li className="mobile__listItem">
-          <Link to="/">HOME</Link>
+          <Link className="mobile__link" to="/">
+            HOME
+          </Link>
         </li>
         <li className="mobile__listItem">
-          <Link to="/products">PRODUCTS</Link>
+          <Link className="mobile__link" to="/products">
+            PRODUCTS
+          </Link>
         </li>
         <li className="mobile__listItem">
-          <Link to="/login">SIGN IN</Link>
+          <Link className="mobile__link" to="/login">
+            SIGN IN
+          </Link>
         </li>
         <li className="mobile__listItem">
-          <Link to="/cart">CART</Link>
+          <Link className="mobile__link" to="/cart">
+            CART
+          </Link>
         </li>
       </ul>
     </div>

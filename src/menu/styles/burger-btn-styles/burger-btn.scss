@@ -24,17 +24,17 @@
 .hamburger__bars {
   position: absolute;
   width: 35px;
-  height: 2px;
+  height: 3px;
   transition: transform 220ms ease-in-out;
   background-color: #000;
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 35px;
-    height: 2px;
+    height: 3px;
     background-color: #000;
   }
 
@@ -45,8 +45,7 @@
 
   &::after {
     bottom: -12px;
-    transition: bottom 100ms 250ms ease-in, 
-      transform 220ms ease-in-out;
+    transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
   }
 }
 
@@ -63,8 +62,7 @@
     &::after {
       bottom: 0;
       transform: rotate(-90deg);
-      transition: bottom 100ms ease-out, 
-        transform 220ms 120ms ease-in-out;
+      transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
     }
   }
 }
