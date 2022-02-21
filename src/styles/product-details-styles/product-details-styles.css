@@ -7,17 +7,27 @@
 }
 
 .card .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 @media (min-width: 768px) {
   .card .row {
-    flex-flow: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
   }
 }
 
 .card .row .col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -33,8 +43,12 @@
 }
 
 .card .row .col-2 .user-grade {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card .row .col-2 .user-grade .stars {
@@ -59,8 +73,12 @@
 }
 
 .card .row .col-2 .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 20px 0 5px;
 }
 
@@ -74,16 +92,26 @@
 }
 
 .card .row .col-2 .quantity .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 5px;
   font-size: 18px;
 }
 
 .card .row .col-2 .quantity .form-wrapper div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card .row .col-2 .quantity .form-wrapper div svg {
@@ -121,7 +149,8 @@
 
 .card .slider.animated div img {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card .row-one {
@@ -155,3 +184,4 @@
 .card .row-three {
   display: block;
 }
+/*# sourceMappingURL=product-details-styles.css.map */

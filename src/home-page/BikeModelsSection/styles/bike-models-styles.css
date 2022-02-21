@@ -1,0 +1,17 @@
+.bike-models {
+  padding-top: 20px;
+}
+
+.bike-models h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bike-models h2 {
+    padding-top: 50px;
+    padding-bottom: 0;
+    font-size: 28px;
+  }
+}
+/*# sourceMappingURL=bike-models-styles.css.map */

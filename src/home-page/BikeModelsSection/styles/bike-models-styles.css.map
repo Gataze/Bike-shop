@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,WAAW,EAAE,IAAI;CAWlB;;AAZD,AAGE,YAHU,CAGV,EAAE,CAAC;EACD,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;CAMnB;;AALC,MAAM,EAAE,SAAS,EAAE,KAAK;EAN5B,AAGE,YAHU,CAGV,EAAE,CAAC;IAIC,WAAW,EAAE,IAAI;IACjB,cAAc,EAAE,CAAC;IACjB,SAAS,EAAE,IAAI;GAElB",
+    "sources": [
+        "bike-models-styles.scss"
+    ],
+    "names": [],
+    "file": "bike-models-styles.css"
+}

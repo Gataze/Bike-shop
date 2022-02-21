@@ -1,4 +1,6 @@
 .card .row-1 .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
 }
@@ -28,3 +30,4 @@
 .card .row-2 .col p {
   font-size: 14px;
 }
+/*# sourceMappingURL=product-description-styles.css.map */

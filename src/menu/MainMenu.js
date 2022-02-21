@@ -1,5 +1,5 @@
 import Logo from "./../images/logo/logo.png";
-import "./styles/main-menu.css";
+import "./styles/main-menu-styles/main-menu.css";
 import BurgerBtn from "./BurgerBtn";
 import { Link } from "react-router-dom";
 import React from "react";
@@ -16,7 +16,6 @@ const MainMenu = ({ activeStyle, handleShow }) => {
               Lorem<span className="MainNav__bold">Bikes</span>
             </span>
           </div>
-
           <ul className="MainNav__list">
             <li className="MainNav__listItem">
               <Link className="MainNav__link" to="/">
