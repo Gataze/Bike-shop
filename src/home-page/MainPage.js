@@ -11,9 +11,9 @@ import Cart from "../cart/Cart";
 import ProductsList from "../products/ProductsList";
 import ProductDetails from "../products/ProductDetails";
 import About from "../about/About";
-import LoginPage from "../user/LoginPage";
-import SignupPage from "../user/SignupPage";
-import ForgotPass from "../user/ForgotPass";
+import LoginPage from "../user-page/LoginPage";
+import SignupPage from "../user-page/SignupPage";
+import ForgotPass from "../user-page/ForgotPass";
 
 const MainPage = () => {
   const [activeStyle, setActiveStyle] = useState(false);
