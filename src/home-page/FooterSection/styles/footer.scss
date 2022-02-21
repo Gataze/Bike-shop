@@ -1,7 +1,7 @@
 footer {
   background-color: rgb(51, 51, 51);
   color: white;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 9px;
 
   .row {
@@ -28,15 +28,12 @@ footer {
       span {
         color: white;
       }
-            
     }
 
     form {
       display: flex;
       margin-top: 10px;
       line-height: 20px;
-            
-            
     }
 
     .plane {
@@ -45,19 +42,15 @@ footer {
       width: 23px;
       border: 1px solid orange;
       text-align: center;
-           
-            
+
       .footer-subscribe {
         border: 0;
         background-color: transparent;
         color: orange;
         font-size: 16px;
         cursor: pointer;
-                
       }
     }
-
-       
 
     input {
       padding: 4px;

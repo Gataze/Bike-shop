@@ -6,6 +6,8 @@ import React from "react";
 import { FaSignInAlt, FaUser, FaShoppingCart } from "react-icons/fa";
 
 const MainMenu = ({ activeStyle, handleShow }) => {
+  const navigation = ["home", "products", "about"];
+
   return (
     <nav className="MainNav">
       <div className="MainNav__container">
@@ -17,21 +19,16 @@ const MainMenu = ({ activeStyle, handleShow }) => {
             </span>
           </div>
           <ul className="MainNav__list">
-            <li className="MainNav__listItem">
-              <Link className="MainNav__link" to="/">
-                HOME
-              </Link>
-            </li>
-            <li className="MainNav__listItem">
-              <Link className="MainNav__link" to="/products">
-                PRODUCTS
-              </Link>
-            </li>
-            <li className="MainNav__listItem">
-              <Link className="MainNav__link" to="/about">
-                ABOUT US
-              </Link>
-            </li>
+            {navigation.map((item) => (
+              <li key={item} className="MainNav__listItem">
+                <Link
+                  className="MainNav__link"
+                  to={item !== "home" ? `/${item}` : "/"}
+                >
+                  {item}
+                </Link>
+              </li>
+            ))}
           </ul>
           <ul className="MainNav__iconList">
             <li className="MainNav__listItem">

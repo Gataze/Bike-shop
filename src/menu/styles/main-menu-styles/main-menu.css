@@ -68,6 +68,12 @@
 
 .MainNav__link {
   color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.MainNav__link:hover {
+  text-decoration: underline;
 }
 
 .MainNav__iconList {
