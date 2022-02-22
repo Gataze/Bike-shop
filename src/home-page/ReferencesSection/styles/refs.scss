@@ -1,0 +1,60 @@
+.refs {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #eeeeee;
+  text-align: center;
+
+  h2 {
+    margin: 30px 0 50px;
+    @media (min-width: 992px) {
+      font-size: 28px;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 40px;
+    @media (min-width: 992px) {
+      flex-flow: row;
+    }
+
+    .col {
+      width: 65%;
+      margin-bottom: 30px;
+      padding: 30px;
+      background-color: #d8d8d8;
+
+      .stars svg {
+        color: gold;
+      }
+    }
+
+    .circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      border-radius: 20px;
+      background-color: rgb(31, 31, 31);
+      color: orange;
+      font-size: 38px;
+      @media (min-width: 992px) {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+      }
+    }
+
+    .name {
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+}

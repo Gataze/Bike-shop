@@ -1,29 +1,33 @@
-import '../../src/styles/mobile-nav-styles/mobile-nav.css'
-import { Link } from 'react-router-dom';
-
-
-
-
+import "./styles/mobile-nav-styles/mobile-nav.css";
+import { Link } from "react-router-dom";
 
 const MobileNav = () => {
-
-
-
-    return ( 
+  return (
     <div className="mobile">
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <ul>
-                        <li><Link to="/">HOME</Link></li>
-                        <li><Link to="/products">PRODUCTS</Link></li>
-                        <li><Link to="/login">SIGN IN</Link></li>
-                        <li><Link to="/cart">CART</Link></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div> );
-}
- 
+      <ul className="mobile__list">
+        <li className="mobile__listItem">
+          <Link className="mobile__link" to="/">
+            HOME
+          </Link>
+        </li>
+        <li className="mobile__listItem">
+          <Link className="mobile__link" to="/products">
+            PRODUCTS
+          </Link>
+        </li>
+        <li className="mobile__listItem">
+          <Link className="mobile__link" to="/login">
+            SIGN IN
+          </Link>
+        </li>
+        <li className="mobile__listItem">
+          <Link className="mobile__link" to="/cart">
+            CART
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
 export default MobileNav;

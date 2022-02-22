@@ -1,0 +1,137 @@
+.Hero {
+  background-color: #eeeeee;
+}
+
+.Hero__container {
+  position: relative;
+  margin: 0 20px;
+}
+
+.Hero__slide {
+  padding-top: 20px;
+  position: relative;
+}
+
+.Hero__sliderText {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 166, 0, 0.65);
+  font-size: 0.8em;
+}
+
+@media (min-width: 576px) {
+  .Hero__sliderText {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .Hero__sliderText {
+    font-size: 1.2em;
+    top: 50px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .Hero__sliderText {
+    font-size: 1.4em;
+    top: 60px;
+    right: 40px;
+    padding: 20px;
+  }
+}
+
+.Hero__sliderLink {
+  color: black;
+}
+
+.Hero__sliderLink:hover {
+  text-decoration: underline;
+}
+
+.Hero__carouselItem {
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 576px) {
+  .Hero__carouselItem {
+    height: 65vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .Hero__carouselItem {
+    height: 65vh;
+  }
+}
+
+.Hero__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .Hero__list {
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+}
+
+.Hero__listItem {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 150px;
+}
+
+.Hero__square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: orange;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .Hero__square {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+  }
+}
+/*# sourceMappingURL=main-slider-styles.css.map */

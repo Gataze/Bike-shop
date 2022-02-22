@@ -1,0 +1,70 @@
+.MainNav {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &__container {
+    margin: 0 20px;
+
+    @media (min-width: 1240px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+  &__bold {
+    font-weight: bold;
+  }
+  &__img {
+    height: 22px;
+  }
+
+  &__flexbox {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 60px;
+    gap: 20px;
+  }
+
+  &__list {
+    display: none;
+    flex-flow: row;
+    justify-content: center;
+    gap: 10%;
+    flex: 1;
+    gap: 20px;
+    font-size: 22px;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__link {
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__iconList {
+    display: none;
+    flex-flow: row;
+    gap: 20px;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__burger-btn {
+    margin-left: auto;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

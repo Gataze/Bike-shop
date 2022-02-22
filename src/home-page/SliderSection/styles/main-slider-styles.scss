@@ -1,0 +1,96 @@
+.Hero {
+  background-color: #eeeeee;
+
+  &__container {
+    position: relative;
+    margin: 0 20px;
+  }
+
+  &__slide {
+    padding-top: 20px;
+    position: relative;
+  }
+
+  &__sliderText {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 166, 0, 0.65);
+    font-size: 0.8em;
+    @media (min-width: 576px) {
+      font-size: 1em;
+    }
+    @media (min-width: 768px) {
+      font-size: 1.2em;
+      top: 50px;
+      right: 50px;
+    }
+    @media (min-width: 992px) {
+      font-size: 1.4em;
+      top: 60px;
+      right: 40px;
+      padding: 20px;
+    }
+  }
+
+  &__sliderLink {
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__carouselItem {
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    @media (min-width: 576px) {
+      height: 65vh;
+    }
+    @media (min-width: 992px) {
+      height: 65vh;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 14px;
+    @media (min-width: 768px) {
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+  }
+
+  &__listItem {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  &__square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: orange;
+    font-size: 24px;
+    @media (min-width: 768px) {
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 15px;
+    }
+  }
+}

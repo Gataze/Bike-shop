@@ -1,0 +1,21 @@
+.mobile {
+  display: flex;
+  background-color: lightgray;
+  height: 100vh;
+  justify-content: center;
+  padding-top: 45px;
+
+  &__list {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+
+  &__listItem {
+    text-align: center;
+  }
+
+  &__link {
+    color: black;
+  }
+}

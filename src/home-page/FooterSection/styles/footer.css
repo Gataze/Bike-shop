@@ -1,0 +1,97 @@
+footer {
+  background-color: #333333;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 9px;
+}
+
+footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+@media (min-width: 768px) {
+  footer .row {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .row {
+    font-size: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+footer .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-width: 50%;
+  padding: 20px 10px;
+}
+
+@media (min-width: 1200px) {
+  footer .row .col {
+    min-width: 25%;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    font-size: 16px;
+  }
+}
+
+footer .row .col span {
+  color: white;
+}
+
+footer .row form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+footer .row .plane {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 23px;
+  border: 1px solid orange;
+  text-align: center;
+}
+
+footer .row .plane .footer-subscribe {
+  border: 0;
+  background-color: transparent;
+  color: orange;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer .row input {
+  padding: 4px;
+  border: 1px solid orange;
+  outline: none;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  footer .row input {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

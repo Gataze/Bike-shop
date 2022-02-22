@@ -1,0 +1,33 @@
+.card .row-1 .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.card .row-1 .col p {
+  padding: 8px 16px;
+  border-radius: 12px 12px 0 0;
+  color: rgba(0, 0, 0, 0.808);
+  cursor: pointer;
+}
+
+.card .row-1 .col .specification-header {
+  background: none;
+  color: rgba(0, 0, 0, 0.808);
+}
+
+.card .row-2 {
+  width: calc(100%);
+  background: rgba(0, 0, 0, 0.808);
+  color: white;
+}
+
+.card .row-2 .col {
+  padding: 16px 16px 32px;
+}
+
+.card .row-2 .col p {
+  font-size: 14px;
+}
+/*# sourceMappingURL=product-description-styles.css.map */
