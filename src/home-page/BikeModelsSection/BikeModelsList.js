@@ -12,7 +12,10 @@ const BikeModelsList = (data) => {
           <img src={item.url} alt="img" />
           <div className="description">
             <h2>{item.name}</h2>
-            <span>{item.body}</span>
+            <span>
+              {item.body}
+              {item.body}
+            </span>
             <Link to={`/products/${product + item.id}`}>View more</Link>
           </div>
         </div>

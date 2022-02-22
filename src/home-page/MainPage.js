@@ -28,7 +28,7 @@ const MainPage = () => {
       style={activeStyle ? { top: "260px" } : { top: "0px" }}
     >
       <MainMenu activeStyle={activeStyle} handleShow={handleShow} />
-      <div className="container">
+      <div className="main-container">
         <Switch>
           <Route exact path="/">
             <MainSlider />

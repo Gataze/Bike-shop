@@ -53,13 +53,12 @@ const MainSlider = () => {
             <FaArrowLeft className="Hero__arrow" />
           </div>
         </div>
-
         <ul className="Hero__list">
           <li className="Hero__listItem">
             <div className="Hero__square">
               <FaUserShield />
             </div>
-            <h2>Safety first</h2>
+            <h2 className="Hero__listHeader">Safety first</h2>
             <p>SAFETY BY DEISGN</p>
           </li>
 
@@ -67,7 +66,7 @@ const MainSlider = () => {
             <div className="Hero__square">
               <FaPhoneAlt />
             </div>
-            <h2>Support 24/7h</h2>
+            <h2 className="Hero__listHeader">Support 24/7h</h2>
             <p>We support 24h a day</p>
           </li>
 
@@ -75,7 +74,7 @@ const MainSlider = () => {
             <div className="Hero__square">
               <FaToolbox />
             </div>
-            <h2>Expert service</h2>
+            <h2 className="Hero__listHeader">Expert service</h2>
             <p>Profesionals who know</p>
           </li>
 
@@ -83,7 +82,7 @@ const MainSlider = () => {
             <div className="Hero__square">
               <FaTools />
             </div>
-            <h2>Repair</h2>
+            <h2 className="Hero__listHeader">Repair</h2>
             <p>Expert Mechanics</p>
           </div>
         </ul>

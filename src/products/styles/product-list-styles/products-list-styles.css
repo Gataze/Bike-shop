@@ -1,10 +1,10 @@
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
   }
 }
@@ -50,7 +50,7 @@
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: white;
+  background-color: #d8d8d8;
 }
 
 .products .row-2 .product-item {
@@ -79,9 +79,9 @@
 }
 
 .products .row-2 .col-3 .photo img {
-  width: 100%;
+  width: 90%;
   min-width: 150px;
-  height: 33vw;
+  height: 25vw;
   margin-top: auto;
   -o-object-fit: fill;
      object-fit: fill;

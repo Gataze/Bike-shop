@@ -21,6 +21,14 @@ footer .row {
   }
 }
 
+@media (min-width: 992px) {
+  footer .row {
+    font-size: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
 footer .row .col {
   display: -webkit-box;
   display: -ms-flexbox;

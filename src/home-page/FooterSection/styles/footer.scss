@@ -12,6 +12,11 @@ footer {
     @media (min-width: 768px) {
       font-size: 15px;
     }
+    @media (min-width: 992px) {
+      font-size: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
     .col {
       display: flex;
