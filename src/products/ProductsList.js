@@ -21,32 +21,6 @@ const ProductsList = () => {
     setProduct(title);
   };
 
-  // console.log(bikes);
-
-  //Fetch bikes list from server
-  //Sort items when sortType is changed
-
-  //'Spread' creates completely new array -> list of objects with our data with bikes. Without spread it would be impossible
-  //to sort the objects in array as we can't sort original object.
-
-  //sortType.length < 6 - If length of sortType is longer than 6 sort the array.
-  //From 9 to 0 or from Z to A
-  // if (sortType.length < 6) {
-  //   const sorted = [...bikes].sort((a, b) =>
-  //     a[sortType.substring(0, 5)] > b[sortType.substring(0, 5)] ? 1 : -1
-  //   );
-  //   setData(sorted);
-  // } else {
-  //   const sorted = [...bikes].sort((a, b) =>
-  //     a[sortType.substring(0, 5).trim()] >
-  //     b[sortType.substring(0, 5).trim()]
-  //       ? -1
-  //       : 1
-  //   );
-  //   setData(sorted);
-  // }
-  // };
-
   return (
     <div className="products">
       <div className="row-1">

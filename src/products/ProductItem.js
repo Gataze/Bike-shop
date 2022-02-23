@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import sorterFunction from "../utilities/sorterFunction";
+import "./styles/product-item-styles/product-item.styles.css";
 
 const ProductItem = ({ bikes, product, sortDirection }) => {
-  let data = sorterFunction(bikes, sortDirection);
+  const sortedProducts = sorterFunction(bikes, sortDirection);
 
   return (
     <>
-      {data.map((bike) => (
+      {sortedProducts.map((bike) => (
         <div className="product-item" key={bike.id}>
           <div className="col-3">
             <h2>{bike.name}</h2>
@@ -14,32 +15,21 @@ const ProductItem = ({ bikes, product, sortDirection }) => {
               <img src={bike.url} alt={`${bike.name} bike`}></img>
             </div>
             <div className="description">
-              <div className="price">
-                <span>Price:</span>
-                <span>
-                  <b> {bike.price}$</b>
-                </span>
-              </div>
-              <div>
-                <span>
-                  Type of bicycle: <b>{bike.type}</b>
-                </span>
-              </div>
-              <div>
-                <span>
-                  Wheel size: <b>{bike.wheel}"</b>
-                </span>
-              </div>
-              <div>
-                <span>
-                  Frame size: <b>{bike.frame}"</b>
-                </span>
-              </div>
-              <div>
-                <span>
-                  Color: <b>{bike.color}</b>
-                </span>
-              </div>
+              <span className="price">
+                Price:<b> {bike.price}$</b>
+              </span>
+              <span>
+                Type of bicycle: <b>{bike.type}</b>
+              </span>
+              <span>
+                Wheel size: <b>{bike.wheel}"</b>
+              </span>
+              <span>
+                Frame size: <b>{bike.frame}"</b>
+              </span>
+              <span>
+                Color: <b>{bike.color}</b>
+              </span>
               <button>
                 <Link className="btn" to={`/products/${product + bike.id}`}>
                   SEE MORE
