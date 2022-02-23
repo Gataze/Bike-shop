@@ -6,8 +6,8 @@ const BurgerBtn = ({ activeStyle, handleShow }) => {
 
   const handleClick = () => {
     setActive(!active);
-    handleShow(activeStyle);
-  };
+    handleShow(activeStyle)
+  }
 
   return (
     <button
