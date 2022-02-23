@@ -1,5 +1,6 @@
 .main-page-wrapper {
   background-color: #d8d8d8;
+  position: relative;
 }
 
 .main-container {

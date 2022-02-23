@@ -1,9 +1,6 @@
 import MainMenu from "../menu/MainMenu";
 import MainSlider from "./SliderSection/MainSlider";
 import BikeModels from "./BikeModelsSection/BikeModels";
-import ReferencesSection from "./ReferencesSection/ReferencesSection";
-import OurPhoto from "./OurPhotoSection/OurPhoto";
-import Footer from "./FooterSection/Footer";
 import { useState } from "react";
 import React from "react";
 import { Switch, Route } from "react-router-dom";
@@ -56,10 +53,7 @@ const MainPage = () => {
             <ForgotPass />
           </Route>
         </Switch>
-        <ReferencesSection />
-        <OurPhoto />
       </div>
-      <Footer />
     </div>
   );
 };

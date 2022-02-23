@@ -11,7 +11,6 @@
 }
 
 .main-page-wrapper {
-  position: absolute;
   width: 100%;
   -webkit-transition: top 0.35s ease-in-out;
   transition: top 0.35s ease-in-out;

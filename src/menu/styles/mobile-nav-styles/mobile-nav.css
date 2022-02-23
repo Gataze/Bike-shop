@@ -2,12 +2,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
   background-color: lightgray;
-  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 45px;
+  padding: 45px 0;
+  height: 260px;
+  width: 100%;
 }
 
 .mobile__list {
