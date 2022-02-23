@@ -19,7 +19,9 @@
     color: white;
     font-size: 14px;
     font-weight: 200;
-    height: 120px;
     letter-spacing: 0.5px;
+    @media (min-width: 768px) {
+      height: 120px;
+    }
   }
 }
