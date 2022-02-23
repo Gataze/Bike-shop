@@ -1,33 +1,27 @@
-.card .row-1 .col {
-  display: flex;
-  margin-top: 50px;
-   
-  p {
-    padding: 8px 16px;
-    border-radius: 12px 12px 0 0;
-    
-    color: rgba(0, 0, 0, 0.808);
-    // background: rgba(0, 0, 0, 0.808);
-    // color: gold;
+.productDescription {
+  padding: 15px 0;
+  &__headers {
+    display: flex;
+  }
+
+  &__header {
+    padding: 10px;
+    color: black;
+    border-radius: 10px 10px 0 0;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
   }
 
-  .specification-header {
-    background: none;
-    color: rgba(0, 0, 0, 0.808);
-  }
-}
-
-.card .row-2 {
-  width: calc(100%);
-  background: rgba(0, 0, 0, 0.808);
-  color: white;
-    
-  .col {
-    padding: 16px 16px 32px;
-
-    p {
-      font-size: 14px;
+  &__text {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    @media (min-width: 768px) {
+      height: 120px;
     }
   }
 }

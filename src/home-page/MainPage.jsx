@@ -1,15 +1,12 @@
 import MainMenu from "../menu/MainMenu";
 import MainSlider from "./SliderSection/MainSlider";
 import BikeModels from "./BikeModelsSection/BikeModels";
-import ReferencesSection from "./ReferencesSection/ReferencesSection";
-import OurPhoto from "./OurPhotoSection/OurPhoto";
-import Footer from "./FooterSection/Footer";
 import { useState } from "react";
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Cart from "../cart/Cart";
 import ProductsList from "../products/ProductsList";
-import ProductDetails from "../products/ProductDetails";
+import ProductDetails from "../products/ProductCard";
 import About from "../about/About";
 import LoginPage from "../user-page/LoginPage";
 import SignupPage from "../user-page/SignupPage";
@@ -56,10 +53,7 @@ const MainPage = () => {
             <ForgotPass />
           </Route>
         </Switch>
-        <ReferencesSection />
-        <OurPhoto />
       </div>
-      <Footer />
     </div>
   );
 };

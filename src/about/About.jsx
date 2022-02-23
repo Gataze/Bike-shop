@@ -2,7 +2,8 @@ import "./styles/about.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <section className="about" name="about">
+      about
       <h1>About us</h1>
       <div className="container">
         <div className="row">
@@ -49,7 +50,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

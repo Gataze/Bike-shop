@@ -19,26 +19,6 @@ const OurPhoto = () => {
           {error && <div>{error}</div>}
           {photos && <OurPhotoList photos={photos} />}
         </div>
-        {/* <div className='container-carousel' style={carouselStyle? {display: 'block'} : {display: 'none'}} >
-                    <div className='fixed-carousel'>
-     
-                        {isPending && <div>Loading...</div>}
-                        {error && <div>{error}</div>}
-                        {photos && <Carousel infiniteLoop={true} showThumbs={false} autoFocus={true} onChange={(ind)=> console.log(ind)}>
-                            
-                            {photos.map((photo) => (
-                                <div className='carousel-container' key={photo.id}>
-                                    <img src={photo.url} alt='' />
-                                </div>
-                            ))}
-
-                            </Carousel>}
-                            <button onClick={handleShow}>
-                                    <FaTimesCircle />
-                            </button>                 
-                    </div>
-                      
-                </div> */}
 
         <div className="row-text">
           <p>
