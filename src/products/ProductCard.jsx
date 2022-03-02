@@ -3,46 +3,55 @@ import { useParams } from "react-router";
 import "./styles/product-details-styles/product-details-styles.css";
 import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import ProductDescription from "./ProductDescription";
 import ImgSlider from "./ImgSlider";
+import { useOrderDetails } from "../context/OrderDetails";
 
 const ProductCard = () => {
-  const [counter, setCounter] = useState(0);
 
+
+  
+  const [orderDetails, updateItemCount] = useOrderDetails();
+  const [counter, setCounter] = useState(0);
   const { typeId, id } = useParams();
   const { data: item } = useFetch(
     `https://my-json-server.typicode.com/gataze/mockjson/${typeId}/${id}`
   );
 
-  console.log(item);
 
-  const addToCart = (item) => {
-    const oldItems = JSON.parse(localStorage.getItem("item"));
 
-    //Item object that was fetched
-    const newItem = {
-      name: item.name,
-      body: item.body,
-      price: item.price,
-      url: item.url,
-      id: item.id,
-      counter: counter,
-    };
+  
 
-    const updatedItems = oldItems.filter(
-      (oldItem) => oldItem.id !== newItem.id
-    );
-    const allItems = [...updatedItems, newItem];
+  // const addToCart = (item) => {
+  //   const oldItems = JSON.parse(localStorage.getItem("item"));
 
-    const temp = JSON.stringify(allItems);
-    localStorage.setItem("item", temp);
-  };
+  //   //Item object that was fetched
+  //   const newItem = {
+  //     name: item.name,
+  //     body: item.body,
+  //     price: item.price,
+  //     url: item.url,
+  //     id: item.id,
+  //   };
+
+  //   const updatedItems = oldItems.filter(
+  //     (oldItem) => oldItem.id !== newItem.id
+  //   );
+  //   const allItems = [...updatedItems, newItem];
+
+  //   const temp = JSON.stringify(allItems);
+  //   localStorage.setItem("item", temp);
+  // };
+
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+
 
   return (
     <section className="card">
@@ -77,16 +86,21 @@ const ProductCard = () => {
             <label className="card__label">Count</label>
             <input
               type="number"
-              value={counter}
-              onChange={(e) => setCounter(e.target.value)}
+              value={orderDetails.count}
+              onChange={(e) => updateItemCount(e.target.value, item.price)}
               min="0"
               max="999"
               className="card__input"
             />
           </form>
 
+          <form className="card__form">
+            <label className="card__label">Total</label>
+            <span>{orderDetails.total}$</span>
+          </form>
+
           <Link
-            onClick={() => addToCart(item)}
+            // onClick={() => addToCart(item)}
             to="/cart"
             className="card__addBtn"
           >
