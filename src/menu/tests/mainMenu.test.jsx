@@ -41,9 +41,4 @@ test("Main manu tests", async () => {
   });
 });
 
-// test("Show about section after (menu) ABOUT button is clicked.", async () => {
-//   const aboutButton = screen.getByRole("link", { name: /about/i });
-//   userEvent.click(aboutButton);
 
-//   const aboutSection = await screen.findByRole("region", { name: /about/i });
-// });

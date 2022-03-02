@@ -1,5 +1,5 @@
 import "./styles/app/App.css";
-import MobileNav from "./menu/MobileNav";
+
 import MainPage from "./home-page/MainPage";
 import ReferencesSection from "./home-page/ReferencesSection/ReferencesSection";
 import Footer from "./home-page/FooterSection/Footer";
@@ -10,7 +10,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <MobileNav />
         <MainPage />
         <ReferencesSection />
         <OurPhoto />

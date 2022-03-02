@@ -1,98 +1,129 @@
-.login-page {
-  padding: 20px 0;
-  background-color: #333;
-  color: white;
-    
-    
 
-  h2,
-  p {
-    font-size: 0.9em;
-    text-align: center;
-    @media (min-width: 768px) {
-      font-size: 1em;
-    }
-    @media (min-width: 1200px) {
-      padding: 10px;
-      font-size: 1.3em;
-    }
-  }
+.loginPage {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
 
-  h2 {
-    font-size: 22px;
-  }
-
-  .row-2 {
+  &__form{
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 77%;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: white;
-    color: black;
-    @media (min-width: 768px) {
-      width: 60%;
-      padding-bottom: 30px;
-    }
-
-    h2 {
-      margin: 10px;
-      @media (min-width: 768px) {
-        padding: 6px;
-        font-size: 18px;
-      }
-    }
-
-    form {
-      display: flex;
-      flex-flow: column;
-      gap: 10px;
-      @media (min-width: 768px) {
-        gap: 20px;
-      }
-
-      input {
-        padding: 3px;
-        @media (min-width: 768px) {
-          padding: 6px;
-        }
-      }
-
-      div {
-        display: flex;
-        font-size: 10px;
-        gap: 5px;
-        @media (min-width: 768px) {
-          font-size: 12px;
-        }
-
-        input {
-          margin-right: 5px;
-                    
-        }
-
-        a {
-          color: blue;
-        }
-      }
-            
-    }
-
-    .sing-up-input {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-      font-size: 12px;
-      gap: 10px;
-
-      a {
-        color: blue;
-      }
-    }
-
+    gap: 10px;
+    padding: 30px 50px 30px 50px;
+    background-color: #777777;
   }
 
-    
+  &__input{
+    height: 30px;
+    width: 200px;
+  }
+
+  &__button{
+    background-color: transparent;
+    border: none;
+    color: blue;
+    cursor: pointer;
+  }
 }
+
+
+
+// .login-page {
+//   padding: 20px 0;
+//   background-color: #333;
+//   color: white;
+    
+    
+
+//   h2,
+//   p {
+//     font-size: 0.9em;
+//     text-align: center;
+//     @media (min-width: 768px) {
+//       font-size: 1em;
+//     }
+//     @media (min-width: 1200px) {
+//       padding: 10px;
+//       font-size: 1.3em;
+//     }
+//   }
+
+//   h2 {
+//     font-size: 22px;
+//   }
+
+//   .row-2 {
+//     display: flex;
+//     flex-flow: column;
+//     align-items: center;
+//     width: 77%;
+//     max-width: 600px;
+//     margin: 20px auto;
+//     padding: 10px;
+//     background-color: white;
+//     color: black;
+//     @media (min-width: 768px) {
+//       width: 60%;
+//       padding-bottom: 30px;
+//     }
+
+//     h2 {
+//       margin: 10px;
+//       @media (min-width: 768px) {
+//         padding: 6px;
+//         font-size: 18px;
+//       }
+//     }
+
+//     form {
+//       display: flex;
+//       flex-flow: column;
+//       gap: 10px;
+//       @media (min-width: 768px) {
+//         gap: 20px;
+//       }
+
+//       input {
+//         padding: 3px;
+//         @media (min-width: 768px) {
+//           padding: 6px;
+//         }
+//       }
+
+//       div {
+//         display: flex;
+//         font-size: 10px;
+//         gap: 5px;
+//         @media (min-width: 768px) {
+//           font-size: 12px;
+//         }
+
+//         input {
+//           margin-right: 5px;
+                    
+//         }
+
+//         a {
+//           color: blue;
+//         }
+//       }
+            
+//     }
+
+//     .sing-up-input {
+//       display: flex;
+//       justify-content: center;
+//       margin-top: 10px;
+//       font-size: 12px;
+//       gap: 10px;
+
+//       a {
+//         color: blue;
+//       }
+//     }
+
+//   }
+
+    
+// }

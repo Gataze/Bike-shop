@@ -8,9 +8,13 @@ import Cart from "../cart/Cart";
 import ProductsList from "../products/ProductsList";
 import ProductDetails from "../products/ProductCard";
 import About from "../about/About";
-import LoginPage from "../user-page/LoginPage";
-import SignupPage from "../user-page/SignupPage";
-import ForgotPass from "../user-page/ForgotPass";
+import UserForm from "../user-page/UserForm"
+
+
+// import LoginPage from "../user-page/LoginPage";
+// import SignupPage from "../user-page/SignupPage";
+// import ForgotPass from "../user-page/ForgotPass";
+
 import "./styles/main-page.css";
 
 const MainPage = () => {
@@ -43,15 +47,7 @@ const MainPage = () => {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/login">
-            <LoginPage />
-          </Route>
-          <Route path="/signup">
-            <SignupPage />
-          </Route>
-          <Route path="/remind">
-            <ForgotPass />
-          </Route>
+        
         </Switch>
       </div>
     </div>

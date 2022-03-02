@@ -1,10 +1,14 @@
 .hamburger {
+  display: bloxk;
   height: 35px;
   margin: auto 0 auto auto;
   padding: 0;
   border: 0;
   background-color: transparent;
   cursor: pointer;
+  @media(min-width: 768px){
+    display: none;
+  }
 
   &:focus {
     & > .hamburger__container {

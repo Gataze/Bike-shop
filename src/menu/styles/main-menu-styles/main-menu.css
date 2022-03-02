@@ -1,6 +1,13 @@
 .MainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .MainNav__container {
@@ -42,20 +49,31 @@
 }
 
 .MainNav__list {
-  display: none;
-  -webkit-box-orient: horizontal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: absolute;
+  left: 50%;
+  top: -260px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  height: 200px;
   gap: 10%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   gap: 20px;
+  text-align: center;
   font-size: 22px;
+  background-color: #d8d8d8;
 }
 
 @media (min-width: 768px) {
@@ -63,6 +81,18 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    position: static;
+    height: auto;
+    width: 200px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -77,19 +107,39 @@
 }
 
 .MainNav__iconList {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
   gap: 20px;
+  width: 100%;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: -70px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #d8d8d8;
 }
 
 @media (min-width: 768px) {
   .MainNav__iconList {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: static;
+    left: 0px;
+    height: auto;
+    background-color: transparent;
+    width: auto;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
