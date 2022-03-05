@@ -20,7 +20,7 @@ const ProductCard = () => {
     `https://my-json-server.typicode.com/gataze/mockjson/${typeId}/${id}`
   );
 
-
+ 
 
   
 
@@ -86,8 +86,8 @@ const ProductCard = () => {
             <label className="card__label">Count</label>
             <input
               type="number"
-              value={orderDetails.count}
-              onChange={(e) => updateItemCount(e.target.value, item.price)}
+              value={counter}
+              onChange={(e) => setCounter(e.target.value)}
               min="0"
               max="999"
               className="card__input"
@@ -96,11 +96,11 @@ const ProductCard = () => {
 
           <form className="card__form">
             <label className="card__label">Total</label>
-            <span>{orderDetails.total}$</span>
+            <span>{counter? counter * item.price : 0}$</span>
           </form>
 
           <Link
-            // onClick={() => addToCart(item)}
+            onClick={() => updateItemCount(counter, item, item.name)}
             to="/cart"
             className="card__addBtn"
           >
