@@ -7,49 +7,55 @@ import { useOrderDetails } from '../context/OrderDetails';
 const CartItem = ({bike}) => {
    
 
-    const [counter, updateItemCount] = useOrderDetails();
+    const [,updateItemCount] = useOrderDetails();
    
     console.log(bike)
 
     return ( 
-        <div className="col-2" key={bike.name}>
+        <div className="cartItem" key={bike.name}>
         
-            <div className='cart-delete'>
-                <FaTrash />
-            </div>
+        
 
-            <div className='cart-info'>
+            <img className="cartItem__itemImg" src={bike.url} alt={bike.name}></img>
 
-                <img src={bike.url} alt="img"></img>
+            <div className="cartItem__description">
 
-                <div className="cart-preview">
+                <div className="cartItem__preview">
                     <h2>{bike.name}</h2>
-                    <p>Bike</p>
-                    <p>Zapytaj o produkt</p>
+                    <div onClick={() => updateItemCount(0, bike, bike.name)} className='cartItem__delete'>
+                        Remove
+                    </div>
                 </div>
 
-            </div>
+                <div className="cartItem__price">
+                    <span className="cartItem__cartDets"><b>Price:</b> {bike.price}$</span>
+                </div>
 
-            <div className="cart-price">
-                <span>Price:</span>
-                <span>{`${bike.price}$`}</span>
-            </div>
+                <div className="cartItem__quantity">
+                    <span className="cartItem__cartDets"><b>Count:</b> {`${bike.newCount}`}</span>
+                </div>
 
-            <div className="cart-quantity">
-            <input
-                type="number"
-                value={bike.newCount}
-                onChange={(e) => updateItemCount(e.target.value, bike, bike.name)}
-                min="0"
-                max="999"
-                className="card__input"
-                />
-            </div>
-
-            <div className='cart-value'>
-                <span>Value: </span>
-                <span className='value'>{bike.price * bike.newCount}$</span>
-            </div>
+                <div className='cartItem__value'>
+                    <span className="cartItem__cartDets"><b>Value:</b> {bike.price * bike.newCount}$</span>
+                </div>
+            
+            
+                <p className="cartItem__detailsSpan"><b>Details</b></p>
+                <p className="cartItem__spcs1">
+                    Type: {bike.type}
+                </p>
+                <p className="cartItem__spcs2">
+                    Color: {bike.color}
+                </p>
+                <p className="cartItem__spcs3">
+                    Frame: {bike.frame}
+                </p>
+                <p className="cartItem__spcs4">
+                    Wheel: {bike.wheel}
+                </p>
+                </div>
+               
+            
         </div>     
      );
 };

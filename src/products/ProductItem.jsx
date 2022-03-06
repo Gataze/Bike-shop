@@ -32,7 +32,7 @@ const ProductItem = ({ bikes, product, sortDirection }) => {
               </span>
               <button>
                 <Link className="btn" to={`/products/${product + bike.id}`}>
-                  BUY
+                  MORE
                 </Link>
               </button>
             </div>

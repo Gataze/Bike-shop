@@ -13,45 +13,23 @@ const ProductCard = () => {
 
 
   
-  const [orderDetails, updateItemCount] = useOrderDetails();
+  const [, updateItemCount] = useOrderDetails();
   const [counter, setCounter] = useState(0);
   const { typeId, id } = useParams();
   const { data: item } = useFetch(
     `https://my-json-server.typicode.com/gataze/mockjson/${typeId}/${id}`
   );
 
- 
+
 
   
-
-  // const addToCart = (item) => {
-  //   const oldItems = JSON.parse(localStorage.getItem("item"));
-
-  //   //Item object that was fetched
-  //   const newItem = {
-  //     name: item.name,
-  //     body: item.body,
-  //     price: item.price,
-  //     url: item.url,
-  //     id: item.id,
-  //   };
-
-  //   const updatedItems = oldItems.filter(
-  //     (oldItem) => oldItem.id !== newItem.id
-  //   );
-  //   const allItems = [...updatedItems, newItem];
-
-  //   const temp = JSON.stringify(allItems);
-  //   localStorage.setItem("item", temp);
-  // };
-
-
+  let disabledLink = counter === "0";
+  console.log(disabledLink)
+  console.log(counter)
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-
 
   return (
     <section className="card">
@@ -87,7 +65,7 @@ const ProductCard = () => {
             <input
               type="number"
               value={counter}
-              onChange={(e) => setCounter(e.target.value)}
+              onChange={(e) => setCounter(Number(e.target.value))}
               min="0"
               max="999"
               className="card__input"
@@ -98,14 +76,13 @@ const ProductCard = () => {
             <label className="card__label">Total</label>
             <span>{counter? counter * item.price : 0}$</span>
           </form>
+          
 
-          <Link
-            onClick={() => updateItemCount(counter, item, item.name)}
-            to="/cart"
-            className="card__addBtn"
-          >
-            ADD TO CART
-          </Link>
+          
+          <Link onClick={() => updateItemCount(counter, item, item.name)} to="/cart" className="card__addBtn" style={counter? null : {pointerEvents: "none", opacity: "0.5"}}>ADD TO CART</Link>
+        
+          
+                 
         </div>
       </div>
 
@@ -115,3 +92,28 @@ const ProductCard = () => {
 };
 
 export default ProductCard;
+
+
+
+  
+
+  // const addToCart = (item) => {
+  //   const oldItems = JSON.parse(localStorage.getItem("item"));
+
+  //   //Item object that was fetched
+  //   const newItem = {
+  //     name: item.name,
+  //     body: item.body,
+  //     price: item.price,
+  //     url: item.url,
+  //     id: item.id,
+  //   };
+
+  //   const updatedItems = oldItems.filter(
+  //     (oldItem) => oldItem.id !== newItem.id
+  //   );
+  //   const allItems = [...updatedItems, newItem];
+
+  //   const temp = JSON.stringify(allItems);
+  //   localStorage.setItem("item", temp);
+  // };

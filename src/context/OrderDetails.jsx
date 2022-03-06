@@ -57,7 +57,7 @@ export function OrderDetailsProvider(props){
 
             console.log(newCount)
 
-            if(newCount === "0"){
+            if(newCount === 0){
                 newItems.delete(itemName)
             }else{
                 newItems.set(itemName, {...item, newCount})

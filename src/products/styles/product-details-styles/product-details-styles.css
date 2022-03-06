@@ -105,4 +105,8 @@
   text-align: center;
   color: black;
 }
+
+.card__addBtn--disabled {
+  pointer-events: none;
+}
 /*# sourceMappingURL=product-details-styles.css.map */

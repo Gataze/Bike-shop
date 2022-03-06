@@ -2,15 +2,8 @@ import CartItem from './CartItem'
 
 const CartList = ({counter}) => {
 
-
-
-    const itemsArray = Array.from(counter.items.entries());
-
-    const itemsArray2 = Array.from(counter.items.values());
-
-    console.log(itemsArray2)
-
-    const itemsList = itemsArray2.map((bike) => (
+    const itemsArray = Array.from(counter.items.values());
+    const itemsList = itemsArray.map((bike) => (
         
         <li key={bike.name}>
           <CartItem bike={bike} />
@@ -18,12 +11,11 @@ const CartList = ({counter}) => {
     ));
 
     return ( 
-        <div className="row">
-            <ul>
+        <div className="cartListWrapper">
+            <ul className="cartListWrapper__list">
                 {itemsList}
             </ul>
         </div>
-  
      );
 };
  

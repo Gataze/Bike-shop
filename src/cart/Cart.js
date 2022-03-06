@@ -1,7 +1,5 @@
 import "./styles/cart-styles.css";
-import useFetch from "../hooks/useFetch";
 import CartList from "./CartList";
-import { useState, useEffect } from "react";
 import { useOrderDetails } from "../context/OrderDetails"
 
 const Cart = () => {
@@ -10,42 +8,20 @@ const Cart = () => {
 
   console.log(total)
 
-  // const {
-  //   data: bikes,
-  //   error,
-  //   isPending,
-  // } = useFetch(
-  //   "https://my-json-server.typicode.com/gataze/mockjson/bikesPreview"
-  // );
+
 
 
   return (
-    <div>
-      <section className="cart-ribbon">
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <h2>CART</h2>
-            </div>
-          </div>
-        </div>
+    <div className="cart">
+      <section className="cart__ribbon">
+        <h2>CART</h2>
       </section>
-      <section className="main-cart">
-        <div className="container">
-          <CartList counter={counter}/>
-          <span>Total: {total.grandTotal}$</span>
-
-         
-
-
-         
-
-          <div className="row clear-proceed">
-            
-              Clear shopping cart
-            
-            <div className="col btn">Proceed to checkout</div>
-          </div>
+      <section className="cart__mainCart">
+        <CartList counter={counter}/>
+        <h2 className="cart__total"><b>Total value:</b> {total.grandTotal}$</h2>
+        <div className="cart__buttons">
+          
+          <button className="cart__button">Proceed to checkout</button>
         </div>
       </section>
     </div>
