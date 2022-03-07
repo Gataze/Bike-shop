@@ -2,15 +2,30 @@ import Logo from "./../images/logo/logo.png";
 import "./styles/main-menu-styles/main-menu.css";
 import BurgerBtn from "./BurgerBtn";
 import { Link } from "react-router-dom";
-import React from "react";
+import { useState } from "react"
 
 import UserMenu from "./userMenu";
 
-const MainMenu = ({ activeStyle, handleShow }) => {
+const MainMenu = () => {
   const navigation = ["home", "products", "about"];
+  const [active, setActive] = useState(false)
+
+  const activeStyle = {
+    position: "absolute",
+    top: "260px",
+    zIndex: "200"
+  }
+
+  function handleShow(){
+    setActive(prevState => 
+      !prevState
+    )
+  }
+
+  console.log(active)
 
   return (
-    <nav className="MainNav">
+    <nav style={active? activeStyle : null} className="MainNav">
       <div className="MainNav__logo">
         <img className="MainNav__img" src={Logo} alt="#" />
         <span className="MainNav__name">

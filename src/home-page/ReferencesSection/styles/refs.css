@@ -1,7 +1,10 @@
 .refs {
-  padding: 20px;
   background-color: #eeeeee;
   text-align: center;
+}
+
+.refs .container {
+  padding: 20px;
 }
 
 .refs h2 {

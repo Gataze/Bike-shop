@@ -16,17 +16,12 @@ import About from "../about/About";
 import "./styles/main-page.css";
 
 const MainPage = () => {
-  const [activeStyle, setActiveStyle] = useState(false);
-  const handleShow = (activeStyle) => {
-    setActiveStyle(!activeStyle);
-  };
+  
 
   return (
     <div
-      className="main-page-wrapper"
-      style={activeStyle ? { top: "260px" } : { top: "0px" }}
-    >
-      <MainMenu activeStyle={activeStyle} handleShow={handleShow} />
+      className="main-page-wrapper">
+      <MainMenu />
       <div className="main-container">
         <Switch>
           <Route exact path="/">
@@ -45,7 +40,6 @@ const MainPage = () => {
           <Route path="/about">
             <About />
           </Route>
-        
         </Switch>
       </div>
     </div>
