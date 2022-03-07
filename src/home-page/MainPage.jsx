@@ -1,7 +1,7 @@
 import MainMenu from "../menu/MainMenu";
 import MainSlider from "./SliderSection/MainSlider";
 import BikeModels from "./BikeModelsSection/BikeModels";
-import { useState } from "react";
+
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Cart from "../cart/Cart";

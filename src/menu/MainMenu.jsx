@@ -10,22 +10,18 @@ const MainMenu = () => {
   const navigation = ["home", "products", "about"];
   const [active, setActive] = useState(false)
 
-  const activeStyle = {
-    position: "absolute",
-    top: "260px",
-    zIndex: "200"
-  }
+  
 
-  function handleShow(){
-    setActive(prevState => 
-      !prevState
-    )
-  }
+  // function handleShow(){
+  //   setActive(prevState => 
+  //     !prevState
+  //   )
+  // }
 
-  console.log(active)
+  // console.log(active)
 
   return (
-    <nav style={active? activeStyle : null} className="MainNav">
+    <nav  className="MainNav">
       <div className="MainNav__logo">
         <img className="MainNav__img" src={Logo} alt="#" />
         <span className="MainNav__name">
@@ -43,9 +39,10 @@ const MainMenu = () => {
             </Link>
           </li>
         ))}
+        <UserMenu />
       </ul>
-      <UserMenu />
-      <BurgerBtn activeStyle={activeStyle} handleShow={handleShow} />
+      
+      <BurgerBtn />
     </nav>
   );
 };
