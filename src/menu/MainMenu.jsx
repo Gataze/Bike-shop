@@ -10,24 +10,21 @@ const MainMenu = () => {
   const navigation = ["home", "products", "about"];
   const [active, setActive] = useState(false)
 
-  
+  const activeStyles = {
+    top: "0px",
+    maxHeight: "340px",
+  }
 
-  // function handleShow(){
-  //   setActive(prevState => 
-  //     !prevState
-  //   )
-  // }
+  function handleShow(){
+    setActive(prevState => 
+      !prevState
+    )
+  }
 
-  // console.log(active)
+  console.log(active)
 
   return (
-    <nav  className="MainNav">
-      <div className="MainNav__logo">
-        <img className="MainNav__img" src={Logo} alt="#" />
-        <span className="MainNav__name">
-          Lorem<span className="MainNav__bold">Bikes</span>
-        </span>
-      </div>
+    <nav style={active? activeStyles : null} className="MainNav">
       <ul className="MainNav__list">
         {navigation.map((item) => (
           <li key={item} className="MainNav__listItem">
@@ -39,10 +36,19 @@ const MainMenu = () => {
             </Link>
           </li>
         ))}
-        <UserMenu />
+        
       </ul>
+      <BurgerBtn handleShow={handleShow}/>
+      <div className="MainNav__logo">
+        <img className="MainNav__img" src={Logo} alt="#" />
+        <span className="MainNav__name">
+          Lorem<span className="MainNav__bold">Bikes</span>
+        </span>
+      </div>
       
-      <BurgerBtn />
+      <UserMenu />
+      
+      
     </nav>
   );
 };

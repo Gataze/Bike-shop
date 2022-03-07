@@ -1,24 +1,36 @@
 .MainNav {
   display: flex;
+  position: relative;
+  top: -260px;
+  max-height: 65px;
   max-width: 1400px;
   margin: 0 auto;
   padding: 15px;
-  justify-content: space-between;
-  position: relative;
+  align-items: center;
+  justify-content: center;
   background-color: #d8d8d8;
   flex-wrap: wrap;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.5s ease-in-out;
+  @media (min-width: 768px){
+    position: static;
+    height: auto;
+    flex-wrap: nowrap;
+  }
 
   &__container {
     margin: 0 20px;
-
     @media (min-width: 1240px) {
       margin: 0 auto;
     }
   }
 
   &__logo {
-    font-size: 22px;
+    font-size: 28px;
     text-transform: uppercase;
+    margin-left: 20px;
+    order: 0;
   }
   &__bold {
     font-weight: bold;
@@ -38,31 +50,32 @@
   &__list {
     display: flex;
     flex-flow: column;
-    height: 300px;
+    z-index: 999;
     align-items: center;
-    justify-content: center;
-    order: 3;
+    justify-content: center; 
     gap: 10%;
     flex: 1;
     gap: 20px;
     text-align: center;
-    font-size: 22px;
+    font-size: 28px;
     min-width: 100%;
     background-color: #d8d8d8;
+    height: 260px;
+    transition: left 0.5s ease-in-out;
     @media (min-width: 768px) {
       display: flex;
       flex-flow: row;
       position: static;
       height: auto;
       width: 200px;
-      flex: 0;
-      transform: translateX(0%);
+      min-width: 0px;
+      order: 1;
     }
   }
 
   &__link {
     color: black;
-    font-size: 18px;
+    font-size: 28px;
     text-transform: uppercase;
     &:hover {
       text-decoration: underline;
@@ -72,16 +85,10 @@
   &__iconList {
     display: flex;
     flex-flow: row;
-    
-      
-    
-    
+    margin-left: auto;
+    gap: 25px;
+    order: 3;
   }
 
-  &__burger-btn {
-    margin-left: auto;
-    @media (min-width: 768px) {
-      display: none;
-    }
-  }
+  
 }

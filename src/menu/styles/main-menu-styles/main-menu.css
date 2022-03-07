@@ -2,16 +2,34 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  top: -260px;
+  max-height: 65px;
   max-width: 1400px;
   margin: 0 auto;
   padding: 15px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #d8d8d8;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .MainNav {
+    position: static;
+    height: auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .MainNav__container {
@@ -25,8 +43,12 @@
 }
 
 .MainNav__logo {
-  font-size: 22px;
+  font-size: 28px;
   text-transform: uppercase;
+  margin-left: 20px;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
 .MainNav__bold {
@@ -60,25 +82,25 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  height: 300px;
+  z-index: 999;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
   gap: 10%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   gap: 20px;
   text-align: center;
-  font-size: 22px;
+  font-size: 28px;
   min-width: 100%;
   background-color: #d8d8d8;
+  height: 260px;
+  -webkit-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -93,17 +115,16 @@
     position: static;
     height: auto;
     width: 200px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    min-width: 0px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
 .MainNav__link {
   color: black;
-  font-size: 18px;
+  font-size: 28px;
   text-transform: uppercase;
 }
 
@@ -119,15 +140,10 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-}
-
-.MainNav__burger-btn {
   margin-left: auto;
-}
-
-@media (min-width: 768px) {
-  .MainNav__burger-btn {
-    display: none;
-  }
+  gap: 25px;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 /*# sourceMappingURL=main-menu.css.map */

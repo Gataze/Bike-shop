@@ -12,14 +12,6 @@
 
 .main-page-wrapper {
   width: 100%;
-  -webkit-transition: top 0.35s ease-in-out;
-  transition: top 0.35s ease-in-out;
-}
-
-@media (min-width: 768px) {
-  .main-page-wrapper {
-    top: 0 !important;
-  }
 }
 
 @media (min-width: 1200px) {

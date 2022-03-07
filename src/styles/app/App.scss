@@ -11,10 +11,6 @@
 
 .main-page-wrapper {
   width: 100%;
-  transition: top 0.35s ease-in-out;
-  @media (min-width: 768px) {
-    top: 0 !important;
-  }
 }
 
 .container {
