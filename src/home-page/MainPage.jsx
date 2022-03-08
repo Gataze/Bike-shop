@@ -1,7 +1,7 @@
 import MainMenu from "../menu/MainMenu";
 import MainSlider from "./SliderSection/MainSlider";
 import BikeModels from "./BikeModelsSection/BikeModels";
-
+import UserForm from "../user-page/UserForm";
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Cart from "../cart/Cart";
@@ -17,7 +17,6 @@ import "./styles/main-page.css";
 
 const MainPage = () => {
   
-
   return (
     <div
       className="main-page-wrapper">
@@ -39,6 +38,9 @@ const MainPage = () => {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route>
+            <UserForm path="/login"/>
           </Route>
         </Switch>
       </div>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import "./styles/login.css";
 import "./styles/forgot.css";
 
@@ -29,7 +29,7 @@ const ForgotPass = ({setUserForm}) => {
 
             <div className="sing-up-input">
               <span>Need an account?</span>
-              <button onChange={()=> setUserForm("signup")}>Sign Up</button>
+              <button onClick={() => setUserForm("signup")}>Sign Up</button>
             </div>
           </div>
         </div>
