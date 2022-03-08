@@ -1,57 +1,28 @@
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import "./styles/our-photo.css";
-import { Carousel } from "react-responsive-carousel";
-import { FaTimesCircle } from "react-icons/fa";
-import { useState } from "react";
 
 const OurPhotoList = ({ photos }) => {
-  const [activeIndex, setActiveIndex] = useState("");
-
+  
   return (
-    <>
+    <div className="ourPhotos" >
       {photos.map((photo, index) => (
-        <div className="photo-grid-item" key={photo.id}>
-          <div className="overlay">
-            <div className="overlay-text">
-              <h2>LOREMBIKES</h2>
-              <p>Not just another bike shop</p>
-              <div>
+        <div className="ourPhotos__container">
+          <div className="ourPhotos__overlay" key={photo.id}>
+              <h2 className="ourPhotos__overlayHeader">LOREMBIKES</h2>
+              <p className="ourPhotos__overlayText">Not just another bike shop</p>
+              <div className="ourPhotos__overlaySocial">
                 <FaFacebook />
                 <FaTwitter />
                 <FaInstagram />
               </div>
-              <span
-                className="carousel-entry"
-                onClick={() => setActiveIndex(index)}
-              >
-                See photos
+              <span className="ourPhotos__carouselEntry">
+                Show photos
               </span>
-            </div>
           </div>
-          <img src={photo.url} alt="#" />
-          <ul
-            className="container-carousel"
-            data-id={index}
-            style={
-              index === activeIndex ? { display: "flex" } : { display: "none" }
-            }
-          >
-            <div className="fixed-carousel">
-              <Carousel infiniteLoop={true} showThumbs={false} autoFocus={true}>
-                {photo.set.map((slide) => (
-                  <div className="carousel-container" key={slide.id}>
-                    <img src={slide.url} alt="" />
-                  </div>
-                ))}
-              </Carousel>
-              <button onClick={() => setActiveIndex("")}>
-                <FaTimesCircle />
-              </button>
-            </div>
-          </ul>
+          <img className="ourPhotos__image"src={photo.url} alt={photo.name} />
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

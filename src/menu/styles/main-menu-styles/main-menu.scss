@@ -1,22 +1,22 @@
 .MainNav {
   display: flex;
   position: relative;
+  z-index: 999;
   top: -260px;
-  max-height: 65px;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 15px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: #d8d8d8;
-  flex-wrap: wrap;
   width: 100%;
-  z-index: 999;
+  max-width: 1400px;
+  max-height: 65px;
+  margin: 0 auto;
+  padding: 15px;
   transition: all 0.5s ease-in-out;
-  @media (min-width: 768px){
+  background-color: #d8d8d8;
+  @media (min-width: 768px) {
     position: static;
-    height: auto;
     flex-wrap: nowrap;
+    height: auto;
   }
 
   &__container {
@@ -27,14 +27,16 @@
   }
 
   &__logo {
+    order: 0;
+    margin-left: 20px;
     font-size: 28px;
     text-transform: uppercase;
-    margin-left: 20px;
-    order: 0;
   }
+
   &__bold {
     font-weight: bold;
   }
+
   &__img {
     height: 22px;
   }
@@ -49,27 +51,27 @@
 
   &__list {
     display: flex;
-    flex-flow: column;
     z-index: 999;
-    align-items: center;
-    justify-content: center; 
-    gap: 10%;
     flex: 1;
-    gap: 20px;
-    text-align: center;
-    font-size: 28px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
     min-width: 100%;
-    background-color: #d8d8d8;
     height: 260px;
     transition: left 0.5s ease-in-out;
+    background-color: #d8d8d8;
+    font-size: 28px;
+    text-align: center; 
+    gap: 10%;
+    gap: 20px;
     @media (min-width: 768px) {
       display: flex;
-      flex-flow: row;
       position: static;
-      height: auto;
+      flex-flow: row;
+      order: 1;
       width: 200px;
       min-width: 0px;
-      order: 1;
+      height: auto;
     }
   }
 
@@ -77,6 +79,7 @@
     color: black;
     font-size: 28px;
     text-transform: uppercase;
+
     &:hover {
       text-decoration: underline;
     }
@@ -85,9 +88,9 @@
   &__iconList {
     display: flex;
     flex-flow: row;
+    order: 3;
     margin-left: auto;
     gap: 25px;
-    order: 3;
   }
 
   

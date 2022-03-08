@@ -1,21 +1,22 @@
 .productDescription {
   padding: 15px 0;
+
   &__headers {
     display: flex;
   }
 
   &__header {
     padding: 10px;
-    color: black;
     border-radius: 10px 10px 0 0;
+    color: black;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
   }
 
   &__text {
-    background-color: #333;
     padding: 10px;
+    background-color: #333;
     color: white;
     font-size: 14px;
     font-weight: 200;

@@ -11,25 +11,23 @@ const OurPhoto = () => {
   } = useFetch("https://my-json-server.typicode.com/gataze/mockjson/OurPhotos");
 
   return (
-    <div className="our-photos">
-      <div className="container">
-        <div className="row-header">OUR PHOTOS</div>
-        <div className="row-photos">
+    <section className="photos">
+        <h2 className="photos__header">OUR PHOTOS</h2>
+        <div className="photos__photoList">
           {isPending && <div>Loading...</div>}
           {error && <div>{error}</div>}
           {photos && <OurPhotoList photos={photos} />}
         </div>
-
-        <div className="row-text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Inventore porro quasi
-            dignissimos recusandae deserunt cupiditate ab, dolore deleniti.
-            Corrupti laborum eum error? Excepturi eveniet corporis rerum
-            assumenda. Itaque, iure asperiores!
-          </p>
-        </div>
-      </div>
-    </div>
+        <p className="photos__text">
+          Lorem ipsum dolor sit amet consectetur. Inventore porro quasi
+          dignissimos recusandae deserunt cupiditate ab, dolore deleniti.
+          Corrupti laborum eum error? Excepturi eveniet corporis rerum
+          assumenda. Itaque, iure asperiores! Lorem ipsum dolor sit amet consectetur. Inventore porro quasi
+          dignissimos recusandae deserunt cupiditate ab, dolore deleniti.
+          Corrupti laborum eum error? Excepturi eveniet corporis rerum
+          assumenda. Itaque, iure asperiores!
+        </p>
+      </section>
   );
 };
 

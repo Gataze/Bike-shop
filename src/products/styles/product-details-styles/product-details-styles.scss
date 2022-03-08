@@ -1,10 +1,10 @@
 .card {
   &__header {
-    text-align: center;
+    margin-bottom: 30px;
     background-color: #333;
     color: white;
     line-height: 80px;
-    margin-bottom: 30px;
+    text-align: center;
   }
 
   &__container {
@@ -29,8 +29,8 @@
 
   &__images-min {
     width: 100px;
-    margin-right: 5px;
     margin-top: 2px;
+    margin-right: 5px;
   }
 
   &__descriptionContainer {
@@ -68,9 +68,9 @@
 
   &__input {
     width: 50px;
-    text-align: center;
     border: 2px solid black;
     border-radius: 4px;
+    text-align: center;
 
     &::-webkit-inner-spin-button {
       opacity: 1;
@@ -79,15 +79,15 @@
 
   &__addBtn {
     display: block;
-    background-color: gold;
     width: 100px;
     margin-top: 21px;
     padding: 3px;
     border: 2px solid black;
-    text-align: center;
+    background-color: gold;
     color: black;
+    text-align: center;
 
-    &--disabled{
+    &--disabled {
       pointer-events: none;
     }
     

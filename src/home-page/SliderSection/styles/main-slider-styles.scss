@@ -7,8 +7,8 @@
   }
 
   &__slide {
-    padding-top: 20px;
     position: relative;
+    padding-top: 20px;
   }
 
   &__sliderText {
@@ -23,15 +23,15 @@
       font-size: 1em;
     }
     @media (min-width: 768px) {
-      font-size: 1.2em;
       top: 50px;
       right: 50px;
+      font-size: 1.2em;
     }
     @media (min-width: 992px) {
-      font-size: 1.4em;
       top: 60px;
       right: 40px;
       padding: 20px;
+      font-size: 1.4em;
     }
   }
 
@@ -45,8 +45,8 @@
 
   &__carouselItem {
     height: 25vh;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     @media (min-width: 576px) {
       height: 65vh;
     }
@@ -58,12 +58,12 @@
   &__list {
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-around;
     padding: 25px 0;
-    text-align: center;
     font-size: 14px;
+    text-align: center;
+    gap: 20px;
     @media (min-width: 768px) {
       margin: 0 auto;
       padding: 20px 0;
@@ -77,8 +77,8 @@
 
   &__square {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 35px;
     height: 35px;
     margin: 0 auto;
