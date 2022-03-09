@@ -1,6 +1,6 @@
 .loginPage {
-  background-color: #eeeeee;
   padding: 20px;
+  background-color: #eeeeee;
 }
 
 .loginPage__container {
@@ -11,10 +11,10 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  background-color: #d8d8d8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #d8d8d8;
 }
 
 .loginPage__form {
@@ -33,16 +33,16 @@
 }
 
 .loginPage__header {
+  width: 100%;
   margin: 30px 0 10px;
   padding: 10px 0;
   background-color: gold;
-  width: 100%;
   text-align: center;
 }
 
 .loginPage__formHeader {
+  margin: 0 0 20px;
   font-size: 18px;
-  margin: 0 0 20px 0;
 }
 
 .loginPage__input {
@@ -60,20 +60,6 @@
   }
 }
 
-.loginPage__submit {
-  display: block;
-  margin: 0 auto;
-  border: 2px solid black;
-  margin-top: 25px;
-  width: 90px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.loginPage__submit:hover {
-  background-color: gold;
-}
-
 .loginPage__loginEntry {
   margin-top: 20px;
 }
@@ -81,8 +67,8 @@
 .loginPage__submit {
   width: 60px;
   height: 30px;
-  border: 2px solid black;
   margin-top: 10px;
+  border: 2px solid black;
   cursor: pointer;
 }
 
@@ -103,11 +89,11 @@
 }
 
 .loginPage__loginEntryButton {
-  background-color: transparent;
-  border: none;
-  color: blue;
   margin-left: 5px;
-  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: blue;
   font-size: 15px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=login.css.map */
