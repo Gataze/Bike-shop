@@ -8,6 +8,14 @@
   @media (min-width: 768px) {
     display: none;
   }
+  
+  .hamburger__container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 35px;
+    height: 30px;
+  }
 
   &:focus {
     & > .hamburger__container {
@@ -16,13 +24,7 @@
   }
 }
 
-.hamburger__container {
-  display: flex;
-  position: relative;
-  align-items: center;
-  width: 35px;
-  height: 30px;
-}
+
 
 .hamburger__bars {
   position: absolute;

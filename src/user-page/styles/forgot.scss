@@ -1,26 +1,85 @@
-.login-page {
-  .row-2 {
-    p {
-      margin-bottom: 10px;
-      text-align: center;
+.forgotPage{
+  
+  background-color: #eeeeee;
+  padding: 40px 20px;
+
+  &__container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #d8d8d8;
+    padding: 0px;
+    height: 330px;
+    @media(min-width: 576px){
+      font-size: 1.2em;
+      height: 380px;
     }
+  }
 
-    form {
-      grid-gap: 0;
+  &__header{
+    margin: 30px 0 10px;
+    padding: 10px 0;
+    background-color: gold;
+    width: 100%;
+    text-align: center;
+  }
 
-      label {
-        font-size: 12px;
-      }
-
-      input {
-        margin-bottom: 20px;
-      }
-
-      button {
-        width: 50%;
-
-        margin: 0 auto;
-      }
+  &__instruction{
+    margin: 10px;
+    text-align: center;
+    @media(min-width: 576px){
+      margin: 20px;
     }
+  }
+
+  &__form{
+    display: flex;
+    gap: 5px;
+    margin: 20px 0;
+    align-items: center;
+  }
+
+  &__input{
+    width: 160px;
+    height: 40px;
+    padding: 5px;
+    font-size: 14px;
+    @media(min-width: 576px){
+      width: 220px;
+      height: 40px;
+      font-size: 18px;
+    }
+  }
+
+  &__submit{
+    width: 60px;
+    height: 40px;
+    border: 2px solid black;
+    font-size: 14px;
+    &:hover{
+      background-color: gold;
+  }
+    @media(min-width: 576px){
+      width: 70px;
+      height: 40px;
+      font-size: 18px;
+    }
+  }
+
+  &__signupEntry{
+    margin: 10px 0 0;
+  }
+
+  &__signupEntryText{
+    font-size: 15px;
+  }
+
+  &__signupEntryButton{
+    background-color: transparent;
+    border: none;
+    color: blue;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 15px;
   }
 }

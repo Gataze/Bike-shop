@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router";
 import LoginPage from "./LoginPage";
-import ForgotPass from "./ForgotPass";
+import ForgotPage from "./ForgotPage";
 import SignupPage from "./SignupPage"
 
 export default function UserForm(){
@@ -10,7 +10,6 @@ export default function UserForm(){
     
 
     const [userForm, setUserForm] = useState(id)
-    console.log(userForm)
 
     let Component = LoginPage;
 
@@ -20,7 +19,7 @@ export default function UserForm(){
         break;
 
         case "remind":
-        Component = ForgotPass;
+        Component = ForgotPage;
         break;
 
         case "signup":
@@ -32,9 +31,6 @@ export default function UserForm(){
     default:
         
     }
-
-    
-
 
     return (
         <section>

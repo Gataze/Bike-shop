@@ -23,9 +23,9 @@ footer .row {
 
 @media (min-width: 992px) {
   footer .row {
-    font-size: 15px;
     max-width: 1000px;
     margin: 0 auto;
+    font-size: 15px;
   }
 }
 

@@ -1,22 +1,109 @@
-.login-page .row-2 p {
-  margin-bottom: 10px;
+.forgotPage {
+  background-color: #eeeeee;
+  padding: 40px 20px;
+}
+
+.forgotPage__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d8d8d8;
+  padding: 0px;
+  height: 330px;
+}
+
+@media (min-width: 576px) {
+  .forgotPage__container {
+    font-size: 1.2em;
+    height: 380px;
+  }
+}
+
+.forgotPage__header {
+  margin: 30px 0 10px;
+  padding: 10px 0;
+  background-color: gold;
+  width: 100%;
   text-align: center;
 }
 
-.login-page .row-2 form {
-  grid-gap: 0;
+.forgotPage__instruction {
+  margin: 10px;
+  text-align: center;
 }
 
-.login-page .row-2 form label {
-  font-size: 12px;
+@media (min-width: 576px) {
+  .forgotPage__instruction {
+    margin: 20px;
+  }
 }
 
-.login-page .row-2 form input {
-  margin-bottom: 20px;
+.forgotPage__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  margin: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.login-page .row-2 form button {
-  width: 50%;
-  margin: 0 auto;
+.forgotPage__input {
+  width: 160px;
+  height: 40px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+@media (min-width: 576px) {
+  .forgotPage__input {
+    width: 220px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+.forgotPage__submit {
+  width: 60px;
+  height: 40px;
+  border: 2px solid black;
+  font-size: 14px;
+}
+
+.forgotPage__submit:hover {
+  background-color: gold;
+}
+
+@media (min-width: 576px) {
+  .forgotPage__submit {
+    width: 70px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+.forgotPage__signupEntry {
+  margin: 10px 0 0;
+}
+
+.forgotPage__signupEntryText {
+  font-size: 15px;
+}
+
+.forgotPage__signupEntryButton {
+  background-color: transparent;
+  border: none;
+  color: blue;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 15px;
 }
 /*# sourceMappingURL=forgot.css.map */

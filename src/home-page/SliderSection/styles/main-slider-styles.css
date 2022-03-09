@@ -8,8 +8,8 @@
 }
 
 .Hero__slide {
-  padding-top: 20px;
   position: relative;
+  padding-top: 20px;
 }
 
 .Hero__sliderText {
@@ -30,18 +30,18 @@
 
 @media (min-width: 768px) {
   .Hero__sliderText {
-    font-size: 1.2em;
     top: 50px;
     right: 50px;
+    font-size: 1.2em;
   }
 }
 
 @media (min-width: 992px) {
   .Hero__sliderText {
-    font-size: 1.4em;
     top: 60px;
     right: 40px;
     padding: 20px;
+    font-size: 1.4em;
   }
 }
 
@@ -55,8 +55,8 @@
 
 .Hero__carouselItem {
   height: 25vh;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 @media (min-width: 576px) {
@@ -79,14 +79,14 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 25px 0;
-  text-align: center;
   font-size: 14px;
+  text-align: center;
+  gap: 20px;
 }
 
 @media (min-width: 768px) {
@@ -107,12 +107,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 35px;
   height: 35px;
   margin: 0 auto;

@@ -13,12 +13,7 @@
   }
 }
 
-.hamburger:focus > .hamburger__container {
-  -webkit-box-shadow: 0 0 2px 2px #51a7e8;
-          box-shadow: 0 0 2px 2px #51a7e8;
-}
-
-.hamburger__container {
+.hamburger .hamburger__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,6 +23,11 @@
           align-items: center;
   width: 35px;
   height: 30px;
+}
+
+.hamburger:focus > .hamburger__container {
+  -webkit-box-shadow: 0 0 2px 2px #51a7e8;
+          box-shadow: 0 0 2px 2px #51a7e8;
 }
 
 .hamburger__bars {

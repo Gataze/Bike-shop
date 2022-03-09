@@ -1,9 +1,9 @@
-.loginPage {
+.signupPage {
   background-color: #eeeeee;
   padding: 20px;
 }
 
-.loginPage__container {
+.signupPage__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +17,15 @@
           align-items: center;
 }
 
-.loginPage__form {
+.signupPage__header {
+  margin: 30px 0 10px;
+  padding: 10px 0;
+  background-color: gold;
+  width: 100%;
+  text-align: center;
+}
+
+.signupPage__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,53 +40,27 @@
   margin-top: 30px;
 }
 
-.loginPage__header {
-  margin: 30px 0 10px;
-  padding: 10px 0;
-  background-color: gold;
-  width: 100%;
-  text-align: center;
-}
-
-.loginPage__formHeader {
-  font-size: 18px;
-  margin: 0 0 20px 0;
-}
-
-.loginPage__input {
-  width: 240px;
+.signupPage__input {
+  width: 180px;
   height: 40px;
   padding: 10px;
 }
 
-@media (min-width: 992px) {
-  .loginPage__input {
-    width: 300px;
-    height: 40px;
-    padding: 15px;
-    font-size: 18px;
+@media (min-width: 576px) {
+  .signupPage__input {
+    width: 270px;
   }
 }
 
-.loginPage__submit {
-  display: block;
-  margin: 0 auto;
-  border: 2px solid black;
-  margin-top: 25px;
-  width: 90px;
-  height: 30px;
-  cursor: pointer;
+.signupPage__checkbox {
+  margin-right: 10px;
 }
 
-.loginPage__submit:hover {
-  background-color: gold;
-}
-
-.loginPage__loginEntry {
+.signupPage__loginEntry {
   margin-top: 20px;
 }
 
-.loginPage__submit {
+.signupPage__submit {
   width: 60px;
   height: 30px;
   border: 2px solid black;
@@ -86,28 +68,27 @@
   cursor: pointer;
 }
 
-.loginPage__submit:hover {
+.signupPage__submit:hover {
   background-color: gold;
 }
 
 @media (min-width: 576px) {
-  .loginPage__submit {
+  .signupPage__submit {
     width: 70px;
     height: 40px;
     font-size: 18px;
   }
 }
 
-.loginPage__remindEntry {
+.signupPage__remindEntry {
   margin-bottom: 20px;
 }
 
-.loginPage__loginEntryButton {
+.signupPage__loginEntryButton {
   background-color: transparent;
   border: none;
   color: blue;
   margin-left: 5px;
   cursor: pointer;
-  font-size: 15px;
 }
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=signup.css.map */
