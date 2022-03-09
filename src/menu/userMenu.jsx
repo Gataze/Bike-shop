@@ -1,7 +1,12 @@
 import { FaSignInAlt, FaUser, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { useOrderDetails } from "../context/OrderDetails";
+import { getTotalItemCount } from "../utilities";
 export default function UserMenu(){
+
+    const [count] = useOrderDetails();
+    const itemNumber = getTotalItemCount(count)
+    
     return (
         <ul className="MainNav__iconList">
         <li className="MainNav__listItem">
@@ -14,9 +19,10 @@ export default function UserMenu(){
             <FaUser />
           </Link>
         </li>
-        <li className="MainNav__listItem">
+        <li className="MainNav__listItem MainNav__listItem--active">
           <Link className="MainNav__link" to="/cart">
             <FaShoppingCart />
+            {itemNumber? <span className="MainNav__itemCount">{itemNumber}</span> : null}
           </Link>
         </li>
       </ul>

@@ -9,6 +9,9 @@
 
   &__mainCart {
     padding: 20px;
+    @media(min-width: 1440px){
+      padding: 20px 0;
+    }
   }
 
   &__total {

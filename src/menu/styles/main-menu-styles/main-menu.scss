@@ -74,8 +74,10 @@
       height: auto;
     }
   }
+  
 
   &__link {
+    position: relative;
     color: black;
     font-size: 24px;
     text-transform: uppercase;
@@ -83,6 +85,21 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  &__itemCount{
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    font-weight: 900;
+    background-color: gold;
+    font-size: 17px;
+    text-align: center;
+    z-index: 999;
+    left: 12px;
+    top: -4px;
+    border-radius: 10px;
   }
 
   &__iconList {

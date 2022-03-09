@@ -8,6 +8,12 @@
   padding: 20px;
 }
 
+@media (min-width: 1440px) {
+  .cart__mainCart {
+    padding: 20px 0;
+  }
+}
+
 .cart__total {
   margin: 20px 0;
   padding: 24px 20px;

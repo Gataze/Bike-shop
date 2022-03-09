@@ -4,11 +4,13 @@ import BurgerBtn from "./BurgerBtn";
 import { Link } from "react-router-dom";
 import { useState } from "react"
 
+
 import UserMenu from "./userMenu";
 
 const MainMenu = () => {
   const navigation = ["home", "products", "about"];
   const [active, setActive] = useState(false)
+  
 
   const activeStyles = {
     top: "0px",
@@ -20,8 +22,6 @@ const MainMenu = () => {
       !prevState
     )
   }
-
-  console.log(active)
 
   return (
     <nav style={active? activeStyles : null} className="MainNav">

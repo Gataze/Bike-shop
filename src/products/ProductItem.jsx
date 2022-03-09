@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import sorterFunction from "../utilities/sorterFunction";
+import { sorterFunction } from "../utilities";
 import "./styles/product-item-styles/product-item.styles.css";
 
 const ProductItem = ({ bikes, product, sortDirection }) => {

@@ -39,9 +39,6 @@ export function OrderDetailsProvider(props){
     })
 
 
-    
-
-
     useEffect(() => {
         const grandTotal = calculateTotal(counter)
         setTotal({
@@ -54,9 +51,6 @@ export function OrderDetailsProvider(props){
         function updateItemCount(newCount, item, itemName){
             
             const newItems = new Map(counter.items)
-
-            console.log(newCount)
-
             if(newCount === 0){
                 newItems.delete(itemName)
             }else{
@@ -64,7 +58,6 @@ export function OrderDetailsProvider(props){
             }
 
             
-
             setCounter({
                 items: newItems
             })

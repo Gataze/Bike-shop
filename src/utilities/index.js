@@ -1,4 +1,4 @@
-const sorterFunction = (bikes, sortDirection) => {
+export const sorterFunction = (bikes, sortDirection) => {
   let sorted = [...bikes];
 
   switch (sortDirection) {
@@ -20,4 +20,12 @@ const sorterFunction = (bikes, sortDirection) => {
   return sorted;
 };
 
-export default sorterFunction;
+
+export function getTotalItemCount(count){
+  let itemCount = 0
+  for(const items of count.items.values()){
+    itemCount += items.newCount
+  }
+  return itemCount
+}
+
