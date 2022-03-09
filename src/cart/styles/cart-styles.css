@@ -5,7 +5,7 @@
 }
 
 .cart__mainCart {
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .cart__total {
@@ -36,6 +36,12 @@
 
 .cart__button:hover {
   background-color: #d8d8d8;
+}
+
+.cart__empty {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 30px;
 }
 
 .cartListWrapper__list {
@@ -86,7 +92,7 @@
 
 @media (min-width: 568px) {
   .cartItem__itemImg {
-    max-width: 50%;
+    max-width: 40%;
   }
 }
 

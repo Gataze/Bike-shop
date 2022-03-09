@@ -6,7 +6,7 @@ const Cart = () => {
 
   const [counter,,total] = useOrderDetails();
 
-  console.log(total)
+  console.log(total.grandTotal)
 
 
 
@@ -17,12 +17,19 @@ const Cart = () => {
         <h2>CART</h2>
       </section>
       <section className="cart__mainCart">
-        <CartList counter={counter}/>
-        <h2 className="cart__total"><b>Total value:</b> {total.grandTotal}$</h2>
-        <div className="cart__buttons">
-          
-          <button className="cart__button">Proceed to checkout</button>
-        </div>
+        {total.grandTotal?
+          <>
+            <CartList counter={counter}/>
+            <div className="cart__buttons">
+              <button className="cart__button">Proceed to checkout</button>
+            </div>
+            <h2 className="cart__total"><b>Total value:</b> {total.grandTotal}$</h2>
+          </>
+          :<div className="cart__emptyContainer">
+            <p className="cart__empty">Your cart is empty</p>
+            <button className="cart__button">Back to shop</button>
+          </div>
+        }
       </section>
     </div>
   );

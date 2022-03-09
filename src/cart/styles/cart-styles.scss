@@ -8,7 +8,7 @@
   }
 
   &__mainCart {
-    padding: 20px 0;
+    padding: 20px;
   }
 
   &__total {
@@ -34,6 +34,12 @@
     &:hover {
       background-color: #d8d8d8;
     }
+  }
+
+  &__empty{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 30px;
   }
 }
 
@@ -73,7 +79,7 @@
     max-width: 100%;
     object-fit: scale-down;
     @media (min-width: 568px) {
-      max-width: 50%;
+      max-width: 40%;
     }
     @media (min-width: 768px) {
       max-width: 33.3%;

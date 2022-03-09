@@ -47,9 +47,9 @@ const CartItem = ({ bike }) => {
         <p className="cartItem__spcs2">
           <b>Color:</b> {bike.color}
         </p>
-        <p className="cartItem__spcs3">
+        {bike.frame? <p className="cartItem__spcs3">
           <b>Frame:</b> {bike.frame}
-        </p>
+        </p> : null}
         <p className="cartItem__spcs4">
           <b>Wheel:</b> {bike.wheel}
         </p>

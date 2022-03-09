@@ -43,6 +43,8 @@
         "body":"Quia optio ipsam molestiae quibusdam aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
         "url":"/images/accesories/helmet.jpg",
         "price": 79,
+        "type": "helmet",
+        "color": "black",
         "id":4
       },
       {
@@ -50,6 +52,8 @@
         "body":"Quia optio ipsam molestiae quibusdam aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
         "url":"/images/accesories/saddle.jpg",
         "price": 99,
+        "type": "saddle",
+        "color": "black",
         "id":5
       },
       {
@@ -57,6 +61,8 @@
         "body":"Quia optio ipsam molestiae quibusdam aliquid laborum error, reiciendis exercitationem aliquid laborum, fugit iste vitae laboriosam culpa enim.",
         "url":"/images/accesories/water-bottle.jpg",
         "price": 29,
+        "type": "bottle",
+        "color": "black",
         "id":6
       }
     ],
@@ -108,155 +114,7 @@
             }
           ],
           "id": 7
-      },
-      {
-          "url": "/images/our-photos/bicycle-2.jpg",
-          "set": [
-            {
-            "url": "/images/our-photos/bicycle-2.jpg",
-            "id": 100
-            },
-            {
-            "url": "/images/our-photos/bicycle-3.jpg",
-            "id": 101
-            },
-            {
-            "url": "/images/our-photos/bicycle-4.jpg",
-            "id": 102
-            },
-            {
-            "url": "/images/our-photos/bicycle-5.jpg",
-            "id": 103
-            },
-            {
-            "url": "/images/our-photos/bicycle-6.jpg",
-            "id": 104
-            },
-            {
-            "url": "/images/our-photos/bicycle-1.jpg",
-            "id": 105
-            }
-          ],
-          "id": 8
-      },
-      {
-          "url": "/images/our-photos/bicycle-3.jpg",
-          "set": [
-            {
-            "url": "/images/our-photos/bicycle-3.jpg",
-            "id": 100
-            },
-            {
-            "url": "/images/our-photos/bicycle-4.jpg",
-            "id": 101
-            },
-            {
-            "url": "/images/our-photos/bicycle-5.jpg",
-            "id": 102
-            },
-            {
-            "url": "/images/our-photos/bicycle-6.jpg",
-            "id": 103
-            },
-            {
-            "url": "/images/our-photos/bicycle-1.jpg",
-            "id": 104
-            },
-            {
-            "url": "/images/our-photos/bicycle-2.jpg",
-            "id": 105
-            }
-          ],
-          "id": 9
-      },
-      {
-          "url": "/images/our-photos/bicycle-4.jpg",
-          "set": [
-            {
-            "url": "/images/our-photos/bicycle-4.jpg",
-            "id": 100
-            },
-            {
-            "url": "/images/our-photos/bicycle-5.jpg",
-            "id": 101
-            },
-            {
-            "url": "/images/our-photos/bicycle-6.jpg",
-            "id": 102
-            },
-            {
-            "url": "/images/our-photos/bicycle-1.jpg",
-            "id": 103
-            },
-            {
-            "url": "/images/our-photos/bicycle-2.jpg",
-            "id": 104
-            },
-            {
-            "url": "/images/our-photos/bicycle-3.jpg",
-            "id": 105
-            }
-          ],
-          "id": 10
-      },
-      {
-          "url": "/images/our-photos/bicycle-5.jpg",
-          "set": [
-            {
-            "url": "/images/our-photos/bicycle-5.jpg",
-            "id": 100
-            },
-            {
-            "url": "/images/our-photos/bicycle-6.jpg",
-            "id": 101
-            },
-            {
-            "url": "/images/our-photos/bicycle-1.jpg",
-            "id": 102
-            },
-            {
-            "url": "/images/our-photos/bicycle-2.jpg",
-            "id": 103
-            },
-            {
-            "url": "/images/our-photos/bicycle-3.jpg",
-            "id": 104
-            },
-            {
-            "url": "/images/our-photos/bicycle-4.jpg",
-            "id": 105
-            }
-          ],
-          "id": 11
-      },
-      {
-          "url": "/images/our-photos/bicycle-6.jpg",
-          "set": [
-            {
-            "url": "/images/our-photos/bicycle-6.jpg",
-            "id": 100
-            },
-            {
-            "url": "/images/our-photos/bicycle-1.jpg",
-            "id": 101
-            },
-            {
-            "url": "/images/our-photos/bicycle-2.jpg",
-            "id": 102
-            },
-            {
-            "url": "/images/our-photos/bicycle-3.jpg",
-            "id": 103
-            },
-            {
-            "url": "/images/our-photos/bicycle-4.jpg",
-            "id": 104
-            },
-            {
-            "url": "/images/our-photos/bicycle-5.jpg",
-            "id": 105
-            }
-          ],
-          "id": 12
       }
+      
+      
  ]}

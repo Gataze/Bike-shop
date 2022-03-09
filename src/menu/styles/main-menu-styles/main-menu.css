@@ -47,7 +47,7 @@
       -ms-flex-order: 0;
           order: 0;
   margin-left: 20px;
-  font-size: 28px;
+  font-size: 26px;
   text-transform: uppercase;
 }
 
@@ -97,7 +97,7 @@
   -webkit-transition: left 0.5s ease-in-out;
   transition: left 0.5s ease-in-out;
   background-color: #d8d8d8;
-  font-size: 28px;
+  font-size: 26px;
   text-align: center;
   gap: 10%;
   gap: 20px;
@@ -124,7 +124,7 @@
 
 .MainNav__link {
   color: black;
-  font-size: 28px;
+  font-size: 24px;
   text-transform: uppercase;
 }
 
