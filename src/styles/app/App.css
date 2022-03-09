@@ -13,19 +13,4 @@
 .App {
   background-color: #d8d8d8;
 }
-
-.main-page-wrapper {
-  width: 100%;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
-
-.btn {
-  display: inline-block;
-}
 /*# sourceMappingURL=App.css.map */

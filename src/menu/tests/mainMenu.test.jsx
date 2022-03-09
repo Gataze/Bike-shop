@@ -1,16 +1,13 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { screen, waitFor } from "@testing-library/react";
+import { render } from "../../test-utils/testing-library-utils";
 import userEvent from "@testing-library/user-event";
 import MainPage from "../../home-page/MainPage";
-import { BrowserRouter as Router } from "react-router-dom";
+
 
 test("Main manu tests", async () => {
-  render(
-    <Router>
-      <MainPage />
-    </Router>
-  );
+  render(<MainPage />);
 
-  //Show slider section and new models section after (menu) "HOME" button is clicked.
+  //navigates home when you click the home link.
   const homeButton = screen.getByRole("link", { name: /home/i });
   userEvent.click(homeButton);
 
@@ -24,7 +21,7 @@ test("Main manu tests", async () => {
   expect(modelsHeader).toBeInTheDocument();
   expect(productsHeaderBefore).not.toBeInTheDocument();
 
-  //Show products header and three products-list items after (menu) "PRODUCTS" button is clicked.
+  //navigates to products section when you click products link.
   const productsButton = screen.getByRole("link", { name: /products/i });
 
   userEvent.click(productsButton);
@@ -39,6 +36,8 @@ test("Main manu tests", async () => {
     const productsList = await screen.findAllByRole("img", { name: /bike$/i });
     expect(productsList).toHaveLength(3);
   });
+
+  // navigates to about section when you click about link.
 });
 
 
