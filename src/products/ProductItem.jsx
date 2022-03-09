@@ -8,33 +8,36 @@ const ProductItem = ({ bikes, product, sortDirection }) => {
   return (
     <>
       {sortedProducts.map((bike) => (
-        <div className="product-item" key={bike.id}>
-          <div className="col-3">
-            <h2>{bike.name}</h2>
-            <div className="photo">
-              <img src={bike.url} alt={`${bike.name} bike`}></img>
+        <div className="productItem" key={bike.id}>
+          <div className="productItem__container">
+            <h2 className="productItem__header">{bike.name}</h2>
+            <div className="productItem__photoContainer">
+              <img className="productItem__photo" src={bike.url} alt={`${bike.name} bike`}></img>
             </div>
-            <div className="description">
-              <span className="price">
+            <div className="productItem__descriptionContainer">
+              <span className="productItem__descriptionItem">
                 Price:<b> {bike.price}$</b>
               </span>
-              <span>
-                Type of bicycle: <b>{bike.type}</b>
+              <span className="productItem__descriptionItem">
+                Type: <b>{bike.type}</b>
               </span>
-              <span>
-                Wheel size: <b>{bike.wheel}"</b>
-              </span>
-              <span>
-                Frame size: <b>{bike.frame}"</b>
-              </span>
-              <span>
+              {bike.wheel? 
+                <span className="productItem__descriptionItem">
+                  Wheel size: <b>{bike.wheel}"</b>
+                </span> : null
+              }
+              {bike.frame? 
+                <span className="productItem__descriptionItem">
+                  Frame size: <b>{bike.frame}"</b>
+                </span>: null}
+              <span className="productItem__descriptionItem">
                 Color: <b>{bike.color}</b>
               </span>
-              <button>
-                <Link className="btn" to={`/products/${product + bike.id}`}>
+              
+                <Link className="productItem__button" to={`/products/${product + bike.id}`}>
                   MORE
                 </Link>
-              </button>
+              
             </div>
           </div>
         </div>

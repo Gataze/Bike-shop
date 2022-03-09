@@ -27,13 +27,22 @@
     margin: 15px 0 5px;
     padding: 10px;
     border: 2px solid black;
+    color: black;
+    font-size: 15px;
     background-color: #aaaaaa;
     text-align: center;
     cursor: pointer;
 
     &:hover {
-      background-color: #d8d8d8;
+      background-color: gold;
     }
+  }
+
+  &__emptyContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
   }
 
   &__empty{
@@ -61,7 +70,8 @@
   background-color: white;
   font-size: 1.3em;
   @media (min-width: 568px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 40% 20% 20%;
     gap: 30px;
   }
   @media (min-width: 768px) {
@@ -78,12 +88,7 @@
   &__itemImg {
     max-width: 100%;
     object-fit: scale-down;
-    @media (min-width: 568px) {
-      max-width: 40%;
-    }
-    @media (min-width: 768px) {
-      max-width: 33.3%;
-    }
+    
   }
 
   &__detailsSpan {

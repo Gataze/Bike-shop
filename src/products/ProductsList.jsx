@@ -7,7 +7,7 @@ const ProductsList = () => {
   const [product, setProduct] = useState("bikesPreview/");
   const [sortDirection, setSortDirection] = useState("");
   const {
-    data: bikes = 0,
+    data: items = 0,
     error,
     isPending,
   } = useFetch(
@@ -22,22 +22,20 @@ const ProductsList = () => {
   };
 
   return (
-    <div className="products">
-      <div className="row-1">
-        <div className="col-1">
-          <h2>All Products</h2>
-        </div>
-        <div className="col-2">
-          <span title="bikesPreview/" onClick={(e) => handleClick(e)}>
-            Bikes
-          </span>
-          <span title="accesories/" onClick={(e) => handleClick(e)}>
-            Accesories
-          </span>
-        </div>
-
-        <div className="col-2">
+    <div className="productsList">
+        <div className="productsList__headerContainer">
+          <h2 className="productsList__header">All Products</h2>
+          <div className="productsList__buttonContainer">
+            <button className="productsList__button" title="bikesPreview/" onClick={(e) => handleClick(e)}>
+              Bikes
+            </button>
+            <button className="productsList__button" title="accesories/" onClick={(e) => handleClick(e)}>
+              Accesories
+            </button>
+          </div>
+         
           <select
+            className="productsList__select"
             defaultValue=""
             onChange={(e) => setSortDirection(e.target.value)}
           >
@@ -50,21 +48,19 @@ const ProductsList = () => {
             <option value="9-1">Price (9...1)</option>
           </select>
         </div>
-      </div>
 
-      <div className="row-2">
-        <div className="container">
+        <article className="productsList__itemsContainer">
           {isPending && <div>Loading...</div>}
           {error && <div>{error}</div>}
-          {bikes && (
+          {items && (
             <ProductItem
               product={product}
-              bikes={bikes}
+              bikes={items}
               sortDirection={sortDirection}
             />
           )}
-        </div>
-      </div>
+        </article>
+      
     </div>
   );
 };
