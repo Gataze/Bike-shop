@@ -12,7 +12,7 @@ const ProductItem = ({ bikes, product, sortDirection }) => {
           <div className="productItem__container">
             <h2 className="productItem__header">{bike.name}</h2>
             <div className="productItem__photoContainer">
-              <img className="productItem__photo" src={bike.url} alt={`${bike.name} bike`}></img>
+              <img className="productItem__photo" src={bike.url} alt={`${bike.name} ${product}`}></img>
             </div>
             <div className="productItem__descriptionContainer">
               <span className="productItem__descriptionItem">

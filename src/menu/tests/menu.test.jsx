@@ -32,7 +32,7 @@ test("Main manu tests", async () => {
   expect(productsHeaderAfter).toBeInTheDocument();
 
   await waitFor(async () => {
-    const productsList = await screen.findAllByRole("img", { name: /bike$/i });
+    const productsList = await screen.findAllByRole("img", { name: /bikesPreview\/$/i });
     expect(productsList).toHaveLength(3);
   });
 
