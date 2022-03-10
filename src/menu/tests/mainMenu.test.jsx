@@ -8,8 +8,8 @@ test("Main manu tests", async () => {
   render(<MainPage />);
 
   //navigates home when you click the home link.
-  const homeButton = screen.getByRole("link", { name: /home/i });
-  userEvent.click(homeButton);
+  const homeLink = screen.getByRole("link", { name: /home/i });
+  userEvent.click(homeLink);
 
   const sliderHeader = screen.getByRole("heading", { name: "NEW MODEL" });
   const modelsHeader = screen.getByRole("heading", { name: "NEW MODELS" });
@@ -22,9 +22,8 @@ test("Main manu tests", async () => {
   expect(productsHeaderBefore).not.toBeInTheDocument();
 
   //navigates to products section when you click products link.
-  const productsButton = screen.getByRole("link", { name: /products/i });
-
-  userEvent.click(productsButton);
+  const productsLink = screen.getByRole("link", { name: /products/i });
+  userEvent.click(productsLink);
 
   const productsHeaderAfter = screen.getByRole("heading", {
     name: /all products/i,
@@ -38,6 +37,7 @@ test("Main manu tests", async () => {
   });
 
   // navigates to about section when you click about link.
+  
 });
 
 

@@ -2,125 +2,91 @@
   padding-bottom: 15px;
   background-color: white;
     
-  h1 {
+  &__header {
     padding: 20px;
     background-color: #333;
     color: white;
     text-align: center;
   }
 
-  .container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    @media (min-width: 768px) {
-      max-width: 100%;
-
-      h2 {
-        font-size: 14px;
-      }
-
-      p {
-        font-size: 13px;
-      }
-    }
-    @media (min-width: 1200px) {
-      h2 {
-        font-size: 18px;
-      }
-
-      p {
-        font-size: 15px;
-      }
-    }
-       
-  }
-    
-  .row {
+  &__container {
     display: flex;
     flex-flow: column;
     gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    @media(min-width: 992px){
+      flex-flow: row;
+      max-width: 1400px;
+    }
+       
+  }
+
+  &__photo {
+    max-width: 50%;
     @media (min-width: 768px) {
-      display: grid;
-      grid-template-columns: 20% 25% 25% 30%;
-      max-width: calc(100% - 60px);
-      margin-top: 35px;
-    }
-    @media (min-width: 1200px) {
-      max-width: calc(100% - 120px);
-      margin-top: 65px;
-      gap: 40px;
-    }
-
-        
-        
-        
-
-    .col-1 {
-      margin-top: 40px;
-      @media (min-width: 768px) {
-        margin-top: 0;
-      }
-            
-      img {
-        max-width: 50%;
-        @media (min-width: 768px) {
-          max-width: 100%;
-        }
-      }
-    }
-
-    .col-2 {
-            
-      font-size: 14px;
-            
-    }
-
-    .col-3 {
-            
-      font-size: 14px;
-
-      p {
-        margin-bottom: 5px;
-      }
-    }
-
-    .col-4 {
-      form {
-        display: flex;
-        flex-flow: column;
-        margin: auto;
-        font-size: 14px;
-
-        label {
-          margin-top: 10px;
-        }
-
-        input,
-        textarea {
-          padding: 5px;
-          border: 1px solid gray;
-        }
-
-        textarea {
-          height: 100px;
-        }
-
-        button {
-          align-self: flex-end;
-          width: 33.3%;
-          margin-top: 20px;
-          padding: 5px 0;
-          border: 2px solid gray;
-          background-color: orange;
-          color: black;
-          cursor: pointer;
-
-          &:hover {
-            opacity: 0.8;
-          }
-        }
-      }
+      max-width: 100%;
     }
   }
-}
+  
+  &__form {
+    display: flex;
+    flex-flow: column;
+    min-width: 25%;
+    font-size: 14px;
+
+  }
+  
+  &__label {
+    margin-top: 10px;
+  }
+
+  &__input,
+  &__textarea {
+    padding: 5px;
+    border: 1px solid gray;
+  }
+
+  &__textarea {
+    height: 100px;
+  }
+
+        
+  &__button {
+    align-self: flex-end;
+    width: 33.3%;
+    margin-top: 20px;
+    padding: 5px 0;
+    border: 2px solid gray;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}   
+        
+
+    
+        
+      
+    
+
+
+    
+      
+        
+
+        
+
+        
+
+        
+        
+      
+    
+  
+
