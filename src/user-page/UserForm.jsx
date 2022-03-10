@@ -1,15 +1,11 @@
 import { useState } from "react";
-import { useParams } from "react-router";
 import LoginPage from "./LoginPage";
 import ForgotPage from "./ForgotPage";
 import SignupPage from "./SignupPage"
 
 export default function UserForm(){
 
-    const { id } = useParams();
-    
-
-    const [userForm, setUserForm] = useState(id)
+    const [userForm, setUserForm] = useState("login")
 
     let Component = LoginPage;
 
