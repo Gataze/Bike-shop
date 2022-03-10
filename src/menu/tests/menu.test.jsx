@@ -37,7 +37,26 @@ test("Main manu tests", async () => {
   });
 
   // navigates to about section when you click about link.
-  
+  const aboutLink = screen.getByRole("link", { name: /about/i });
+  userEvent.click(aboutLink);
+
+  const aboutHeader = screen.getByRole("heading", { name: /about us/i})
+  expect(aboutHeader).toBeInTheDocument();
 });
 
+
+test("User menu tests", () => {
+  render(<MainPage />)
+
+
+  //user login link test - login form should be shown
+  const loginIcon = screen.getByTitle("login");
+  userEvent.click(loginIcon);
+  expect(screen.getByRole("heading", {name: /log in to your account/i})).toBeInTheDocument();
+
+  //user cart link test - cart initially should be empty
+  const cartIcon = screen.getByTitle("cart");
+  userEvent.click(cartIcon)
+  expect(screen.getByRole("heading", {name: /cart/i})).toBeInTheDocument()
+})
 

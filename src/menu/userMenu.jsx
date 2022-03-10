@@ -16,12 +16,12 @@ export default function UserMenu(){
         </li>
         <li className="MainNav__listItem">
           <Link className="MainNav__link" to="/login">
-            <FaUser />
+            <FaUser title="login"/>
           </Link>
         </li>
         <li className="MainNav__listItem MainNav__listItem--active">
           <Link className="MainNav__link" to="/cart">
-            <FaShoppingCart />
+            <FaShoppingCart title="cart"/>
             {itemNumber? <span className="MainNav__itemCount">{itemNumber}</span> : null}
           </Link>
         </li>
