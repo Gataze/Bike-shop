@@ -6,7 +6,7 @@ const ImgSlider = ({ item }) => {
   return (
     <div className="card__imagesContainer">
       {imageOne ? (
-        <img src={item.url} alt={item.name} className="card__images" />
+        <img src={item.url} alt={`${item.name} card`} className="card__images" />
       ) : (
         <img src={item.url2} alt={item.name} className="card__images" />
       )}

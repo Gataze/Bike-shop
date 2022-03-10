@@ -9,14 +9,14 @@ const BikeModelsList = (data) => {
     <div className="bike-models-list">
       {data.data.map((item) => (
         <div className="col" key={item.id}>
-          <img src={item.url} alt="img" />
+          <img src={item.url} alt={`${item.name} bike`} />
           <div className="description">
             <h2>{item.name}</h2>
             <span>
               {item.body}
               {item.body}
             </span>
-            <Link to={`/products/${product + item.id}`}>View more</Link>
+            <Link title={item.name} to={`/products/${product + item.id}`}>View more</Link>
           </div>
         </div>
       ))}
