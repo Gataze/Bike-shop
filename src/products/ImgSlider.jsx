@@ -6,21 +6,21 @@ const ImgSlider = ({ item }) => {
   return (
     <div className="card__imagesContainer">
       {imageOne ? (
-        <img src={item.url} alt={`${item.name} card`} className="card__images" />
+        <img src={item.url} alt={`${item.name} max`} className="card__images" />
       ) : (
-        <img src={item.url2} alt={item.name} className="card__images" />
+        <img src={item.url2} alt={`${item.name} max`} className="card__images" />
       )}
       <div className="card__imagesContainer-min">
         <img
           onClick={() => setImageOne(true)}
           src={item.url}
-          alt={item.name}
+          alt={`${item.name} min`}
           className="card__images-min"
         />
         <img
           onClick={() => setImageOne(false)}
           src={item.url2}
-          alt={item.name}
+          alt={`${item.name} min`}
           className="card__images-min"
         />
       </div>

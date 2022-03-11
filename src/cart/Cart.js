@@ -7,10 +7,6 @@ const Cart = () => {
 
   const [counter,,total] = useOrderDetails();
 
-  console.log(total.grandTotal)
-
-
-
 
   return (
     <div className="cart">

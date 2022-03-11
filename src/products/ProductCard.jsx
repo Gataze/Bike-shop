@@ -3,16 +3,16 @@ import { useParams } from "react-router";
 import "./styles/product-details-styles/product-details-styles.css";
 import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import ProductDescription from "./ProductDescription";
 import ImgSlider from "./ImgSlider";
 import { useOrderDetails } from "../context/OrderDetails";
+import { formatCurrency } from "../utilities";
+
 
 const ProductCard = () => {
 
-
-  
   const [, updateItemCount] = useOrderDetails();
   const [counter, setCounter] = useState(0);
   const { typeId, id } = useParams();
@@ -20,12 +20,6 @@ const ProductCard = () => {
     `https://my-json-server.typicode.com/gataze/mockjson/${typeId}/${id}`
   );
 
-
-
-  
-  let disabledLink = counter === "0";
-  console.log(disabledLink)
-  console.log(counter)
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -44,8 +38,8 @@ const ProductCard = () => {
             ))}
             <span className="card__starsSpan">4.8/5 (33)</span>
           </div>
-          <p className="card__itemPrice">{item.price}$</p>
-          <p className="card__itemLoan">10 rat x {item.price / 10}0$</p>
+          <p className="card__itemPrice">{formatCurrency(item.price)}</p>
+          <p className="card__itemLoan">10 rat x {formatCurrency(item.price / 10)}</p>
           <p className="card__detailsSpan">Details:</p>
           <p className="card__spcs1">
             Type: <b>{item.type}</b>
@@ -61,11 +55,12 @@ const ProductCard = () => {
           </p>
 
           <form className="card__form">
-            <label className="card__label">Count</label>
+            <label htmlFor="spinInput" className="card__label">Count</label>
             <input
               type="number"
+              id="spinInput"
               value={counter}
-              onChange={(e) => setCounter(Number(e.target.value))}
+              onChange={(e) => setCounter(Math.floor(Number(e.target.value)))}
               min="0"
               max="999"
               className="card__input"
@@ -73,13 +68,16 @@ const ProductCard = () => {
           </form>
 
           <form className="card__form">
-            <label className="card__label">Total</label>
-            <span>{counter? counter * item.price : 0}$</span>
+            
+            <span role="button">Total: {counter? formatCurrency(counter * (item.price)) : 0}</span>
           </form>
           
 
           
-          <Link onClick={() => updateItemCount(counter, item, item.name)} to="/cart" className="card__addBtn" style={counter? null : {pointerEvents: "none", opacity: "0.5"}}>ADD TO CART</Link>
+            <Link onClick={() => updateItemCount(counter, item, item.name)} to="/cart" className="card__addBtn" >
+              <button className="card__add" disabled={!counter}>ADD TO CART</button>
+            </Link>
+          
         
           
                  

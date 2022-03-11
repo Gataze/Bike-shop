@@ -27,6 +27,6 @@ test("bike models section tests", async () => {
     const cardHeader = screen.getByRole("heading", {name: /product card/i});
     expect(cardHeader).toBeInTheDocument();
 
-    const bikeImage = await screen.findByRole("img", {name: /manticora card/i})
+    const bikeImage = await screen.findByRole("img", {name: /manticora max/i})
     expect(bikeImage).toBeInTheDocument();
 })  

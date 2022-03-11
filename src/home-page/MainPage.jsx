@@ -8,11 +8,6 @@ import Cart from "../cart/Cart";
 import ProductsList from "../products/ProductsList";
 import ProductDetails from "../products/ProductCard";
 import About from "../about/About";
-
-
-
-
-
 import "./styles/main-page.css";
 
 const MainPage = () => {

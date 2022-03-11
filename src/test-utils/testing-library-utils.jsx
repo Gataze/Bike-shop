@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { OrderDetailsProvider } from "../context/OrderDetails";
-import { MemoryRouter} from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
 
 
 const AllWrappers = ({children}) => {
@@ -13,6 +13,10 @@ const AllWrappers = ({children}) => {
     )
 }
 
+
+
+
+
 const renderWithContext = (ui, options) => 
     render(ui, {wrapper: AllWrappers, ...options }); 
 
@@ -20,4 +24,4 @@ const renderWithContext = (ui, options) =>
 //re-export everything
 export * from "@testing-library/react";
 
-export {renderWithContext as render}
+export {renderWithContext as render }

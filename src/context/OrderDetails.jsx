@@ -1,11 +1,5 @@
 import { createContext, useContext, useMemo, useState, useEffect } from "react";
-
-// import useFetch from "../hooks/useFetch";
-
-// const OrderDetails = createContext();
-//   export const value = useContext({})
-//   return <OrderDetails.Provider value={value} {...props} />
-// }
+import {formatCurrency} from "../utilities"
 
 const OrderDetails = createContext()
 
@@ -34,15 +28,19 @@ export function OrderDetailsProvider(props){
     const [counter, setCounter] = useState({
         items: new Map(),
     });
-    const [total, setTotal] = useState({
-        grandTotal: 0,
-    })
 
+
+    const zeroCurrency = formatCurrency(0);
+
+
+    const [total, setTotal] = useState({
+        grandTotal: zeroCurrency,
+    })
 
     useEffect(() => {
         const grandTotal = calculateTotal(counter)
         setTotal({
-            grandTotal: grandTotal
+            grandTotal: formatCurrency(grandTotal)
         })
     },[counter])
     

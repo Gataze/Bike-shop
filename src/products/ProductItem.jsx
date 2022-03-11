@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { sorterFunction } from "../utilities";
 import "./styles/product-item-styles/product-item.styles.css";
+import { formatCurrency } from "../utilities";
 
 const ProductItem = ({ bikes, product, sortDirection }) => {
   const sortedProducts = sorterFunction(bikes, sortDirection);
@@ -16,7 +17,7 @@ const ProductItem = ({ bikes, product, sortDirection }) => {
             </div>
             <div className="productItem__descriptionContainer">
               <span className="productItem__descriptionItem">
-                Price:<b> {bike.price}$</b>
+                Price:<b> {formatCurrency(bike.price)}</b>
               </span>
               <span className="productItem__descriptionItem">
                 Type: <b>{bike.type}</b>

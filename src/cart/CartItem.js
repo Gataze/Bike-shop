@@ -1,4 +1,5 @@
 import { useOrderDetails } from "../context/OrderDetails";
+import { formatCurrency } from "../utilities";
 
 const CartItem = ({ bike }) => {
   const [, updateItemCount] = useOrderDetails();
@@ -20,7 +21,7 @@ const CartItem = ({ bike }) => {
 
         <div className="cartItem__price">
           <span className="cartItem__cartDets">
-            <b>Price:</b> {bike.price}$
+            <b>Price:</b> {formatCurrency(bike.price)}
           </span>
         </div>
 
@@ -32,7 +33,7 @@ const CartItem = ({ bike }) => {
 
         <div className="cartItem__value">
           <span className="cartItem__cartDets">
-            <b>Value:</b> {bike.price * bike.newCount}$
+            <b>Value:</b> {formatCurrency(bike.price * bike.newCount)}$
           </span>
         </div>
       </div>
