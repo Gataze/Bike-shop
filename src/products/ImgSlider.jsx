@@ -1,24 +1,21 @@
 import { useState } from "react";
 
 const ImgSlider = ({ item }) => {
-  const [imageOne, setImageOne] = useState(true);
+  const [active, setActive] = useState(true);
 
   return (
     <div className="card__imagesContainer">
-      {imageOne ? (
-        <img src={item.url} alt={`${item.name} max`} className="card__images" />
-      ) : (
-        <img src={item.url2} alt={`${item.name} max`} className="card__images" />
-      )}
+        <img src={item.url} alt={`${item.name} one`} className={`card__images ${active? "card__images--active" : "card__images--inActive"}`} />
+        <img src={item.url2} alt={`${item.name} two`} className={`card__images ${active? "card__images--inActive" : "card__images--active" }`} />
       <div className="card__imagesContainer-min">
         <img
-          onClick={() => setImageOne(true)}
+          onClick={() => setActive(true)}
           src={item.url}
           alt={`${item.name} min`}
           className="card__images-min"
         />
         <img
-          onClick={() => setImageOne(false)}
+          onClick={() => setActive(false)}
           src={item.url2}
           alt={`${item.name} min`}
           className="card__images-min"

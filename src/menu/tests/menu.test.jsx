@@ -4,7 +4,7 @@ import userEvent from "@testing-library/user-event";
 import MainPage from "../../home-page/MainPage";
 
 
-test("Main manu tests", async () => {
+test("Main manu navigation tests", async () => {
   render(<MainPage />);
 
   //navigates home when you click the home link.
@@ -54,9 +54,15 @@ test("User menu tests", () => {
   userEvent.click(loginIcon);
   expect(screen.getByRole("heading", {name: /log in to your account/i})).toBeInTheDocument();
 
-  //user cart link test - cart initially should be empty
+  //user cart link test - cart should be shown
   const cartIcon = screen.getByTitle("cart");
   userEvent.click(cartIcon)
   expect(screen.getByRole("heading", {name: /cart/i})).toBeInTheDocument()
+
+  //cart icon counter tests
+  
+
 })
+
+
 

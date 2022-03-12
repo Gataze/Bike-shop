@@ -12,11 +12,6 @@ const MainMenu = () => {
   const [active, setActive] = useState(false)
   
 
-  const activeStyles = {
-    top: "0px",
-    maxHeight: "340px",
-  }
-
   function handleShow(){
     setActive(prevState => 
       !prevState
@@ -24,7 +19,7 @@ const MainMenu = () => {
   }
 
   return (
-    <nav style={active? activeStyles : null} className="MainNav">
+    <nav className={!active ? "MainNav" : "MainNav MainNav--active"}>
       <ul className="MainNav__list">
         {navigation.map((item) => (
           <li key={item} className="MainNav__listItem">

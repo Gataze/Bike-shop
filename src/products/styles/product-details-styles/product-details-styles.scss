@@ -25,6 +25,10 @@
 
   &__images {
     max-width: 100%;
+    display: none;
+    &--active{
+      display: block;
+    }
   }
 
   &__images-min {

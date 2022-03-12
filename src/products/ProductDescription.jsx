@@ -30,7 +30,7 @@ const ProductDescription = () => {
         </div>
         <div className="productDescription__text">
           {description ? (
-            <span>
+            <span className="productDescription__textOne">
               Aenean posuere vulputate orci, et gravida dolor consectetur ut.
               Suspendisse eget accumsan dui, sed malesuada dolor. Suspendisse
               potenti. Vestibulum congue mauris tortor, id venenatis lectus
@@ -42,7 +42,7 @@ const ProductDescription = () => {
               luctus.
             </span>
           ) : (
-            <span>
+            <span className="productDescription__textTwo">
               Vestibulum imperdiet mauris eget rhoncus facilisis. Suspendisse
               vitae dictum velit. Aenean rutrum convallis ipsum, id malesuada
               diam finibus sagittis. Nunc eu enim tellus. Phasellus leo ipsum,

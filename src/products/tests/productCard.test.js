@@ -21,11 +21,11 @@ export const renderWithRoute = (ui, options) =>
     render(ui, {wrapper: WrapperWithRoute, ...options }); 
 
 
-test("product card tests", async () => {
+test("product card input values tests", async () => {
     renderWithRoute(<ProductCard />)
 
     // Apropriate item image should be displayed
-    const cardImage = await screen.findByAltText("Griffon max")
+    const cardImage = await screen.findByAltText("Griffon one")
     expect(cardImage).toBeInTheDocument();
     
     //Add to cart button initially should be disabled
@@ -65,5 +65,13 @@ test("product card tests", async () => {
     userEvent.type(input, "abc");
     expect(showTotal).toHaveTextContent("0")
 
+    userEvent.clear(input)
+    userEvent.type(input, "1");
+    userEvent.click(addToCartButton)
+
+
 })
+
+
+
 

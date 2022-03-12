@@ -23,6 +23,11 @@
   background-color: #d8d8d8;
 }
 
+.MainNav--active {
+  top: 0px;
+  max-height: 340px;
+}
+
 @media (min-width: 768px) {
   .MainNav {
     position: static;

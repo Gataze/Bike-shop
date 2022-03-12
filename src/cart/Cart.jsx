@@ -21,7 +21,7 @@ const Cart = () => {
               <button className="cart__button">Proceed to checkout</button>
               <Link to="/products" className="cart__button">Back to shop</Link>
             </div>
-            <h2 className="cart__total"><b>Total value:</b> {total.grandTotal}$</h2>
+            <h2 className="cart__total">Total value: {total.grandTotal}</h2>
           </>
           :<div className="cart__emptyContainer">
             <p className="cart__empty">Your cart is empty</p>

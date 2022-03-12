@@ -15,8 +15,6 @@ const AllWrappers = ({children}) => {
 
 
 
-
-
 const renderWithContext = (ui, options) => 
     render(ui, {wrapper: AllWrappers, ...options }); 
 

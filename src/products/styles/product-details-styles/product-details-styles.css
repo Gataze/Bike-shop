@@ -37,6 +37,11 @@
 
 .card__images {
   max-width: 100%;
+  display: none;
+}
+
+.card__images--active {
+  display: block;
 }
 
 .card__images-min {
