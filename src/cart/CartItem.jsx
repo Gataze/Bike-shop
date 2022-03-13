@@ -7,39 +7,40 @@ const CartItem = ({ bike }) => {
   return (
     <div className="cartItem" key={bike.name}>
       <img className="cartItem__itemImg" src={bike.url} alt={`${bike.name} cart`}></img>
-
       <div className="cartItem__description">
         <div className="cartItem__preview">
           <h2>{bike.name}</h2>
-          <div
+          <button
             onClick={() => updateItemCount(0, bike, bike.name)}
             className="cartItem__delete"
+            title={`remove ${bike.name}`}
           >
             Remove
-          </div>
+          </button>
         </div>
 
         <div className="cartItem__price">
           <span className="cartItem__cartDets">
-            <b>Price:</b> {formatCurrency(bike.price)}
+            Price: {formatCurrency(bike.price)}
           </span>
         </div>
 
         <div className="cartItem__quantity">
           <span className="cartItem__cartDets">
-            <b>Count:</b> {`${bike.newCount}`}
+            Count: {`${bike.newCount}`}
           </span>
         </div>
 
         <div className="cartItem__value">
+          {bike?
           <span className="cartItem__cartDets">
-            <b>Value:</b> {formatCurrency(bike.price * bike.newCount)}$
-          </span>
+            Value: {formatCurrency(bike.price * bike.newCount)}
+          </span> : null}
         </div>
       </div>
       <div className="cartItem__description">
         <h2 className="cartItem__detailsSpan">
-          <b>Details</b>
+          Details
         </h2>
         <p className="cartItem__spcs1">
           <b>Type: </b>
@@ -56,6 +57,8 @@ const CartItem = ({ bike }) => {
         </p>
       </div>
     </div>
+    
+         
   );
 };
 

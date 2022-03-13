@@ -1,19 +1,20 @@
 import CartItem from './CartItem'
+import { useOrderDetails } from '../context/OrderDetails';
 
-const CartList = ({counter}) => {
+const CartList = () => {
+
+    const [counter] = useOrderDetails();
 
     const itemsArray = Array.from(counter.items.values());
-    const itemsList = itemsArray.map((bike) => (
-        
-        <li key={bike.name}>
-          <CartItem bike={bike} />
-        </li>
-    ));
 
     return ( 
         <div className="cartListWrapper">
             <ul className="cartListWrapper__list">
-                {itemsList}
+                {itemsArray.map((bike) => (
+                    <li key={bike.name}>
+                        <CartItem bike={bike} />
+                    </li>
+                ))}
             </ul>
         </div>
      );

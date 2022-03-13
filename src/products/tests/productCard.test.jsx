@@ -17,12 +17,14 @@ const WrapperWithRoute = ({children}) => {
     )
 }
 
-export const renderWithRoute = (ui, options) => 
+const renderWithRoute = (ui, options) => 
     render(ui, {wrapper: WrapperWithRoute, ...options }); 
 
 
 test("product card input values tests", async () => {
+    window.scrollTo = jest.fn()
     renderWithRoute(<ProductCard />)
+   
 
     // Apropriate item image should be displayed
     const cardImage = await screen.findByAltText("Griffon one")
@@ -64,10 +66,6 @@ test("product card input values tests", async () => {
     userEvent.clear(input)
     userEvent.type(input, "abc");
     expect(showTotal).toHaveTextContent("0")
-
-    userEvent.clear(input)
-    userEvent.type(input, "1");
-    userEvent.click(addToCartButton)
 
 
 })

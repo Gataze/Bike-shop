@@ -105,6 +105,8 @@
   font-size: 14px;
   text-decoration: underline;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .cartItem__itemImg {
@@ -115,5 +117,9 @@
 
 .cartItem__detailsSpan {
   font-size: 1.5em;
+}
+
+.cartItem__cartDets {
+  font-weight: bold;
 }
 /*# sourceMappingURL=cart-styles.css.map */

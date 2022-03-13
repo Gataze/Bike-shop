@@ -7,7 +7,8 @@ import MainPage from "../../MainPage";
 
 test("bike models section tests", async () => {
     render(<MainPage />)
-
+    window.scrollTo = jest.fn()
+    
     //bike models section should be rendered
     const bikeModel = screen.getByRole("heading", {name: /new models/i});
     expect(bikeModel).toBeInTheDocument();
@@ -23,10 +24,12 @@ test("bike models section tests", async () => {
     //correct product card should be shown after "view more" link is clicked 
     const manticoraLink = screen.getByTitle("Manticora");
     userEvent.click(manticoraLink);
-
+    
     const cardHeader = screen.getByRole("heading", {name: /product card/i});
     expect(cardHeader).toBeInTheDocument();
 
     const bikeImage = await screen.findByRole("img", {name: /manticora one/i})
     expect(bikeImage).toBeInTheDocument();
+
+    
 })  

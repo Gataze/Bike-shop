@@ -35,7 +35,7 @@ const ProductItem = ({ bikes, product, sortDirection }) => {
                 Color: <b>{bike.color}</b>
               </span>
               
-                <Link className="productItem__button" to={`/products/${product + bike.id}`}>
+                <Link className="productItem__button" title={bike.name} to={`/products/${product + bike.id}`}>
                   MORE
                 </Link>
               

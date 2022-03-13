@@ -11,13 +11,13 @@ const ImgSlider = ({ item }) => {
         <img
           onClick={() => setActive(true)}
           src={item.url}
-          alt={`${item.name} min`}
+          alt={`${item.name} min one`}
           className="card__images-min"
         />
         <img
           onClick={() => setActive(false)}
           src={item.url2}
-          alt={`${item.name} min`}
+          alt={`${item.name} min two`}
           className="card__images-min"
         />
       </div>

@@ -22,7 +22,7 @@ export default function UserMenu(){
         <li className="MainNav__listItem MainNav__listItem--active">
           <Link className="MainNav__link" to="/cart">
             <FaShoppingCart title="cart"/>
-            {itemNumber? <span className="MainNav__itemCount">{itemNumber}</span> : null}
+            {itemNumber? <span title="countIndicator" className="MainNav__itemCount">{itemNumber}</span> : null}
           </Link>
         </li>
       </ul>

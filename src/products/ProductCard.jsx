@@ -69,7 +69,7 @@ const ProductCard = () => {
 
           <form className="card__form">
             
-            <span role="button">Total: {counter? formatCurrency(counter * (item.price)) : 0}</span>
+            <span>Total: {counter? formatCurrency(counter * (item.price)) : 0}</span>
           </form>
           
 

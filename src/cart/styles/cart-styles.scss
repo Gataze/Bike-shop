@@ -86,6 +86,8 @@
     font-size: 14px;
     text-decoration: underline;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
   }
 
   &__itemImg {
@@ -96,5 +98,9 @@
 
   &__detailsSpan {
     font-size: 1.5em;
+  }
+
+  &__cartDets{
+    font-weight: bold;
   }
 }

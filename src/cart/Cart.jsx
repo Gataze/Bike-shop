@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
 
-  const [counter,,total] = useOrderDetails();
+  const [,,total] = useOrderDetails();
 
 
   return (
@@ -16,7 +16,7 @@ const Cart = () => {
       <section className="cart__mainCart">
         {total.grandTotal?
           <>
-            <CartList counter={counter}/>
+            <CartList/>
             <div className="cart__buttons">
               <button className="cart__button">Proceed to checkout</button>
               <Link to="/products" className="cart__button">Back to shop</Link>
