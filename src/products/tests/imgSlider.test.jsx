@@ -21,7 +21,18 @@ const renderWithRoute = (ui, options) =>
 
 
 test("Toggling active classes in ImgSlider component", async () => {
+    window.scrollTo = jest.fn()
     renderWithRoute(<ProductCard/>)
+    
+    
+    const slideOne = await screen.findByAltText("Griffon one")
+    const slideTwo = await screen.findByAltText("Griffon two")
+    
+    expect(slideOne).toHaveClass("card__images--active")
+    expect(slideTwo).toHaveClass("card__images--inActive")
 
-    const optionOne = await screen.findByAltText("Griffon min one")
+    const optionTwo = await screen.findByAltText("Griffon min two")
+    userEvent.click(optionTwo)
+    expect(slideOne).toHaveClass("card__images--inActive")
+    expect(slideTwo).toHaveClass("card__images--active")
 })
