@@ -9,7 +9,14 @@ const useFetchWithSorting = (url) => {
   });
 
   const urlHandler = (e) => {
-    setState((prevState) => ({ ...prevState, type: e.target.title }));
+    if (e.target.title !== state.type) {
+      setState({
+        data: [],
+        error: false,
+        isPending: true,
+        type: e.target.title,
+      });
+    }
   };
 
   useEffect(() => {
