@@ -1,35 +1,83 @@
-import useFetch from "../hooks/useFetch";
+import useFetchWithSorting from "../hooks/useFetchWithSorting";
 import "./styles/product-list-styles/products-list-styles.css";
 import ProductItem from "./ProductItem";
-import { useState, useMemo } from "react";
+import { useState, useEffect } from "react";
 
-import { sorterFunction } from "../utilities";
+// import { sorterFunction } from "../utilities";
+
+// const useProductsOptions = (items) => {
+//   const [product, setProduct] = useState("bikesPreview/");
+//   const [sortDirection, setSortDirection] = useState([]);
+//   const [sortedItems, setSortedItem] = useState("");
+
+//   const productTypeHandler = (e) => {
+//     setProduct(e.target.title);
+//   };
+
+//   const sortTypeHandler = (e) => {
+//     setSortDirection(e.target.value);
+//   };
+
+//   useEffect(() => {
+//     const sorterFunction = (bikes, sortDirection) => {
+//       let sorted = [...bikes];
+
+//       switch (sortDirection) {
+//         case "A-Z":
+//           sorted.sort((a, b) => a.name.localeCompare(b.name));
+//           break;
+//         case "Z-A":
+//           sorted.sort((a, b) => b.name.localeCompare(a.name));
+//           break;
+//         case "1-9":
+//           sorted.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+//           break;
+//         case "9-1":
+//           sorted.sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
+//           break;
+//         default:
+//           break;
+//       }
+//       console.log(sorted);
+//       setSortedItem(sorted);
+//     };
+
+//     sorterFunction(items, sortDirection);
+//   }, [items, sortDirection]);
+
+//   return {
+//     product,
+//     sortDirection,
+//     sortedItems,
+//     productTypeHandler,
+//     sortTypeHandler,
+//   };
+// };
 
 const ProductsList = () => {
-  const [product, setProduct] = useState("bikesPreview/");
+  // const [product, setProduct] = useState("bikesPreview/");
 
   // const product = "bikesPreview/";
 
-  const [sortDirection, setSortDirection] = useState([]);
+  // const [sortDirection, setSortDirection] = useState([]);
 
   const {
-    data: items = [],
-    error,
-    isPending,
-  } = useFetch(
-    `https://my-json-server.typicode.com/gataze/mockjson/bikesPreview/`
+    state: { data: items, isPending, error },
+    urlHandler,
+  } = useFetchWithSorting(
+    `https://my-json-server.typicode.com/gataze/mockjson/`
   );
 
-  const handleClick = (e) => {
-    const {
-      target: { title },
-    } = e;
-    setProduct(title);
-  };
+  // const {
+  //   product,
+  //   sortDirection,
+  //   sortedItems,
+  //   productTypeHandler,
+  //   sortTypeHandler,
+  // } = useProductsOptions(items);
 
-  const sortedItems = sorterFunction(items, sortDirection);
-
-  console.log(sortedItems);
+  // const sss = sorterFunction(items, sortDirection);
+  console.log(items);
 
   return (
     <div className="productsList">
@@ -39,14 +87,14 @@ const ProductsList = () => {
           <button
             className="productsList__button"
             title="bikesPreview/"
-            onClick={(e) => handleClick(e)}
+            onClick={(e) => urlHandler(e)}
           >
             Bikes
           </button>
           <button
             className="productsList__button"
             title="accesories/"
-            onClick={(e) => handleClick(e)}
+            onClick={(e) => urlHandler(e)}
           >
             Accesories
           </button>
@@ -55,7 +103,7 @@ const ProductsList = () => {
         <select
           className="productsList__select"
           defaultValue=""
-          onChange={(e) => setSortDirection(e.target.value)}
+          // onChange={(e) => sortTypeHandler(e)}
         >
           <option value="" disabled hidden>
             Sort items by:{" "}
@@ -71,9 +119,7 @@ const ProductsList = () => {
         {isPending && <div>Loading...</div>}
         {error && <div>{error}</div>}
         {items &&
-          items.map((item) => (
-            <ProductItem product={product} item={item} key={item.id} />
-          ))}
+          items.map((item) => <ProductItem item={item} key={item.id} />)}
       </article>
     </div>
   );

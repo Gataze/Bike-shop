@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const useFetch = (url) => {
   const [state, setState] = useState({
-    data: null,
+    data: [],
     error: false,
     isPending: true,
   });
