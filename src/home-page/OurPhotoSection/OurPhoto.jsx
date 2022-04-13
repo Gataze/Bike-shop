@@ -12,22 +12,22 @@ const OurPhoto = () => {
 
   return (
     <section className="photos">
-        <h2 className="photos__header">OUR PHOTOS</h2>
-        <div className="photos__photoList">
-          {isPending && <div>Loading...</div>}
-          {error && <div>{error}</div>}
-          {photos && <OurPhotoList photos={photos} />}
-        </div>
-        <p className="photos__text">
-          Lorem ipsum dolor sit amet consectetur. Inventore porro quasi
-          dignissimos recusandae deserunt cupiditate ab, dolore deleniti.
-          Corrupti laborum eum error? Excepturi eveniet corporis rerum
-          assumenda. Itaque, iure asperiores! Lorem ipsum dolor sit amet consectetur. Inventore porro quasi
-          dignissimos recusandae deserunt cupiditate ab, dolore deleniti.
-          Corrupti laborum eum error? Excepturi eveniet corporis rerum
-          assumenda. Itaque, iure asperiores!
-        </p>
-      </section>
+      <h2 className="photos__header">OUR PHOTOS</h2>
+      <div className="photos__photoList">
+        {isPending && <div>Loading...</div>}
+        {error && <div>{error}</div>}
+        {photos && <OurPhotoList photos={photos} />}
+      </div>
+      <p className="photos__text">
+        Lorem ipsum dolor sit amet consectetur. Inventore porro quasi
+        dignissimos recusandae deserunt cupiditate ab, dolore deleniti. Corrupti
+        laborum eum error? Excepturi eveniet corporis rerum assumenda. Itaque,
+        iure asperiores! Lorem ipsum dolor sit amet consectetur. Inventore porro
+        quasi dignissimos recusandae deserunt cupiditate ab, dolore deleniti.
+        Corrupti laborum eum error? Excepturi eveniet corporis rerum assumenda.
+        Itaque, iure asperiores!
+      </p>
+    </section>
   );
 };
 

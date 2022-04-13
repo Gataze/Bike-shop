@@ -2,20 +2,16 @@ import Logo from "./../images/logo/logo.png";
 import "./styles/main-menu-styles/main-menu.css";
 import BurgerBtn from "./BurgerBtn";
 import { Link } from "react-router-dom";
-import { useState } from "react"
-
+import { useState } from "react";
 
 import UserMenu from "./userMenu";
 
 const MainMenu = () => {
   const navigation = ["home", "products", "about"];
-  const [active, setActive] = useState(false)
-  
+  const [active, setActive] = useState(false);
 
-  function handleShow(){
-    setActive(prevState => 
-      !prevState
-    )
+  function handleShow() {
+    setActive((prevState) => !prevState);
   }
 
   return (
@@ -31,19 +27,16 @@ const MainMenu = () => {
             </Link>
           </li>
         ))}
-        
       </ul>
-      <BurgerBtn handleShow={handleShow}/>
+      <BurgerBtn handleShow={handleShow} />
       <div className="MainNav__logo">
         <img className="MainNav__img" src={Logo} alt="#" />
         <span className="MainNav__name">
           Lorem<span className="MainNav__bold">Bikes</span>
         </span>
       </div>
-      
+
       <UserMenu />
-      
-      
     </nav>
   );
 };
