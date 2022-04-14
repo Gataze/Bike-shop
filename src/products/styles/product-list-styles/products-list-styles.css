@@ -34,7 +34,7 @@
   border-radius: 4px;
 }
 
-.productsList__itemsContainer {
+.itemsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +48,7 @@
 }
 
 @media (min-width: 768px) {
-  .productsList__itemsContainer {
+  .itemsContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
@@ -58,7 +58,7 @@
 }
 
 @media (min-width: 1440px) {
-  .productsList__itemsContainer {
+  .itemsContainer {
     gap: 20px;
     padding: 20px 0 0 0;
   }

@@ -1,28 +1,25 @@
-.productItem{
-  
-
-  &__container{
+.productItem {
+  color: black;
+  &__container {
     max-width: 576px;
-    background-color: #eeeeee;
     padding: 10px;
     margin: 0 auto;
-    @media(min-width: 576px){
+    @media (min-width: 576px) {
       padding: 20px;
     }
-    
   }
 
-  &__photo{
+  &__photo {
     max-width: 100%;
   }
 
-  &__descriptionContainer{
+  &__descriptionContainer {
     display: flex;
     flex-flow: column;
     margin-top: 10px;
   }
 
-  &__button{
+  &__button {
     width: 90px;
     height: 30px;
     border: 2px solid black;
@@ -30,7 +27,7 @@
     text-align: center;
     color: black;
     margin-top: 10px;
-    &:hover{
+    &:hover {
       background-color: gold;
     }
   }

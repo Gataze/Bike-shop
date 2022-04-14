@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import "./styles/product-item-styles/product-item.styles.css";
 import { formatCurrency } from "../utilities";
 
@@ -49,7 +48,6 @@ const ProductItem = ({ item, product }) => {
           </div>
         </div>
       </div>
-      )
     </>
   );
 };
