@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useFetchWithSorting = (url) => {
+const useFetchWithUrlHandler = (url) => {
   const [state, setState] = useState({
     data: [],
     error: false,
@@ -56,4 +56,4 @@ const useFetchWithSorting = (url) => {
   return { state, urlHandler };
 };
 
-export default useFetchWithSorting;
+export default useFetchWithUrlHandler;

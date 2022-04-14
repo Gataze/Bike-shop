@@ -5,16 +5,14 @@ import UserForm from "../user-page/UserForm";
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Cart from "../cart/Cart";
-import ProductsList from "../products/ProductsList";
+import ProductsHeader from "../products/ProductsHeader";
 import ProductDetails from "../products/ProductCard";
 import About from "../about/About";
 import "./styles/main-page.css";
 
 const MainPage = () => {
-  
   return (
-    <div
-      className="main-page-wrapper">
+    <div className="main-page-wrapper">
       <MainMenu />
       <div className="main-container">
         <Switch>
@@ -29,13 +27,13 @@ const MainPage = () => {
             <ProductDetails />
           </Route>
           <Route path="/products">
-            <ProductsList />
+            <ProductsHeader />
           </Route>
           <Route path="/about">
             <About />
           </Route>
           <Route>
-            <UserForm path="/login"/>
+            <UserForm path="/login" />
           </Route>
         </Switch>
       </div>
