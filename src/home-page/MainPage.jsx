@@ -5,10 +5,11 @@ import UserForm from "../user-page/UserForm";
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Cart from "../cart/Cart";
-import ProductsHeader from "../products/ProductsHeader";
+
 import ProductDetails from "../products/ProductCard";
 import About from "../about/About";
 import "./styles/main-page.css";
+import ProductWrapper from "../products/ProductWrapper";
 
 const MainPage = () => {
   return (
@@ -27,7 +28,7 @@ const MainPage = () => {
             <ProductDetails />
           </Route>
           <Route path="/products">
-            <ProductsHeader />
+            <ProductWrapper />
           </Route>
           <Route path="/about">
             <About />
