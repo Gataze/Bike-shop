@@ -1,0 +1,33 @@
+.productsOptions {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: #333333;
+  color: white;
+  gap: 20px;
+
+  &__buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__button {
+    padding: 5px;
+    width: 90px;
+    border-radius: 20px;
+    font-size: 16px;
+    &:hover {
+      background-color: gold;
+    }
+  }
+
+  &__select {
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}

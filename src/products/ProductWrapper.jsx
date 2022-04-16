@@ -1,5 +1,5 @@
 import React from "react";
-import ProductsHeader from "./ProductsHeader";
+import ProductsHeader from "./ProductsOptions";
 import ProductsList from "./ProductsList";
 import useFetchWithUrlHandler from "../hooks/useFetchWithUrlHandler";
 import useSortingHook from "../hooks/useSortingHook";

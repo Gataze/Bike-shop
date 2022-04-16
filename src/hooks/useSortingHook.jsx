@@ -29,9 +29,18 @@ const useSortingHook = (items) => {
     const sorted = sorterFunction(items, e.target.value);
     setSortedItem(sorted);
   };
-
-  const newItems = sortedItems ? sortedItems : items;
+  console.log(Object.is(sortedItems, items));
+  console.log(sortedItems);
+  console.log(items);
+  const newItems =
+    sortedItems &&
+    Object.entries(sortedItems).sort().toString() ===
+      Object.entries(items).sort().toString()
+      ? sortedItems
+      : items;
   return { newItems, sortTypeHandler };
 };
 
 export default useSortingHook;
+
+// utworzenie nowego hooka który będzie pobierał dane i sotrował je w jednym

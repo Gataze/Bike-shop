@@ -1,19 +1,19 @@
-import "./styles/product-list-styles/products-list-styles.css";
+import "./styles/product-options-styles/Product-options-styles.css";
 
-export default function ProductsHeader({ urlHandler, sortTypeHandler }) {
+export default function ProductsOptions({ urlHandler, sortTypeHandler }) {
   return (
-    <div className="productsWrapper__headerContainer">
-      <h2 className="productsWrapper__header">All Products</h2>
-      <div className="productsWrapper__buttonContainer">
+    <div className="productsOptions">
+      <h2 className="productsOptions__header">All Products</h2>
+      <div className="productsOptions__buttonContainer">
         <button
-          className="productsWrapper__button"
+          className="productsOptions__button"
           title="bikesPreview/"
           onClick={(e) => urlHandler(e)}
         >
           Bikes
         </button>
         <button
-          className="productsWrapper__button"
+          className="productsOptions__button"
           title="accesories/"
           onClick={(e) => urlHandler(e)}
         >
@@ -22,7 +22,7 @@ export default function ProductsHeader({ urlHandler, sortTypeHandler }) {
       </div>
 
       <select
-        className="productsWrapper__select"
+        className="productsOptions__select"
         defaultValue=""
         onChange={(e) => sortTypeHandler(e)}
       >
