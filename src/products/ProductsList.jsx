@@ -1,13 +1,12 @@
 import "./styles/product-list-styles/products-list-styles.css";
 import ProductItem from "./ProductItem";
 
-const ProductsList = ({ newItems, isPending, error }) => {
+const ProductsList = ({ items, isPending, error }) => {
   return (
     <article className="productsList__itemsContainer">
       {isPending && <div>Loading...</div>}
       {error && <div>{error}</div>}
-      {newItems &&
-        newItems.map((item) => <ProductItem item={item} key={item.id} />)}
+      {items && items.map((item) => <ProductItem item={item} key={item.id} />)}
     </article>
   );
 };
