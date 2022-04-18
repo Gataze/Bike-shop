@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import "./styles/product-item-styles/product-item.styles.css";
 import { formatCurrency } from "../utilities";
 
-const ProductItem = ({ item, product }) => {
-  // const sortedProducts = sorterFunction(bikes, sortDirection);
-
+const ProductItem = ({ item, type }) => {
+  console.log("product item rendered");
   return (
     <>
       <div className="productItem" key={item.id}>
@@ -14,7 +13,7 @@ const ProductItem = ({ item, product }) => {
             <img
               className="productItem__photo"
               src={item.url}
-              alt={`${item.name} ${product}`}
+              alt={`${item.name} ${type}`}
             ></img>
           </div>
           <div className="productItem__descriptionContainer">
@@ -41,7 +40,7 @@ const ProductItem = ({ item, product }) => {
             <Link
               className="productItem__button"
               title={item.name}
-              to={`/products/${product + item.id}`}
+              to={`/products/${type + item.id}`}
             >
               MORE
             </Link>

@@ -6,16 +6,14 @@ import useFetchWithUrlHandler from "../hooks/useFetchSortHook";
 
 export default function ProductWrapper() {
   const {
-    state: { data: items, isPending, error },
+    state: { data: items, isPending, error, type },
     urlHandler,
     sortTypeHandler,
   } = useFetchWithUrlHandler(
     `https://my-json-server.typicode.com/gataze/mockjson/`
   );
 
-  // const { newItems, sortTypeHandler } = useSortingHook(items);
-
-  console.log(items);
+  console.log(type);
 
   return (
     <div>
@@ -23,7 +21,12 @@ export default function ProductWrapper() {
         urlHandler={urlHandler}
         sortTypeHandler={sortTypeHandler}
       />
-      <ProductsList items={items} isPending={isPending} error={error} />
+      <ProductsList
+        items={items}
+        isPending={isPending}
+        error={error}
+        type={type}
+      />
     </div>
   );
 }
